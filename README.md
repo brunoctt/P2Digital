@@ -11,7 +11,7 @@
   - Dentro do Comparador haverá a checagem de senhas
   - Os botões pressionados da senha devem ser mostrado na 2 linha do LCD
 
-#Dúvidas
+#Dúvidas:
   
 
   ![image](https://user-images.githubusercontent.com/65169791/113223793-5d042300-9260-11eb-8473-5bf09d9ee167.png)
