@@ -1,5 +1,51 @@
-|buzzer
-pin_name2 <= pin_name1.DB_MAX_OUTPUT_PORT_TYPE
-pin_name1 => pin_name2.DATAIN
+|contador_relogio
+clock => contagemML[0].CLK
+clock => contagemML[1].CLK
+clock => contagemML[2].CLK
+clock => contagemML[3].CLK
+clock => contagemMH[0].CLK
+clock => contagemMH[1].CLK
+clock => contagemMH[2].CLK
+clock => contagemMH[3].CLK
+clock => contagemHL[0].CLK
+clock => contagemHL[1].CLK
+clock => contagemHL[2].CLK
+clock => contagemHL[3].CLK
+clock => contagemHH[0].CLK
+clock => contagemHH[1].CLK
+clock => contagemHH[2].CLK
+clock => contagemHH[3].CLK
+clock => contagemSH[0].CLK
+clock => contagemSH[1].CLK
+clock => contagemSH[2].CLK
+clock => contagemSH[3].CLK
+clock => contagemSL[0].CLK
+clock => contagemSL[1].CLK
+clock => contagemSL[2].CLK
+clock => contagemSL[3].CLK
+sl[0] <= contagemSL[0].DB_MAX_OUTPUT_PORT_TYPE
+sl[1] <= contagemSL[1].DB_MAX_OUTPUT_PORT_TYPE
+sl[2] <= contagemSL[2].DB_MAX_OUTPUT_PORT_TYPE
+sl[3] <= contagemSL[3].DB_MAX_OUTPUT_PORT_TYPE
+sh[0] <= contagemSH[0].DB_MAX_OUTPUT_PORT_TYPE
+sh[1] <= contagemSH[1].DB_MAX_OUTPUT_PORT_TYPE
+sh[2] <= contagemSH[2].DB_MAX_OUTPUT_PORT_TYPE
+sh[3] <= contagemSH[3].DB_MAX_OUTPUT_PORT_TYPE
+ml[0] <= contagemML[0].DB_MAX_OUTPUT_PORT_TYPE
+ml[1] <= contagemML[1].DB_MAX_OUTPUT_PORT_TYPE
+ml[2] <= contagemML[2].DB_MAX_OUTPUT_PORT_TYPE
+ml[3] <= contagemML[3].DB_MAX_OUTPUT_PORT_TYPE
+mh[0] <= contagemMH[0].DB_MAX_OUTPUT_PORT_TYPE
+mh[1] <= contagemMH[1].DB_MAX_OUTPUT_PORT_TYPE
+mh[2] <= contagemMH[2].DB_MAX_OUTPUT_PORT_TYPE
+mh[3] <= contagemMH[3].DB_MAX_OUTPUT_PORT_TYPE
+hl[0] <= contagemHL[0].DB_MAX_OUTPUT_PORT_TYPE
+hl[1] <= contagemHL[1].DB_MAX_OUTPUT_PORT_TYPE
+hl[2] <= contagemHL[2].DB_MAX_OUTPUT_PORT_TYPE
+hl[3] <= contagemHL[3].DB_MAX_OUTPUT_PORT_TYPE
+hh[0] <= contagemHH[0].DB_MAX_OUTPUT_PORT_TYPE
+hh[1] <= contagemHH[1].DB_MAX_OUTPUT_PORT_TYPE
+hh[2] <= contagemHH[2].DB_MAX_OUTPUT_PORT_TYPE
+hh[3] <= contagemHH[3].DB_MAX_OUTPUT_PORT_TYPE
 
 

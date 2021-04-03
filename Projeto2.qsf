@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE6E22C8
-set_global_assignment -name TOP_LEVEL_ENTITY lcd_example
+set_global_assignment -name TOP_LEVEL_ENTITY seteseg
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:56:56  MARCH 31, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
@@ -51,8 +51,37 @@ set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name VHDL_FILE contador.vhd
 set_location_assignment PIN_88 -to pin_name1
 set_location_assignment PIN_110 -to pin_name2
-set_global_assignment -name VHDL_FILE lcd_example.vhd
 set_global_assignment -name VHDL_FILE lcd_controller.vhd
+set_global_assignment -name VHDL_FILE lcd_example_sitedenegao.vhd
+set_location_assignment PIN_143 -to e
+set_location_assignment PIN_11 -to lcd_data[7]
+set_location_assignment PIN_7 -to lcd_data[6]
+set_location_assignment PIN_10 -to lcd_data[5]
+set_location_assignment PIN_2 -to lcd_data[4]
+set_location_assignment PIN_3 -to lcd_data[3]
+set_location_assignment PIN_144 -to lcd_data[2]
+set_location_assignment PIN_1 -to lcd_data[1]
+set_location_assignment PIN_142 -to lcd_data[0]
+set_location_assignment PIN_141 -to rs
+set_location_assignment PIN_138 -to rw
+set_global_assignment -name VHDL_FILE EXEMPLO_LCD_FPGA_EE03.vhd
+set_global_assignment -name VHDL_FILE lcd_controller_v2_1.vhd
+set_global_assignment -name VHDL_FILE lcd_example_digikey.vhd
+set_global_assignment -name VHDL_FILE seteseg.vhd
+set_location_assignment PIN_23 -to clock
+set_location_assignment PIN_133 -to dig[0]
+set_location_assignment PIN_135 -to dig[1]
+set_location_assignment PIN_136 -to dig[2]
+set_location_assignment PIN_137 -to dig[3]
+set_location_assignment PIN_128 -to saida[0]
+set_location_assignment PIN_121 -to saida[1]
+set_location_assignment PIN_125 -to saida[2]
+set_location_assignment PIN_129 -to saida[3]
+set_location_assignment PIN_132 -to saida[4]
+set_location_assignment PIN_126 -to saida[5]
+set_location_assignment PIN_124 -to saida[6]
+set_global_assignment -name VHDL_FILE contador_relogio.vhd
+set_global_assignment -name BDF_FILE testecont7seg.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

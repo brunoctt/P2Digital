@@ -1,5 +1,5 @@
-Analysis & Synthesis report for Projeto2
-Thu Apr 01 15:47:36 2021
+Analysis & Elaboration report for Projeto2
+Sat Apr 03 19:51:12 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -7,16 +7,10 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Analysis & Elaboration Messages
 
 
 
@@ -41,32 +35,48 @@ https://fpgasoftware.intel.com/eula.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
+; Analysis & Elaboration Summary                                                   ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 01 15:47:36 2021       ;
+; Analysis & Elaboration Status      ; Failed - Sat Apr 03 19:51:11 2021           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
-; Top-level Entity Name              ; buzzer                                      ;
+; Top-level Entity Name              ; seteseg                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 2                                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
+; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; buzzer             ; Projeto2           ;
+; Top-level entity name                                            ; seteseg            ; Projeto2           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -146,133 +156,54 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path               ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------+---------+
-; buzzer.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/Estudo/Eletrônica Digital/P2/buzzer.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------+---------+
-
-
-+----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                    ;
-+---------------------------------------------+------------------+
-; Resource                                    ; Usage            ;
-+---------------------------------------------+------------------+
-;                                             ;                  ;
-; Total combinational functions               ; 0                ;
-; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 0                ;
-;     -- 3 input functions                    ; 0                ;
-;     -- <=2 input functions                  ; 0                ;
-;                                             ;                  ;
-; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 0                ;
-;     -- arithmetic mode                      ; 0                ;
-;                                             ;                  ;
-; Total registers                             ; 0                ;
-;     -- Dedicated logic registers            ; 0                ;
-;     -- I/O registers                        ; 0                ;
-;                                             ;                  ;
-; I/O pins                                    ; 2                ;
-;                                             ;                  ;
-; Embedded Multiplier 9-bit elements          ; 0                ;
-;                                             ;                  ;
-; Maximum fan-out node                        ; pin_name2~output ;
-; Maximum fan-out                             ; 1                ;
-; Total fan-out                               ; 3                ;
-; Average fan-out                             ; 0.75             ;
-+---------------------------------------------+------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |buzzer                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |buzzer             ; buzzer      ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Apr 01 15:47:26 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
+    Info: Processing started: Sat Apr 03 19:51:03 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
     Info (12022): Found design unit 1: contador-contar File: D:/Estudo/Eletrônica Digital/P2/contador.vhd Line: 11
     Info (12023): Found entity 1: contador File: D:/Estudo/Eletrônica Digital/P2/contador.vhd Line: 5
-Info (12021): Found 1 design units, including 1 entities, in source file buzzer.bdf
-    Info (12023): Found entity 1: buzzer
-Info (12127): Elaborating entity "buzzer" for the top level hierarchy
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 1 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Thu Apr 01 15:47:36 2021
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+Info (12021): Found 2 design units, including 1 entities, in source file lcd_controller.vhd
+    Info (12022): Found design unit 1: lcd_controller-controller File: D:/Estudo/Eletrônica Digital/P2/lcd_controller.vhd Line: 62
+    Info (12023): Found entity 1: lcd_controller File: D:/Estudo/Eletrônica Digital/P2/lcd_controller.vhd Line: 51
+Info (12021): Found 2 design units, including 1 entities, in source file lcd_example_sitedenegao.vhd
+    Info (12022): Found design unit 1: lcd_example_sitedenegao-behavior File: D:/Estudo/Eletrônica Digital/P2/lcd_example_sitedenegao.vhd Line: 36
+    Info (12023): Found entity 1: lcd_example_sitedenegao File: D:/Estudo/Eletrônica Digital/P2/lcd_example_sitedenegao.vhd Line: 29
+Info (12021): Found 2 design units, including 1 entities, in source file exemplo_lcd_fpga_ee03.vhd
+    Info (12022): Found design unit 1: EXEMPLO_LCD_FPGA_EE03-hardware File: D:/Estudo/Eletrônica Digital/P2/EXEMPLO_LCD_FPGA_EE03.vhd Line: 37
+    Info (12023): Found entity 1: EXEMPLO_LCD_FPGA_EE03 File: D:/Estudo/Eletrônica Digital/P2/EXEMPLO_LCD_FPGA_EE03.vhd Line: 26
+Info (12021): Found 2 design units, including 1 entities, in source file lcd_controller_v2_1.vhd
+    Info (12022): Found design unit 1: lcd_controller_v2_1-controller File: D:/Estudo/Eletrônica Digital/P2/lcd_controller_v2_1.vhd Line: 62
+    Info (12023): Found entity 1: lcd_controller_v2_1 File: D:/Estudo/Eletrônica Digital/P2/lcd_controller_v2_1.vhd Line: 51
+Info (12021): Found 2 design units, including 1 entities, in source file lcd_example_digikey.vhd
+    Info (12022): Found design unit 1: lcd_example_digikey-behavior File: D:/Estudo/Eletrônica Digital/P2/lcd_example_digikey.vhd Line: 36
+    Info (12023): Found entity 1: lcd_example_digikey File: D:/Estudo/Eletrônica Digital/P2/lcd_example_digikey.vhd Line: 29
+Error (10500): VHDL syntax error at seteseg.vhd(45) near text "with";  expecting "end", or "(", or an identifier ("with" is a reserved keyword), or a sequential statement File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 45
+Error (10500): VHDL syntax error at seteseg.vhd(46) near text "when";  expecting ";" File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 46
+Error (10500): VHDL syntax error at seteseg.vhd(48) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 48
+Error (10500): VHDL syntax error at seteseg.vhd(49) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 49
+Error (10500): VHDL syntax error at seteseg.vhd(50) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 50
+Error (10500): VHDL syntax error at seteseg.vhd(51) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 51
+Error (10500): VHDL syntax error at seteseg.vhd(52) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 52
+Error (10500): VHDL syntax error at seteseg.vhd(53) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 53
+Error (10500): VHDL syntax error at seteseg.vhd(54) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 54
+Error (10500): VHDL syntax error at seteseg.vhd(55) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 55
+Info (12021): Found 0 design units, including 0 entities, in source file seteseg.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file contador_relogio.vhd
+    Info (12022): Found design unit 1: contador_relogio-contar File: D:/Estudo/Eletrônica Digital/P2/contador_relogio.vhd Line: 16
+    Info (12023): Found entity 1: contador_relogio File: D:/Estudo/Eletrônica Digital/P2/contador_relogio.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file testecont7seg.bdf
+    Info (12023): Found entity 1: testecont7seg
+Error: Quartus Prime Analysis & Elaboration was unsuccessful. 10 errors, 1 warning
+    Error: Peak virtual memory: 4782 megabytes
+    Error: Processing ended: Sat Apr 03 19:51:12 2021
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:18
 
 
