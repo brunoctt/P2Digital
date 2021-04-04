@@ -37,21 +37,35 @@ begin
 --				"1110" WHEN 3;
 --				"1111" WHEN OTHERS;
 	case digito is
-		when 0 => dig <= "0111"; aux <= sl;
-		when 1 => dig <= "1011"; aux <= sh;
-		when 2 => dig <= "1101"; aux <= ml;
-		when 3 => dig <= "1110"; aux <= mh;
+		when 0 => dig <= "0111"; aux <= mh;
+		when 1 => dig <= "1011"; aux <= ml;
+		when 2 => dig <= "1101"; aux <= sh;
+		when 3 => dig <= "1110"; aux <= sl;
 	end CASE;
-	with aux select
-		saida <= "0000001" when "0000";
-					"1001111" when "0001";
-					"0010010" when "0010";
-					"0000110" when "0011";
-					"1001100" when "0100";
-					"0100100" when "0101";
-					"1100000" when "0110";
-					"0001111" when "0111";
-					"0000000" when "1000";
-					"0001100" when "1001";
+	case aux is
+		when "0000" => saida <= "0000001";
+		when "0001" =>	saida	<=	"1001111";
+		when "0010"	=>	saida	<= "0010010";
+		when "0011" =>	saida	<= "0000110";
+		when "0100" =>	saida	<= "1001100";
+		when "0101" => saida	<= "0100100";
+		when "0110" => saida	<= "0100000";
+		when "0111" => saida	<= "0001111";
+		when "1000" => saida	<= "0000000";
+		when "1001" => saida	<= "0000100";
+		when others => saida <= "0110000";
+	end case;	
+--	with aux select
+--		saida <= "0000001" when "0000";
+--					"1001111" when "0001";
+--					"0010010" when "0010";
+--					"0000110" when "0011";
+--					"1001100" when "0100";
+--					"0100100" when "0101";
+--					"1100000" when "0110";
+--					"0001111" when "0111";
+--					"0000000" when "1000";
+--					"0001100" when "1001";
+--	saida <= "0000001";
 	end process;
 end behavior;

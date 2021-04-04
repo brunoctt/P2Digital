@@ -1,5 +1,5 @@
-Analysis & Elaboration report for Projeto2
-Sat Apr 03 19:51:12 2021
+Analysis & Synthesis report for Projeto2
+Sun Apr 04 18:55:41 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -7,10 +7,22 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|state
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Port Connectivity Checks: "lcd_example:inst|lcd_controller_v2_1:dut"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -35,48 +47,32 @@ https://fpgasoftware.intel.com/eula.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                   ;
+; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Failed - Sat Apr 03 19:51:11 2021           ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 04 18:55:41 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
-; Top-level Entity Name              ; seteseg                                     ;
+; Top-level Entity Name              ; testecontdisp                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 315                                         ;
+;     Total combinational functions  ; 315                                         ;
+;     Dedicated logic registers      ; 108                                         ;
+; Total registers                    ; 108                                         ;
+; Total pins                         ; 12                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE6E22C8        ;                    ;
-; Top-level entity name                                            ; seteseg            ; Projeto2           ;
+; Top-level entity name                                            ; testecontdisp      ; Projeto2           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -156,14 +152,208 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                      ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                            ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------+---------+
+; lcd_controller_v2_1.vhd          ; yes             ; User VHDL File                     ; D:/Estudo/Eletrônica Digital/P2/lcd_controller_v2_1.vhd ;         ;
+; contador_relogio.vhd             ; yes             ; User VHDL File                     ; D:/Estudo/Eletrônica Digital/P2/contador_relogio.vhd    ;         ;
+; divisor.vhd                      ; yes             ; User VHDL File                     ; D:/Estudo/Eletrônica Digital/P2/divisor.vhd             ;         ;
+; testecontdisp.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Estudo/Eletrônica Digital/P2/testecontdisp.bdf       ;         ;
+; lcd_example.vhd                  ; yes             ; Auto-Found VHDL File               ; D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd         ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 315         ;
+;                                             ;             ;
+; Total combinational functions               ; 315         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 145         ;
+;     -- 3 input functions                    ; 39          ;
+;     -- <=2 input functions                  ; 131         ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 254         ;
+;     -- arithmetic mode                      ; 61          ;
+;                                             ;             ;
+; Total registers                             ; 108         ;
+;     -- Dedicated logic registers            ; 108         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 12          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 88          ;
+; Total fan-out                               ; 1221        ;
+; Average fan-out                             ; 2.73        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name         ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+---------------------+--------------+
+; |testecontdisp                  ; 315 (0)             ; 108 (0)                   ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |testecontdisp                                          ; testecontdisp       ; work         ;
+;    |contador_relogio:inst666|   ; 35 (35)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|contador_relogio:inst666                 ; contador_relogio    ; work         ;
+;    |divisor:inst2|              ; 45 (45)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|divisor:inst2                            ; divisor             ; work         ;
+;    |lcd_example:inst|           ; 235 (49)            ; 61 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example:inst                         ; lcd_example         ; work         ;
+;       |lcd_controller_v2_1:dut| ; 186 (186)           ; 47 (47)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut ; lcd_controller_v2_1 ; work         ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------+
+; State Machine - |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|state   ;
++------------------+------------+-------------+------------------+----------------+
+; Name             ; state.send ; state.ready ; state.initialize ; state.power_up ;
++------------------+------------+-------------+------------------+----------------+
+; state.power_up   ; 0          ; 0           ; 0                ; 0              ;
+; state.initialize ; 0          ; 0           ; 1                ; 1              ;
+; state.ready      ; 0          ; 1           ; 0                ; 1              ;
+; state.send       ; 1          ; 0           ; 0                ; 1              ;
++------------------+------------+-------------+------------------+----------------+
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++---------------------------------------------+-----------------------------------------+
+; Register name                               ; Reason for Removal                      ;
++---------------------------------------------+-----------------------------------------+
+; lcd_example:inst|lcd_bus[8]                 ; Stuck at GND due to stuck port data_in  ;
+; lcd_example:inst|char[5]                    ; Stuck at GND due to stuck port data_in  ;
+; lcd_example:inst|lcd_bus[9]                 ; Merged with lcd_example:inst|lcd_bus[7] ;
+; lcd_example:inst|lcd_controller_v2_1:dut|rw ; Stuck at GND due to stuck port data_in  ;
+; Total Number of Removed Registers = 4       ;                                         ;
++---------------------------------------------+-----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                           ;
++-----------------------------+---------------------------+---------------------------------------------+
+; Register name               ; Reason for Removal        ; Registers Removed due to This Register      ;
++-----------------------------+---------------------------+---------------------------------------------+
+; lcd_example:inst|lcd_bus[8] ; Stuck at GND              ; lcd_example:inst|lcd_controller_v2_1:dut|rw ;
+;                             ; due to stuck port data_in ;                                             ;
++-----------------------------+---------------------------+---------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 108   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 31    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------+
+; Inverted Register Statistics                            ;
++-----------------------------------------------+---------+
+; Inverted Register                             ; Fan out ;
++-----------------------------------------------+---------+
+; lcd_example:inst|lcd_controller_v2_1:dut|busy ; 1       ;
+; contador_relogio:inst666|contagemML[0]        ; 6       ;
+; Total number of inverted registers = 2        ;         ;
++-----------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; 32:1               ; 2 bits    ; 42 LEs        ; 28 LEs               ; 14 LEs                 ; Yes        ; |testecontdisp|lcd_example:inst|lcd_bus[0]                            ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|clk_count[20] ;
+; 14:1               ; 8 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|lcd_data[7]   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |testecontdisp|contador_relogio:inst666|contagemHL                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "lcd_example:inst|lcd_controller_v2_1:dut" ;
++---------+-------+----------+-----------------------------------------+
+; Port    ; Type  ; Severity ; Details                                 ;
++---------+-------+----------+-----------------------------------------+
+; reset_n ; Input ; Info     ; Stuck at VCC                            ;
++---------+-------+----------+-----------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 12                          ;
+; cycloneiii_ff         ; 108                         ;
+;     ENA               ; 30                          ;
+;     ENA SLD           ; 1                           ;
+;     plain             ; 77                          ;
+; cycloneiii_lcell_comb ; 316                         ;
+;     arith             ; 61                          ;
+;         2 data inputs ; 61                          ;
+;     normal            ; 255                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 62                          ;
+;         3 data inputs ; 39                          ;
+;         4 data inputs ; 145                         ;
+;                       ;                             ;
+; Max LUT depth         ; 12.40                       ;
+; Average LUT depth     ; 6.83                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Apr 03 19:51:03 2021
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2 --analysis_and_elaboration
+    Info: Processing started: Sun Apr 04 18:55:30 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
@@ -184,26 +374,58 @@ Info (12021): Found 2 design units, including 1 entities, in source file lcd_con
 Info (12021): Found 2 design units, including 1 entities, in source file lcd_example_digikey.vhd
     Info (12022): Found design unit 1: lcd_example_digikey-behavior File: D:/Estudo/Eletrônica Digital/P2/lcd_example_digikey.vhd Line: 36
     Info (12023): Found entity 1: lcd_example_digikey File: D:/Estudo/Eletrônica Digital/P2/lcd_example_digikey.vhd Line: 29
-Error (10500): VHDL syntax error at seteseg.vhd(45) near text "with";  expecting "end", or "(", or an identifier ("with" is a reserved keyword), or a sequential statement File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 45
-Error (10500): VHDL syntax error at seteseg.vhd(46) near text "when";  expecting ";" File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 46
-Error (10500): VHDL syntax error at seteseg.vhd(48) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 48
-Error (10500): VHDL syntax error at seteseg.vhd(49) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 49
-Error (10500): VHDL syntax error at seteseg.vhd(50) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 50
-Error (10500): VHDL syntax error at seteseg.vhd(51) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 51
-Error (10500): VHDL syntax error at seteseg.vhd(52) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 52
-Error (10500): VHDL syntax error at seteseg.vhd(53) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 53
-Error (10500): VHDL syntax error at seteseg.vhd(54) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 54
-Error (10500): VHDL syntax error at seteseg.vhd(55) near text "when";  expecting "(", or "'", or "." File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 55
-Info (12021): Found 0 design units, including 0 entities, in source file seteseg.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file seteseg.vhd
+    Info (12022): Found design unit 1: seteseg-behavior File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 14
+    Info (12023): Found entity 1: seteseg File: D:/Estudo/Eletrônica Digital/P2/seteseg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file contador_relogio.vhd
     Info (12022): Found design unit 1: contador_relogio-contar File: D:/Estudo/Eletrônica Digital/P2/contador_relogio.vhd Line: 16
     Info (12023): Found entity 1: contador_relogio File: D:/Estudo/Eletrônica Digital/P2/contador_relogio.vhd Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file testecont7seg.bdf
     Info (12023): Found entity 1: testecont7seg
-Error: Quartus Prime Analysis & Elaboration was unsuccessful. 10 errors, 1 warning
-    Error: Peak virtual memory: 4782 megabytes
-    Error: Processing ended: Sat Apr 03 19:51:12 2021
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:18
+Info (12021): Found 2 design units, including 1 entities, in source file divisor.vhd
+    Info (12022): Found design unit 1: divisor-Behavioral File: D:/Estudo/Eletrônica Digital/P2/divisor.vhd Line: 11
+    Info (12023): Found entity 1: divisor File: D:/Estudo/Eletrônica Digital/P2/divisor.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file testecontdisp.bdf
+    Info (12023): Found entity 1: testecontdisp
+Info (12127): Elaborating entity "testecontdisp" for the top level hierarchy
+Warning (275083): Bus "contador1[3..0]" found using same base name as "contador", which might lead to a name conflict.
+Warning (275083): Bus "contador2[3..0]" found using same base name as "contador", which might lead to a name conflict.
+Warning (275083): Bus "contador3[3..0]" found using same base name as "contador", which might lead to a name conflict.
+Warning (275080): Converted elements in bus name "contador" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "contador[3..0]" to "contador3..0"
+Warning (275080): Converted elements in bus name "contador1" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "contador1[3..0]" to "contador13..0"
+Warning (275080): Converted elements in bus name "contador2" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "contador2[3..0]" to "contador23..0"
+Warning (275080): Converted elements in bus name "contador3" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "contador3[3..0]" to "contador33..0"
+Warning (12125): Using design file lcd_example.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: lcd_example-behavior File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 38
+    Info (12023): Found entity 1: lcd_example File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 29
+Info (12128): Elaborating entity "lcd_example" for hierarchy "lcd_example:inst"
+Warning (10492): VHDL Process Statement warning at lcd_example.vhd(63): signal "chegoureal" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 63
+Warning (10492): VHDL Process Statement warning at lcd_example.vhd(71): signal "contador1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at lcd_example.vhd(72): signal "contador2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at lcd_example.vhd(73): signal "contador3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 73
+Warning (10492): VHDL Process Statement warning at lcd_example.vhd(74): signal "contador4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at lcd_example.vhd(75): signal "contador5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 75
+Warning (10492): VHDL Process Statement warning at lcd_example.vhd(76): signal "contador6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 76
+Info (12128): Elaborating entity "lcd_controller_v2_1" for hierarchy "lcd_example:inst|lcd_controller_v2_1:dut" File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 56
+Info (12128): Elaborating entity "contador_relogio" for hierarchy "contador_relogio:inst666"
+Info (12128): Elaborating entity "divisor" for hierarchy "divisor:inst2"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "rw" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 331 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 319 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Sun Apr 04 18:55:41 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:21
 
 
