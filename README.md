@@ -1,5 +1,5 @@
 #Objetivos:
-  - Contador básico e limites 0-24 e 0-59 (Com feedback)
+  - Contador básico e limites 0-24 e 0-59 (Com feedback) DONE
   - Alarmes para cada integrante do grupo (Com feedback)
   - Entrar no menu com sw1
   - Definir ajuste de relógio ou alarme com sw2
