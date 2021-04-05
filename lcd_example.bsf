@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 232 224)
+	(rect 16 16 232 256)
 	(text "lcd_example" (rect 5 0 54 12)(font "Arial" ))
-	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -83,9 +83,23 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 160)
 		(input)
-		(text "chegoureal" (rect 0 0 42 12)(font "Arial" ))
-		(text "chegoureal" (rect 21 155 63 167)(font "Arial" ))
+		(text "load_ena" (rect 0 0 35 12)(font "Arial" ))
+		(text "load_ena" (rect 21 155 56 167)(font "Arial" ))
 		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "comparador" (rect 0 0 48 12)(font "Arial" ))
+		(text "comparador" (rect 21 171 69 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "menu[1..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "menu[1..0]" (rect 21 187 62 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
 	)
 	(port
 		(pt 216 32)
@@ -116,6 +130,6 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 216 80)(pt 200 80)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 200 192)(line_width 1))
+		(rectangle (rect 16 16 200 224)(line_width 1))
 	)
 )

@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity comparador is
+	port (
+	sl, sh, ml, mh, hl, hh: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+	fsl, fsh, fml, fmh, fhl, fhh  : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+	edicao: in std_logic;
+	igual: out std_logic
+	);
+end comparador;	
+architecture comparar of comparador is
+begin
+	process (clock, edicao)
+		begin				
+			if edicao = '1' then
+				if sl = fsl and sh = fsh and ml = fml and mh = fmh and hl = fhl and hh = fhh then
+					igual <= '1';
+				else 
+					igual <= '0';
+				end if;
+			else
+				igual <= '0';
+			end if;		
+			end process;	
+end comparar;

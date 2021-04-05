@@ -4,7 +4,7 @@ use ieee.std_logic_arith.all;
  
 entity contador_relogio is
     port (
-    clock		: in std_logic;
+    clock, ena	: in std_logic;
     sl			: out std_logic_vector (3 downto 0);
     sh			: out std_logic_vector (3 downto 0);
     ml			: out std_logic_vector (3 downto 0);
@@ -15,8 +15,7 @@ entity contador_relogio is
 end contador_relogio;    
 architecture contar of contador_relogio is
 begin
-    process (clock)
-    
+    process (clock,ena)
     variable contagemSL : integer range 0 to 10;
     variable contagemSH : integer range 0 to 6;
 	 variable contagemML : integer range 0 to 10 := 1;
@@ -24,7 +23,7 @@ begin
 	 variable contagemHL : integer range 0 to 10;
 	 variable contagemHH : integer range 0 to 2;
     begin
-		if clock'event and clock = '1'    then     
+		if clock'event and clock = '1' and ena = '1' then     
            contagemSL := contagemSL + 1;
             if contagemSL = 10 then
                 contagemSL := 0;
