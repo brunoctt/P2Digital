@@ -12,6 +12,8 @@
   - Os botões pressionados da senha devem ser mostrado na 2 linha do LCD
 
 #Dúvidas:
+- Comparador, pq colocar ou tirar leds faz essa merda funcionar?
+- Display qnd adiciona s3
   
 #Links
 http://infraled.blogspot.com/2014/06/vhdl-tutorial-2-relogio-digital.html
