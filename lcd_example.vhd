@@ -30,7 +30,7 @@ ENTITY lcd_example IS
   PORT(
 		contador, contador1, contador2, contador3, contador4: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		contador5, contador6  : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-      clk, load_ena, comparador       : IN  STD_LOGIC;  --system clock+
+      clk, load_ena, comparador, s3    : IN  STD_LOGIC;  --system clock+
 		menu							: in STD_LOGIC_VECTOR(1 DOWNTO 0);
       rw, rs, e : OUT STD_LOGIC;  --read/write, setup/data, and enable for lcd
       lcd_data  : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)); --data signals for lcd
@@ -185,10 +185,10 @@ BEGIN
 						when 9 => lcd_bus <= "1001001001";  --I
 						when 10 => lcd_bus <= "1001001110"; --N
 						when 11 => lcd_bus <= "1001001001"; --I
-						when 12 => lcd_bus <= "1000100000"; --ESPAÇO
-						when 13 => lcd_bus <= "1000100000"; --ESPAÇO
-						when 14 => lcd_bus <= "1000100000"; --ESPAÇO
-						when 15 => lcd_bus <= "1000100000"; --ESPAÇO
+						when 12 => lcd_bus <= "1001000011"; --C
+						when 13 => lcd_bus <= "1001001001"; --I
+						when 14 => lcd_bus <= "1001010101"; --U
+						when 15 => lcd_bus <= "1001010011"; --S
 						when 16 => lcd_bus <= "0011010000"; --QUEBRA DE LINHA
 						WHEN 17 => lcd_bus <= aux6;	-- HH
 						WHEN 18 => lcd_bus <= aux5;	--HL
@@ -203,34 +203,38 @@ BEGIN
 					end case;	
 				end if;
 			else								-- caso do comparador
-				CASE char IS
-					when 1 => lcd_bus <= "1001000001";  --A
-					when 2 => lcd_bus <= "1001000011";  --C
-					when 3 => lcd_bus <= "1001001111";  --O
-					when 4 => lcd_bus <= "1001010010";  --R
-					when 5 => lcd_bus <= "1001000100";  --D
-					when 6 => lcd_bus <= "1001000001";  --A
-					when 7 => lcd_bus <= "1000100000";  --ESPAÇO
-					when 8 => lcd_bus <= "1001010110";  --V 
-					when 9 => lcd_bus <= "1001001001";  --I
-					when 10 => lcd_bus <= "1001001110"; --N
-					when 11 => lcd_bus <= "1001001001"; --I
-					when 12 => lcd_bus <= "1000100000"; --ESPAÇO
-					when 13 => lcd_bus <= "1000100000"; --ESPAÇO
-					when 14 => lcd_bus <= "1000100000"; --ESPAÇO
-					when 15 => lcd_bus <= "1000100000"; --ESPAÇO
-					when 16 => lcd_bus <= "0011010000"; --QUEBRA DE LINHA
-					WHEN 17 => lcd_bus <= aux6;	-- HH
-					WHEN 18 => lcd_bus <= aux5;	--HL
-					WHEN 19 => lcd_bus <= "1000111010";	--:
-					WHEN 20 => lcd_bus <= aux4;	--MH
-					WHEN 21 => lcd_bus <= aux3;	--ML
-					WHEN 22 => lcd_bus <= "1000111010";  --:
-					WHEN 23 => lcd_bus <= aux2;	--SH
-					WHEN 24 => lcd_bus <= aux1;	--SL
-					WHEN OTHERS => lcd_bus <= "0010000000";
-										 char:= 0;	
-				end case;	
+--				if s3 = '0' then
+--					lcd_bus <= "0000010100";
+--				else
+					CASE char IS
+						when 1 => lcd_bus <= "1001000001";  --A
+						when 2 => lcd_bus <= "1001000011";  --C
+						when 3 => lcd_bus <= "1001001111";  --O
+						when 4 => lcd_bus <= "1001010010";  --R
+						when 5 => lcd_bus <= "1001000100";  --D
+						when 6 => lcd_bus <= "1001000001";  --A
+						when 7 => lcd_bus <= "1000100000";  --ESPAÇO
+						when 8 => lcd_bus <= "1001010110";  --V 
+						when 9 => lcd_bus <= "1001001001";  --I
+						when 10 => lcd_bus <= "1001001110"; --N
+						when 11 => lcd_bus <= "1001001001"; --I
+						when 12 => lcd_bus <= "1001000011"; --C
+						when 13 => lcd_bus <= "1001001001"; --I
+						when 14 => lcd_bus <= "1001010101"; --U
+						when 15 => lcd_bus <= "1001010011"; --S
+						when 16 => lcd_bus <= "0011010000"; --QUEBRA DE LINHA
+						WHEN 17 => lcd_bus <= aux6;	-- HH
+						WHEN 18 => lcd_bus <= aux5;	--HL
+						WHEN 19 => lcd_bus <= "1000111010";	--:
+						WHEN 20 => lcd_bus <= aux4;	--MH
+						WHEN 21 => lcd_bus <= aux3;	--ML
+						WHEN 22 => lcd_bus <= "1000111010";  --:
+						WHEN 23 => lcd_bus <= aux2;	--SH
+						WHEN 24 => lcd_bus <= aux1;	--SL
+						WHEN OTHERS => lcd_bus <= "0010000000";
+											 char:= 0;	
+					end case;
+--				end if;	
 			end if;
       ELSE
         lcd_enable <= '0';

@@ -44,31 +44,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "led[1]",
-					"strict" : false
-				},
-				{
-					"name" : "led[0]",
-					"strict" : false
-				},
-				{
 					"name" : "clock",
 					"strict" : false
 				},
 				{
-					"name" : "sw1",
+					"name" : "button1",
 					"strict" : false
 				},
 				{
-					"name" : "sw2",
+					"name" : "button4",
 					"strict" : false
 				},
 				{
-					"name" : "s3",
+					"name" : "button2",
 					"strict" : false
 				},
 				{
-					"name" : "s4",
+					"name" : "button3",
 					"strict" : false
 				}
 			]

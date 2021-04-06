@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto2
-Mon Apr 05 18:31:49 2021
+Tue Apr 06 11:28:14 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,17 +13,21 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |testecontdisp|lcd_example:64489988|lcd_controller_v2_1:dut|state
+  8. State Machine - |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|state
   9. Logic Cells Representing Combinational Loops
  10. Registers Removed During Synthesis
  11. Removed Registers Triggering Further Register Optimizations
  12. General Register Statistics
  13. Inverted Register Statistics
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Port Connectivity Checks: "lcd_example:64489988|lcd_controller_v2_1:dut"
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 15. Parameter Settings for User Entity Instance: debounce:inst8
+ 16. Parameter Settings for User Entity Instance: debounce:inst9
+ 17. Parameter Settings for User Entity Instance: debounce:inst10
+ 18. Parameter Settings for User Entity Instance: debounce:inst11
+ 19. Port Connectivity Checks: "lcd_example:inst|lcd_controller_v2_1:dut"
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -50,16 +54,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 05 18:31:49 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 06 11:28:14 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
 ; Top-level Entity Name              ; testecontdisp                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 433                                         ;
-;     Total combinational functions  ; 433                                         ;
-;     Dedicated logic registers      ; 139                                         ;
-; Total registers                    ; 139                                         ;
-; Total pins                         ; 18                                          ;
+; Total logic elements               ; 575                                         ;
+;     Total combinational functions  ; 567                                         ;
+;     Dedicated logic registers      ; 231                                         ;
+; Total registers                    ; 231                                         ;
+; Total pins                         ; 20                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -166,7 +170,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -184,6 +188,7 @@ https://fpgasoftware.intel.com/eula.
 ; lcd_example.vhd                  ; yes             ; User VHDL File                     ; D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd         ;         ;
 ; testecontdisp.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Estudo/Eletrônica Digital/P2/testecontdisp.bdf       ;         ;
 ; comparadorpre.vhd                ; yes             ; User VHDL File                     ; D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd       ;         ;
+; debounce.vhd                     ; yes             ; Auto-Found VHDL File               ; D:/Estudo/Eletrônica Digital/P2/debounce.vhd            ;         ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------+---------+
 
 
@@ -192,61 +197,65 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 433         ;
+; Estimated Total logic elements              ; 575         ;
 ;                                             ;             ;
-; Total combinational functions               ; 433         ;
+; Total combinational functions               ; 567         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 204         ;
-;     -- 3 input functions                    ; 52          ;
-;     -- <=2 input functions                  ; 177         ;
+;     -- 4 input functions                    ; 243         ;
+;     -- 3 input functions                    ; 64          ;
+;     -- <=2 input functions                  ; 260         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 347         ;
-;     -- arithmetic mode                      ; 86          ;
+;     -- normal mode                          ; 409         ;
+;     -- arithmetic mode                      ; 158         ;
 ;                                             ;             ;
-; Total registers                             ; 139         ;
-;     -- Dedicated logic registers            ; 139         ;
+; Total registers                             ; 231         ;
+;     -- Dedicated logic registers            ; 231         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 18          ;
+; I/O pins                                    ; 20          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 116         ;
-; Total fan-out                               ; 1668        ;
-; Average fan-out                             ; 2.74        ;
+; Maximum fan-out                             ; 204         ;
+; Total fan-out                               ; 2358        ;
+; Average fan-out                             ; 2.81        ;
 +---------------------------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                           ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                         ; Entity Name         ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+---------------------+--------------+
-; |testecontdisp                  ; 433 (0)             ; 139 (0)                   ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |testecontdisp                                              ; testecontdisp       ; work         ;
-;    |comparadorpre:hsdgft|       ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|comparadorpre:hsdgft                         ; comparadorpre       ; work         ;
-;    |contador_relogio:gf|        ; 34 (34)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|contador_relogio:gf                          ; contador_relogio    ; work         ;
-;    |divisor2s:inst1|            ; 49 (49)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|divisor2s:inst1                              ; divisor2s           ; work         ;
-;    |divisor:inst2|              ; 45 (45)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|divisor:inst2                                ; divisor             ; work         ;
-;    |lcd_example:64489988|       ; 294 (108)           ; 62 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example:64489988                         ; lcd_example         ; work         ;
-;       |lcd_controller_v2_1:dut| ; 186 (186)           ; 47 (47)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example:64489988|lcd_controller_v2_1:dut ; lcd_controller_v2_1 ; work         ;
-;    |menu:5484822|               ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|menu:5484822                                 ; menu                ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name         ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+---------------------+--------------+
+; |testecontdisp                  ; 567 (0)             ; 231 (0)                   ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |testecontdisp                                          ; testecontdisp       ; work         ;
+;    |comparadorpre:inst13|       ; 13 (13)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|comparadorpre:inst13                     ; comparadorpre       ; work         ;
+;    |contador_relogio:gf|        ; 34 (34)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|contador_relogio:gf                      ; contador_relogio    ; work         ;
+;    |debounce:inst10|            ; 26 (26)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|debounce:inst10                          ; debounce            ; work         ;
+;    |debounce:inst11|            ; 26 (26)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|debounce:inst11                          ; debounce            ; work         ;
+;    |debounce:inst8|             ; 26 (26)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|debounce:inst8                           ; debounce            ; work         ;
+;    |debounce:inst9|             ; 26 (26)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|debounce:inst9                           ; debounce            ; work         ;
+;    |divisor2s:inst1|            ; 49 (49)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|divisor2s:inst1                          ; divisor2s           ; work         ;
+;    |divisor:inst2|              ; 45 (45)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|divisor:inst2                            ; divisor             ; work         ;
+;    |lcd_example:inst|           ; 318 (132)           ; 62 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example:inst                         ; lcd_example         ; work         ;
+;       |lcd_controller_v2_1:dut| ; 186 (186)           ; 47 (47)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut ; lcd_controller_v2_1 ; work         ;
+;    |menu:inst4|                 ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|menu:inst4                               ; menu                ; work         ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------+
-; State Machine - |testecontdisp|lcd_example:64489988|lcd_controller_v2_1:dut|state ;
-+------------------+------------+-------------+------------------+------------------+
-; Name             ; state.send ; state.ready ; state.initialize ; state.power_up   ;
-+------------------+------------+-------------+------------------+------------------+
-; state.power_up   ; 0          ; 0           ; 0                ; 0                ;
-; state.initialize ; 0          ; 0           ; 1                ; 1                ;
-; state.ready      ; 0          ; 1           ; 0                ; 1                ;
-; state.send       ; 1          ; 0           ; 0                ; 1                ;
-+------------------+------------+-------------+------------------+------------------+
++---------------------------------------------------------------------------------+
+; State Machine - |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|state   ;
++------------------+------------+-------------+------------------+----------------+
+; Name             ; state.send ; state.ready ; state.initialize ; state.power_up ;
++------------------+------------+-------------+------------------+----------------+
+; state.power_up   ; 0          ; 0           ; 0                ; 0              ;
+; state.initialize ; 0          ; 0           ; 1                ; 1              ;
+; state.ready      ; 0          ; 1           ; 0                ; 1              ;
+; state.send       ; 1          ; 0           ; 0                ; 1              ;
++------------------+------------+-------------+------------------+----------------+
 
 
 +------------------------------------------------------------+
@@ -254,32 +263,32 @@ Encoding Type:  One-Hot
 +--------------------------------------------------------+---+
 ; Logic Cell Name                                        ;   ;
 +--------------------------------------------------------+---+
-; comparadorpre:hsdgft|process_0~1                       ;   ;
+; comparadorpre:inst13|igual                             ;   ;
 ; Number of logic cells representing combinational loops ; 1 ;
 +--------------------------------------------------------+---+
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                       ;
-+-------------------------------------------------+----------------------------------------+
-; Register name                                   ; Reason for Removal                     ;
-+-------------------------------------------------+----------------------------------------+
-; lcd_example:64489988|lcd_bus[8]                 ; Stuck at GND due to stuck port data_in ;
-; lcd_example:64489988|char[5]                    ; Stuck at GND due to stuck port data_in ;
-; lcd_example:64489988|lcd_controller_v2_1:dut|rw ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 3           ;                                        ;
-+-------------------------------------------------+----------------------------------------+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++---------------------------------------------+----------------------------------------+
+; Register name                               ; Reason for Removal                     ;
++---------------------------------------------+----------------------------------------+
+; lcd_example:inst|lcd_bus[8]                 ; Stuck at GND due to stuck port data_in ;
+; lcd_example:inst|char[5]                    ; Stuck at GND due to stuck port data_in ;
+; lcd_example:inst|lcd_controller_v2_1:dut|rw ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 3       ;                                        ;
++---------------------------------------------+----------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                   ;
-+---------------------------------+---------------------------+-------------------------------------------------+
-; Register name                   ; Reason for Removal        ; Registers Removed due to This Register          ;
-+---------------------------------+---------------------------+-------------------------------------------------+
-; lcd_example:64489988|lcd_bus[8] ; Stuck at GND              ; lcd_example:64489988|lcd_controller_v2_1:dut|rw ;
-;                                 ; due to stuck port data_in ;                                                 ;
-+---------------------------------+---------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                           ;
++-----------------------------+---------------------------+---------------------------------------------+
+; Register name               ; Reason for Removal        ; Registers Removed due to This Register      ;
++-----------------------------+---------------------------+---------------------------------------------+
+; lcd_example:inst|lcd_bus[8] ; Stuck at GND              ; lcd_example:inst|lcd_controller_v2_1:dut|rw ;
+;                             ; due to stuck port data_in ;                                             ;
++-----------------------------+---------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -287,46 +296,94 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 139   ;
-; Number of registers using Synchronous Clear  ; 1     ;
+; Total registers                              ; 231   ;
+; Number of registers using Synchronous Clear  ; 77    ;
 ; Number of registers using Synchronous Load   ; 5     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 34    ;
+; Number of registers using Clock Enable       ; 110   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
++---------------------------------------------------------+
+; Inverted Register Statistics                            ;
++-----------------------------------------------+---------+
+; Inverted Register                             ; Fan out ;
++-----------------------------------------------+---------+
+; lcd_example:inst|lcd_controller_v2_1:dut|busy ; 1       ;
+; contador_relogio:gf|contagemML[0]             ; 7       ;
+; Total number of inverted registers = 2        ;         ;
++-----------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |testecontdisp|debounce:inst8|count[0]                                ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |testecontdisp|debounce:inst11|count[16]                              ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |testecontdisp|debounce:inst9|count[18]                               ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |testecontdisp|debounce:inst10|count[10]                              ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |testecontdisp|lcd_example:inst|lcd_bus[4]                            ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|clk_count[31] ;
+; 14:1               ; 8 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|lcd_data[5]   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |testecontdisp|contador_relogio:gf|contagemHL                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------+
-; Inverted Register Statistics                                ;
-+---------------------------------------------------+---------+
-; Inverted Register                                 ; Fan out ;
-+---------------------------------------------------+---------+
-; lcd_example:64489988|lcd_controller_v2_1:dut|busy ; 1       ;
-; contador_relogio:gf|contagemML[0]                 ; 7       ;
-; Total number of inverted registers = 2            ;         ;
-+---------------------------------------------------+---------+
+; Parameter Settings for User Entity Instance: debounce:inst8 ;
++----------------+----------+---------------------------------+
+; Parameter Name ; Value    ; Type                            ;
++----------------+----------+---------------------------------+
+; clk_freq       ; 50000000 ; Signed Integer                  ;
+; stable_time    ; 10       ; Signed Integer                  ;
++----------------+----------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |testecontdisp|lcd_example:64489988|lcd_bus[4]                            ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |testecontdisp|lcd_example:64489988|lcd_controller_v2_1:dut|clk_count[29] ;
-; 14:1               ; 8 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |testecontdisp|lcd_example:64489988|lcd_controller_v2_1:dut|lcd_data[7]   ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |testecontdisp|contador_relogio:gf|contagemHL                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce:inst9 ;
++----------------+----------+---------------------------------+
+; Parameter Name ; Value    ; Type                            ;
++----------------+----------+---------------------------------+
+; clk_freq       ; 50000000 ; Signed Integer                  ;
+; stable_time    ; 10       ; Signed Integer                  ;
++----------------+----------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------+
-; Port Connectivity Checks: "lcd_example:64489988|lcd_controller_v2_1:dut" ;
-+---------+-------+----------+---------------------------------------------+
-; Port    ; Type  ; Severity ; Details                                     ;
-+---------+-------+----------+---------------------------------------------+
-; reset_n ; Input ; Info     ; Stuck at VCC                                ;
-+---------+-------+----------+---------------------------------------------+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce:inst10 ;
++----------------+----------+----------------------------------+
+; Parameter Name ; Value    ; Type                             ;
++----------------+----------+----------------------------------+
+; clk_freq       ; 50000000 ; Signed Integer                   ;
+; stable_time    ; 10       ; Signed Integer                   ;
++----------------+----------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce:inst11 ;
++----------------+----------+----------------------------------+
+; Parameter Name ; Value    ; Type                             ;
++----------------+----------+----------------------------------+
+; clk_freq       ; 50000000 ; Signed Integer                   ;
+; stable_time    ; 10       ; Signed Integer                   ;
++----------------+----------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "lcd_example:inst|lcd_controller_v2_1:dut" ;
++---------+-------+----------+-----------------------------------------+
+; Port    ; Type  ; Severity ; Details                                 ;
++---------+-------+----------+-----------------------------------------+
+; reset_n ; Input ; Info     ; Stuck at VCC                            ;
++---------+-------+----------+-----------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -334,24 +391,24 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 18                          ;
-; cycloneiii_ff         ; 139                         ;
+; boundary_port         ; 20                          ;
+; cycloneiii_ff         ; 231                         ;
 ;     ENA               ; 28                          ;
-;     ENA SCLR          ; 1                           ;
+;     ENA SCLR          ; 77                          ;
 ;     ENA SLD           ; 5                           ;
-;     plain             ; 105                         ;
-; cycloneiii_lcell_comb ; 434                         ;
-;     arith             ; 86                          ;
-;         2 data inputs ; 86                          ;
-;     normal            ; 348                         ;
+;     plain             ; 121                         ;
+; cycloneiii_lcell_comb ; 568                         ;
+;     arith             ; 158                         ;
+;         2 data inputs ; 158                         ;
+;     normal            ; 410                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 81                          ;
-;         3 data inputs ; 52                          ;
-;         4 data inputs ; 204                         ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 88                          ;
+;         3 data inputs ; 64                          ;
+;         4 data inputs ; 243                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 12.40                       ;
-; Average LUT depth     ; 6.10                        ;
+; Average LUT depth     ; 5.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -360,7 +417,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -370,7 +427,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Apr 05 18:31:35 2021
+    Info: Processing started: Tue Apr 06 11:28:03 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -404,8 +461,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file compara
     Info (12022): Found design unit 1: comparador-comparar File: D:/Estudo/Eletrônica Digital/P2/comparador.vhd Line: 14
     Info (12023): Found entity 1: comparador File: D:/Estudo/Eletrônica Digital/P2/comparador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file comparadorpre.vhd
-    Info (12022): Found design unit 1: comparadorpre-comparar File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 14
+    Info (12022): Found design unit 1: comparadorpre-comparar File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 15
     Info (12023): Found entity 1: comparadorpre File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 5
+Info (12021): Found 0 design units, including 0 entities, in source file alarme1.vhd
 Info (12127): Elaborating entity "testecontdisp" for the top level hierarchy
 Warning (275083): Bus "contador1[3..0]" found using same base name as "contador", which might lead to a name conflict.
 Warning (275083): Bus "contador2[3..0]" found using same base name as "contador", which might lead to a name conflict.
@@ -418,7 +476,8 @@ Warning (275080): Converted elements in bus name "contador2" using legacy naming
     Warning (275081): Converted element name(s) from "contador2[3..0]" to "contador23..0"
 Warning (275080): Converted elements in bus name "contador3" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "contador3[3..0]" to "contador33..0"
-Info (12128): Elaborating entity "lcd_example" for hierarchy "lcd_example:64489988"
+Warning (275043): Pin "led[4..1]" is missing source
+Info (12128): Elaborating entity "lcd_example" for hierarchy "lcd_example:inst"
 Warning (10492): VHDL Process Statement warning at lcd_example.vhd(64): signal "load_ena" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 64
 Warning (10492): VHDL Process Statement warning at lcd_example.vhd(72): signal "contador1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 72
 Warning (10492): VHDL Process Statement warning at lcd_example.vhd(73): signal "contador2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 73
@@ -426,37 +485,56 @@ Warning (10492): VHDL Process Statement warning at lcd_example.vhd(74): signal "
 Warning (10492): VHDL Process Statement warning at lcd_example.vhd(75): signal "contador4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 75
 Warning (10492): VHDL Process Statement warning at lcd_example.vhd(76): signal "contador5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 76
 Warning (10492): VHDL Process Statement warning at lcd_example.vhd(77): signal "contador6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 77
-Info (12128): Elaborating entity "lcd_controller_v2_1" for hierarchy "lcd_example:64489988|lcd_controller_v2_1:dut" File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 57
-Info (12128): Elaborating entity "comparadorpre" for hierarchy "comparadorpre:hsdgft"
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(19): signal "pulso" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 19
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(20): signal "sl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 20
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(20): signal "sh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 20
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(20): signal "ml" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 20
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(20): signal "mh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 20
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(20): signal "hl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 20
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(20): signal "hh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 20
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(27): signal "pulso" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(47): signal "s1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(47): signal "s2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(47): signal "s3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(47): signal "s4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 47
+Info (12128): Elaborating entity "lcd_controller_v2_1" for hierarchy "lcd_example:inst|lcd_controller_v2_1:dut" File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 57
+Info (12128): Elaborating entity "comparadorpre" for hierarchy "comparadorpre:inst13"
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(25): signal "igual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(26): signal "sl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(26): signal "sh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(26): signal "ml" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(26): signal "mh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(26): signal "hl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(26): signal "hh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(33): signal "igual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(104): signal "s1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(110): signal "s2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 110
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(110): signal "aux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 110
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(116): signal "s3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 116
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(116): signal "aux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 116
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(116): signal "aux2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 116
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(122): signal "s4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 122
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(122): signal "aux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 122
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(122): signal "aux2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 122
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(122): signal "aux3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 122
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(130): signal "aux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 130
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(130): signal "aux2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 130
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(130): signal "aux3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 130
+Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(130): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 130
+Warning (12125): Using design file debounce.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: debounce-logic File: D:/Estudo/Eletrônica Digital/P2/debounce.vhd Line: 40
+    Info (12023): Found entity 1: debounce File: D:/Estudo/Eletrônica Digital/P2/debounce.vhd Line: 29
+Info (12128): Elaborating entity "debounce" for hierarchy "debounce:inst8"
 Info (12128): Elaborating entity "contador_relogio" for hierarchy "contador_relogio:gf"
 Info (12128): Elaborating entity "divisor" for hierarchy "divisor:inst2"
-Info (12128): Elaborating entity "menu" for hierarchy "menu:5484822"
+Info (12128): Elaborating entity "menu" for hierarchy "menu:inst4"
+Warning (10492): VHDL Process Statement warning at menu.vhd(17): signal "ena" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/menu.vhd Line: 17
 Info (12128): Elaborating entity "divisor2s" for hierarchy "divisor2s:inst1"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "rw" is stuck at GND
+    Warning (13410): Pin "led[4]" is stuck at GND
+    Warning (13410): Pin "led[3]" is stuck at GND
+    Warning (13410): Pin "led[2]" is stuck at GND
+    Warning (13410): Pin "led[1]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 456 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 600 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 438 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 4790 megabytes
-    Info: Processing ended: Mon Apr 05 18:31:49 2021
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:24
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 580 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 4791 megabytes
+    Info: Processing ended: Tue Apr 06 11:28:15 2021
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:20
 
 
