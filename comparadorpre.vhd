@@ -122,7 +122,7 @@ begin
 				if s4'event and s4 = '0' and aux1 = '1' and aux2 = '1' and aux3 = '1' then
 					aux4 <= not aux4;
 --					igual <= '0';
---					pulso <= '0';
+					pulso <= '0';
 				else
 					igual <= '1';
 --					pulso <= '1';

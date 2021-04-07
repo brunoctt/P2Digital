@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto2
-Tue Apr 06 11:28:14 2021
+Tue Apr 06 21:21:59 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -54,16 +54,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 06 11:28:14 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 06 21:21:59 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
 ; Top-level Entity Name              ; testecontdisp                               ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 575                                         ;
-;     Total combinational functions  ; 567                                         ;
-;     Dedicated logic registers      ; 231                                         ;
-; Total registers                    ; 231                                         ;
-; Total pins                         ; 20                                          ;
+; Total logic elements               ; 588                                         ;
+;     Total combinational functions  ; 580                                         ;
+;     Dedicated logic registers      ; 235                                         ;
+; Total registers                    ; 235                                         ;
+; Total pins                         ; 16                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -170,7 +170,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -188,6 +188,8 @@ https://fpgasoftware.intel.com/eula.
 ; lcd_example.vhd                  ; yes             ; User VHDL File                     ; D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd         ;         ;
 ; testecontdisp.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Estudo/Eletrônica Digital/P2/testecontdisp.bdf       ;         ;
 ; comparadorpre.vhd                ; yes             ; User VHDL File                     ; D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd       ;         ;
+; alarme2.vhd                      ; yes             ; User VHDL File                     ; D:/Estudo/Eletrônica Digital/P2/alarme2.vhd             ;         ;
+; alarme3.vhd                      ; yes             ; User VHDL File                     ; D:/Estudo/Eletrônica Digital/P2/alarme3.vhd             ;         ;
 ; debounce.vhd                     ; yes             ; Auto-Found VHDL File               ; D:/Estudo/Eletrônica Digital/P2/debounce.vhd            ;         ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------+---------+
 
@@ -197,30 +199,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 575         ;
+; Estimated Total logic elements              ; 588         ;
 ;                                             ;             ;
-; Total combinational functions               ; 567         ;
+; Total combinational functions               ; 580         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 243         ;
-;     -- 3 input functions                    ; 64          ;
-;     -- <=2 input functions                  ; 260         ;
+;     -- 4 input functions                    ; 252         ;
+;     -- 3 input functions                    ; 65          ;
+;     -- <=2 input functions                  ; 263         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 409         ;
+;     -- normal mode                          ; 422         ;
 ;     -- arithmetic mode                      ; 158         ;
 ;                                             ;             ;
-; Total registers                             ; 231         ;
-;     -- Dedicated logic registers            ; 231         ;
+; Total registers                             ; 235         ;
+;     -- Dedicated logic registers            ; 235         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 20          ;
+; I/O pins                                    ; 16          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 204         ;
-; Total fan-out                               ; 2358        ;
-; Average fan-out                             ; 2.81        ;
+; Total fan-out                               ; 2407        ;
+; Average fan-out                             ; 2.84        ;
 +---------------------------------------------+-------------+
 
 
@@ -229,8 +231,9 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                     ; Entity Name         ; Library Name ;
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+---------------------+--------------+
-; |testecontdisp                  ; 567 (0)             ; 231 (0)                   ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |testecontdisp                                          ; testecontdisp       ; work         ;
-;    |comparadorpre:inst13|       ; 13 (13)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|comparadorpre:inst13                     ; comparadorpre       ; work         ;
+; |testecontdisp                  ; 580 (0)             ; 235 (0)                   ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |testecontdisp                                          ; testecontdisp       ; work         ;
+;    |alarme2:inst5|              ; 14 (14)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|alarme2:inst5                            ; alarme2             ; work         ;
+;    |comparadorpre:inst13|       ; 8 (8)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|comparadorpre:inst13                     ; comparadorpre       ; work         ;
 ;    |contador_relogio:gf|        ; 34 (34)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|contador_relogio:gf                      ; contador_relogio    ; work         ;
 ;    |debounce:inst10|            ; 26 (26)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|debounce:inst10                          ; debounce            ; work         ;
 ;    |debounce:inst11|            ; 26 (26)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|debounce:inst11                          ; debounce            ; work         ;
@@ -238,7 +241,7 @@ https://fpgasoftware.intel.com/eula.
 ;    |debounce:inst9|             ; 26 (26)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|debounce:inst9                           ; debounce            ; work         ;
 ;    |divisor2s:inst1|            ; 49 (49)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|divisor2s:inst1                          ; divisor2s           ; work         ;
 ;    |divisor:inst2|              ; 45 (45)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|divisor:inst2                            ; divisor             ; work         ;
-;    |lcd_example:inst|           ; 318 (132)           ; 62 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example:inst                         ; lcd_example         ; work         ;
+;    |lcd_example:inst|           ; 322 (136)           ; 62 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example:inst                         ; lcd_example         ; work         ;
 ;       |lcd_controller_v2_1:dut| ; 186 (186)           ; 47 (47)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut ; lcd_controller_v2_1 ; work         ;
 ;    |menu:inst4|                 ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|menu:inst4                               ; menu                ; work         ;
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------+---------------------+--------------+
@@ -264,7 +267,8 @@ Encoding Type:  One-Hot
 ; Logic Cell Name                                        ;   ;
 +--------------------------------------------------------+---+
 ; comparadorpre:inst13|igual                             ;   ;
-; Number of logic cells representing combinational loops ; 1 ;
+; alarme2:inst5|igual                                    ;   ;
+; Number of logic cells representing combinational loops ; 2 ;
 +--------------------------------------------------------+---+
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -296,7 +300,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 231   ;
+; Total registers                              ; 235   ;
 ; Number of registers using Synchronous Clear  ; 77    ;
 ; Number of registers using Synchronous Load   ; 5     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -312,7 +316,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; Inverted Register                             ; Fan out ;
 +-----------------------------------------------+---------+
 ; lcd_example:inst|lcd_controller_v2_1:dut|busy ; 1       ;
-; contador_relogio:gf|contagemML[0]             ; 7       ;
+; contador_relogio:gf|contagemML[0]             ; 8       ;
 ; Total number of inverted registers = 2        ;         ;
 +-----------------------------------------------+---------+
 
@@ -323,12 +327,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
 ; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |testecontdisp|debounce:inst8|count[0]                                ;
-; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |testecontdisp|debounce:inst11|count[16]                              ;
+; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |testecontdisp|debounce:inst11|count[15]                              ;
 ; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |testecontdisp|debounce:inst9|count[18]                               ;
 ; 3:1                ; 19 bits   ; 38 LEs        ; 19 LEs               ; 19 LEs                 ; Yes        ; |testecontdisp|debounce:inst10|count[10]                              ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |testecontdisp|lcd_example:inst|lcd_bus[4]                            ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|clk_count[31] ;
-; 14:1               ; 8 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|lcd_data[5]   ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |testecontdisp|lcd_example:inst|lcd_bus[4]                            ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|clk_count[29] ;
+; 14:1               ; 8 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |testecontdisp|lcd_example:inst|lcd_controller_v2_1:dut|lcd_data[7]   ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |testecontdisp|contador_relogio:gf|contagemHL                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
 
@@ -391,24 +395,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 20                          ;
-; cycloneiii_ff         ; 231                         ;
+; boundary_port         ; 16                          ;
+; cycloneiii_ff         ; 235                         ;
 ;     ENA               ; 28                          ;
 ;     ENA SCLR          ; 77                          ;
 ;     ENA SLD           ; 5                           ;
-;     plain             ; 121                         ;
-; cycloneiii_lcell_comb ; 568                         ;
+;     plain             ; 125                         ;
+; cycloneiii_lcell_comb ; 581                         ;
 ;     arith             ; 158                         ;
 ;         2 data inputs ; 158                         ;
-;     normal            ; 410                         ;
+;     normal            ; 423                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 13                          ;
-;         2 data inputs ; 88                          ;
-;         3 data inputs ; 64                          ;
-;         4 data inputs ; 243                         ;
+;         2 data inputs ; 91                          ;
+;         3 data inputs ; 65                          ;
+;         4 data inputs ; 252                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 12.40                       ;
-; Average LUT depth     ; 5.22                        ;
+; Average LUT depth     ; 5.15                        ;
 +-----------------------+-----------------------------+
 
 
@@ -427,7 +431,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 06 11:28:03 2021
+    Info: Processing started: Tue Apr 06 21:21:47 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -464,6 +468,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file compara
     Info (12022): Found design unit 1: comparadorpre-comparar File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 15
     Info (12023): Found entity 1: comparadorpre File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 5
 Info (12021): Found 0 design units, including 0 entities, in source file alarme1.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file alarme2.vhd
+    Info (12022): Found design unit 1: alarme2-comparar File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 15
+    Info (12023): Found entity 1: alarme2 File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file alarme3.vhd
+    Info (12022): Found design unit 1: alarme3-comparar File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 15
+    Info (12023): Found entity 1: alarme3 File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 5
 Info (12127): Elaborating entity "testecontdisp" for the top level hierarchy
 Warning (275083): Bus "contador1[3..0]" found using same base name as "contador", which might lead to a name conflict.
 Warning (275083): Bus "contador2[3..0]" found using same base name as "contador", which might lead to a name conflict.
@@ -476,7 +486,6 @@ Warning (275080): Converted elements in bus name "contador2" using legacy naming
     Warning (275081): Converted element name(s) from "contador2[3..0]" to "contador23..0"
 Warning (275080): Converted elements in bus name "contador3" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "contador3[3..0]" to "contador33..0"
-Warning (275043): Pin "led[4..1]" is missing source
 Info (12128): Elaborating entity "lcd_example" for hierarchy "lcd_example:inst"
 Warning (10492): VHDL Process Statement warning at lcd_example.vhd(64): signal "load_ena" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 64
 Warning (10492): VHDL Process Statement warning at lcd_example.vhd(72): signal "contador1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 72
@@ -487,6 +496,7 @@ Warning (10492): VHDL Process Statement warning at lcd_example.vhd(76): signal "
 Warning (10492): VHDL Process Statement warning at lcd_example.vhd(77): signal "contador6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 77
 Info (12128): Elaborating entity "lcd_controller_v2_1" for hierarchy "lcd_example:inst|lcd_controller_v2_1:dut" File: D:/Estudo/Eletrônica Digital/P2/lcd_example.vhd Line: 57
 Info (12128): Elaborating entity "comparadorpre" for hierarchy "comparadorpre:inst13"
+Warning (10036): Verilog HDL or VHDL warning at comparadorpre.vhd(16): object "pulso" assigned a value but never read File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 16
 Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(25): signal "igual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 25
 Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(26): signal "sl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 26
 Warning (10492): VHDL Process Statement warning at comparadorpre.vhd(26): signal "sh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd Line: 26
@@ -515,25 +525,67 @@ Warning (12125): Using design file debounce.vhd, which is not specified as a des
 Info (12128): Elaborating entity "debounce" for hierarchy "debounce:inst8"
 Info (12128): Elaborating entity "contador_relogio" for hierarchy "contador_relogio:gf"
 Info (12128): Elaborating entity "divisor" for hierarchy "divisor:inst2"
+Info (12128): Elaborating entity "alarme2" for hierarchy "alarme2:inst5"
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(25): signal "igual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(26): signal "sl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(26): signal "sh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(26): signal "ml" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(26): signal "mh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(26): signal "hl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(26): signal "hh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(31): signal "igual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(33): signal "s4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(38): signal "s3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(38): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(43): signal "s2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(43): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(43): signal "aux3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(48): signal "s1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(48): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(48): signal "aux2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(48): signal "aux3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(53): signal "aux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(53): signal "aux2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(53): signal "aux3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at alarme2.vhd(53): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme2.vhd Line: 53
 Info (12128): Elaborating entity "menu" for hierarchy "menu:inst4"
 Warning (10492): VHDL Process Statement warning at menu.vhd(17): signal "ena" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/menu.vhd Line: 17
 Info (12128): Elaborating entity "divisor2s" for hierarchy "divisor2s:inst1"
+Info (12128): Elaborating entity "alarme3" for hierarchy "alarme3:inst6"
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(25): signal "igual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(26): signal "sl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(26): signal "sh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(26): signal "ml" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(26): signal "mh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(26): signal "hl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(26): signal "hh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(31): signal "igual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(33): signal "s4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(38): signal "s3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(38): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(43): signal "s2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(43): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(43): signal "aux3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(48): signal "s1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(48): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(48): signal "aux2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(48): signal "aux3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(53): signal "aux1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(53): signal "aux2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(53): signal "aux3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at alarme3.vhd(53): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletrônica Digital/P2/alarme3.vhd Line: 53
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "rw" is stuck at GND
-    Warning (13410): Pin "led[4]" is stuck at GND
-    Warning (13410): Pin "led[3]" is stuck at GND
-    Warning (13410): Pin "led[2]" is stuck at GND
-    Warning (13410): Pin "led[1]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 600 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 609 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 580 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
-    Info: Peak virtual memory: 4791 megabytes
-    Info: Processing ended: Tue Apr 06 11:28:15 2021
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 593 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 90 warnings
+    Info: Peak virtual memory: 4794 megabytes
+    Info: Processing ended: Tue Apr 06 21:21:59 2021
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:20
 

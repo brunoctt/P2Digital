@@ -97,8 +97,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 192)
 		(input)
-		(text "s3" (rect 0 0 9 12)(font "Arial" ))
-		(text "s3" (rect 21 187 30 199)(font "Arial" ))
+		(text "comparador2" (rect 0 0 53 12)(font "Arial" ))
+		(text "comparador2" (rect 21 187 74 199)(font "Arial" ))
 		(line (pt 0 192)(pt 16 192)(line_width 1))
 	)
 	(port
