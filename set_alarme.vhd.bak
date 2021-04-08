@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity set_alarme is
+	port (
+	clock, sw2, s3, s4		: in STD_LOGIC;
+	fsl, fsh, fml, fmh, fhl, fhh  : buffer STD_LOGIC_VECTOR(3 DOWNTO 0);
+--	edicao: out std_logic;
+--	igual: out std_logic
+	q		: out std_logic_vector(3 downto 0)
+	);
+end set_alarme;	
+architecture seta of set_alarme is
+begin
+	process (clock, s3, s4)
+	variable digito : integer range 0 to 6 := 0;
+	begin
+		if s3'event and s3 = '0' then
+			if digito = 6 then
+				digito := 0;
+			else
+				digito := digito + 1;
+			end if;
+		end if;	
+
+		q <= conv_std_logic_vector (digito, 3);
+	end process;
+end seta;
+	

@@ -155,7 +155,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 83        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : 84        :        :                   :         : 5         :                
 led[2]                       : 85        : output : 2.5 V             :         : 5         : Y              
 led[1]                       : 86        : output : 2.5 V             :         : 5         : Y              
-led[0]                       : 87        : output : 2.5 V             :         : 5         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : 87        :        :                   :         : 5         :                
 button1                      : 88        : input  : 2.5 V             :         : 5         : Y              
 button2                      : 89        : input  : 2.5 V             :         : 5         : Y              
 button3                      : 90        : input  : 2.5 V             :         : 6         : Y              

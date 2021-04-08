@@ -1,0 +1,22 @@
+--library ieee;
+--use ieee.std_logic_1164.all;
+--use ieee.std_logic_arith.all;
+-- 
+--entity alarme1 is
+--    port (
+--    clock, ena	: in std_logic;
+--	 menu 		: in std_logic_vector(1 downto 0);
+--    sl			: out std_logic_vector (3 downto 0);
+--    sh			: out std_logic_vector (3 downto 0);
+--    ml			: out std_logic_vector (3 downto 0);
+--    mh			: out std_logic_vector (3 downto 0);
+--    hl			: out std_logic_vector (3 downto 0); 
+--    hh			: out std_logic_vector (3 downto 0)
+--    );
+--end alarme1;    
+--architecture alarme of alarme1 is
+--begin
+--	if menu = "01" then   -- confirma se está no favorito correto
+--		
+-- 
+--end alarme;
