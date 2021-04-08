@@ -23,30 +23,30 @@ begin
 	process (clock, edicao)
 		begin				
 			if edicao = '1' and igual = '0' then
-				if sl = "0000" and sh = "0000" and ml = "0101" and mh = "0000" and hl = "0000" and hh = "0000" then
+				if sl = "0000" and sh = "0000" and ml = "0000" and mh = "0001" and hl = "0000" and hh = "0000" then
 					igual <= '1';
 				else 
 					igual <= '0';
 				end if;
 			elsif edicao = '1' and igual = '1' then	
-			
-				if s4'event and s4 = '0' then
-					aux4 <= not aux4;
+------------------------------------------------------------------- checando senhas			
+				if s1'event and s1 = '0' then
+					aux1 <= not aux1;
 				else
 					igual <= '1';
 				end if;
-				if s3'event and s3 = '0' and aux4 = '1' then
-					aux3 <= not aux3;
+				if s2'event and s2 = '0' and aux1 = '1' then
+					aux2 <= not aux2;
 				else
 					igual <= '1';
 				end if;
-				if s2'event and s2 = '0' and aux4 = '1' and aux3 = '1' then
-					aux2 <= not aux2;				
+				if s3'event and s3 = '0' and aux1 = '1' and aux2 = '1' then
+					aux3 <= not aux3;				
 				else
 					igual <= '1';
 				end if;	
-				if s1'event and s1 = '0' and aux4 = '1' and aux2 = '1' and aux3 = '1' then
-					aux1 <= not aux1;
+				if s4'event and s4 = '0' and aux1 = '1' and aux2 = '1' and aux3 = '1' then
+					aux4 <= not aux4;
 				else
 					igual <= '1';
 				end if;
@@ -56,9 +56,9 @@ begin
 					igual <= '1';
 				end if;
 				
-		else
-			igual <= '0';
-		end if;
+			else
+				igual <= '0';
+			end if;
 		
 	end process;	
 end comparar;

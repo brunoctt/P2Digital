@@ -13,6 +13,7 @@ source_file = 1, D:/Estudo/Eletrônica Digital/P2/comparadorpre.vhd
 source_file = 1, D:/Estudo/Eletrônica Digital/P2/alarme1.vhd
 source_file = 1, D:/Estudo/Eletrônica Digital/P2/alarme2.vhd
 source_file = 1, D:/Estudo/Eletrônica Digital/P2/alarme3.vhd
+source_file = 1, D:/Estudo/Eletrônica Digital/P2/lcd_example_3favs.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd

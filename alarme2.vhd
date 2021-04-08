@@ -23,7 +23,7 @@ begin
 	process (clock, edicao)
 		begin				
 			if edicao = '1' and igual = '0' then
-				if sl = "0000" and sh = "0000" and ml = "0001" and mh = "0001" and hl = "0000" and hh = "0000" then
+				if sl = "0000" and sh = "0000" and ml = "0011" and mh = "0000" and hl = "0000" and hh = "0000" then
 					igual <= '1';
 				else 
 					igual <= '0';

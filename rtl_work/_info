@@ -1,0 +1,437 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Estudo/Eletronica_Digital/P2
+Ealarme2
+Z1 w1617754002
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 7
+R0
+Z5 8D:/Estudo/Eletronica_Digital/P2/alarme2.vhd
+Z6 FD:/Estudo/Eletronica_Digital/P2/alarme2.vhd
+l0
+L5 1
+VfbXffRjLcK^W9TNEae0_K1
+!s100 ]W5<>k3hX]loD:IhA@nzN2
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1617827168
+!i10b 1
+Z9 !s108 1617827168.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/Estudo/Eletronica_Digital/P2/alarme2.vhd|
+Z11 !s107 D:/Estudo/Eletronica_Digital/P2/alarme2.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Acomparar
+R2
+R3
+R4
+DEx4 work 7 alarme2 0 22 fbXffRjLcK^W9TNEae0_K1
+!i122 7
+l22
+Z14 L15 50
+VGM?@U?zm3^T9hbBeMXJfR3
+!s100 R_O4J8GeaT<<i4dBfOMk23
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealarme3
+Z15 w1617754165
+R2
+R3
+R4
+!i122 8
+R0
+Z16 8D:/Estudo/Eletronica_Digital/P2/alarme3.vhd
+Z17 FD:/Estudo/Eletronica_Digital/P2/alarme3.vhd
+l0
+L5 1
+VcEP2ZO46Q>mcM3B4a4zbi2
+!s100 ]6iL1OjM648Kb4Mb?5f8n3
+R7
+31
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/Estudo/Eletronica_Digital/P2/alarme3.vhd|
+Z19 !s107 D:/Estudo/Eletronica_Digital/P2/alarme3.vhd|
+!i113 1
+R12
+R13
+Acomparar
+R2
+R3
+R4
+DEx4 work 7 alarme3 0 22 cEP2ZO46Q>mcM3B4a4zbi2
+!i122 8
+l22
+R14
+VQ7i33XMOBnTTIKg3LWRK^2
+!s100 8@aL0KL>c^RGlLMIC1]Mz0
+R7
+31
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
+Ecomparadorpre
+Z20 w1617753544
+R2
+R3
+R4
+!i122 6
+R0
+Z21 8D:/Estudo/Eletronica_Digital/P2/comparadorpre.vhd
+Z22 FD:/Estudo/Eletronica_Digital/P2/comparadorpre.vhd
+l0
+L5 1
+V`Z]X@gnYc2>9MZUS^2mcc0
+!s100 ?cKoLz[6]m;z_kOdH2YP00
+R7
+31
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-93|-work|work|D:/Estudo/Eletronica_Digital/P2/comparadorpre.vhd|
+Z24 !s107 D:/Estudo/Eletronica_Digital/P2/comparadorpre.vhd|
+!i113 1
+R12
+R13
+Acomparar
+R2
+R3
+R4
+DEx4 work 13 comparadorpre 0 22 `Z]X@gnYc2>9MZUS^2mcc0
+!i122 6
+l22
+L15 130
+V?L@eSo>78>?bm1P`^eDfP2
+!s100 2z?UHH9OdThJ>4CR`ciVh3
+R7
+31
+R8
+!i10b 1
+R9
+R23
+R24
+!i113 1
+R12
+R13
+Econtador_relogio
+Z25 w1617655370
+R2
+R3
+R4
+!i122 1
+R0
+Z26 8D:/Estudo/Eletronica_Digital/P2/contador_relogio.vhd
+Z27 FD:/Estudo/Eletronica_Digital/P2/contador_relogio.vhd
+l0
+L5 1
+VXJV2NjK[Ub>TM[R]cHTC71
+!s100 4>cggn]C5WlAB[BDag5hE2
+R7
+31
+Z28 !s110 1617827167
+!i10b 1
+Z29 !s108 1617827167.000000
+Z30 !s90 -reportprogress|300|-93|-work|work|D:/Estudo/Eletronica_Digital/P2/contador_relogio.vhd|
+Z31 !s107 D:/Estudo/Eletronica_Digital/P2/contador_relogio.vhd|
+!i113 1
+R12
+R13
+Acontar
+R2
+R3
+R4
+DEx4 work 16 contador_relogio 0 22 XJV2NjK[Ub>TM[R]cHTC71
+!i122 1
+l17
+L16 45
+VDmfnbEF:f`AS_PKO2h5K_2
+!s100 T0]DCK5K]QkmaKCV9HEkE2
+R7
+31
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R12
+R13
+Edebounce
+Z32 w1617717169
+R3
+R4
+!i122 9
+R0
+Z33 8D:/Estudo/Eletronica_Digital/P2/debounce.vhd
+Z34 FD:/Estudo/Eletronica_Digital/P2/debounce.vhd
+l0
+Z35 L29 1
+V66e5TaDXCZQ<T9ZadB0aF0
+!s100 ioBh4o^k8FQc^eDeB2Vz@0
+R7
+31
+R8
+!i10b 1
+R9
+Z36 !s90 -reportprogress|300|-93|-work|work|D:/Estudo/Eletronica_Digital/P2/debounce.vhd|
+!s107 D:/Estudo/Eletronica_Digital/P2/debounce.vhd|
+!i113 1
+R12
+R13
+Alogic
+R3
+R4
+DEx4 work 8 debounce 0 22 66e5TaDXCZQ<T9ZadB0aF0
+!i122 9
+l43
+L40 24
+V@X1KaZiiAWW^Zd0gaf[1O1
+!s100 QkP:P5[<9B5JjUXkgmjEG0
+R7
+31
+R8
+!i10b 1
+R9
+R36
+Z37 !s107 D:/Estudo/Eletronica_Digital/P2/debounce.vhd|
+!i113 1
+R12
+R13
+Edivisor
+Z38 w1617655573
+Z39 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 2
+R0
+Z40 8D:/Estudo/Eletronica_Digital/P2/divisor.vhd
+Z41 FD:/Estudo/Eletronica_Digital/P2/divisor.vhd
+l0
+L5 1
+VQVDak>JHzYY6ShH^_m70K3
+!s100 fDalj3_om9SmP^ICj:MF00
+R7
+31
+R28
+!i10b 1
+R29
+Z42 !s90 -reportprogress|300|-93|-work|work|D:/Estudo/Eletronica_Digital/P2/divisor.vhd|
+Z43 !s107 D:/Estudo/Eletronica_Digital/P2/divisor.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R39
+R3
+R4
+DEx4 work 7 divisor 0 22 QVDak>JHzYY6ShH^_m70K3
+!i122 2
+l14
+Z44 L11 19
+VQe?>7R<J1W1DhUPKL3i3R0
+!s100 1YDW`XXm<U]czne?3PkEe0
+R7
+31
+R28
+!i10b 1
+R29
+R42
+R43
+!i113 1
+R12
+R13
+Edivisor2s
+Z45 w1617646674
+R39
+R3
+R4
+!i122 4
+R0
+Z46 8D:/Estudo/Eletronica_Digital/P2/divisor2s.vhd
+Z47 FD:/Estudo/Eletronica_Digital/P2/divisor2s.vhd
+l0
+L5 1
+V>93abn;@=1S?Lgc_UJYEO3
+!s100 DI?G``9`_0NiD7d9CQnR;0
+R7
+31
+R28
+!i10b 1
+R29
+Z48 !s90 -reportprogress|300|-93|-work|work|D:/Estudo/Eletronica_Digital/P2/divisor2s.vhd|
+Z49 !s107 D:/Estudo/Eletronica_Digital/P2/divisor2s.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R39
+R3
+R4
+DEx4 work 9 divisor2s 0 22 >93abn;@=1S?Lgc_UJYEO3
+!i122 4
+l14
+R44
+VD0][Cc2N7YV2lBWXFVkS[2
+!s100 NnF8V8kYZjnWAYb4]Wb8T1
+R7
+31
+R28
+!i10b 1
+R29
+R48
+R49
+!i113 1
+R12
+R13
+Elcd_controller_v2_1
+Z50 w1617480963
+R3
+R4
+!i122 0
+R0
+Z51 8D:/Estudo/Eletronica_Digital/P2/lcd_controller_v2_1.vhd
+Z52 FD:/Estudo/Eletronica_Digital/P2/lcd_controller_v2_1.vhd
+l0
+L51 1
+V03YB7B]Obg[B?=]zeYhUS2
+!s100 XSGkR;nZ`T2ST1z3>>JII3
+R7
+31
+R28
+!i10b 1
+R29
+Z53 !s90 -reportprogress|300|-93|-work|work|D:/Estudo/Eletronica_Digital/P2/lcd_controller_v2_1.vhd|
+Z54 !s107 D:/Estudo/Eletronica_Digital/P2/lcd_controller_v2_1.vhd|
+!i113 1
+R12
+R13
+Acontroller
+R3
+R4
+DEx4 work 19 lcd_controller_v2_1 0 22 03YB7B]Obg[B?=]zeYhUS2
+!i122 0
+l66
+L62 128
+VVo?VWSjCd4:D0o@4F8QDh1
+!s100 n85m?o36GcdFdVG9Pm@M<1
+R7
+31
+R28
+!i10b 1
+R29
+R53
+R54
+!i113 1
+R12
+R13
+Elcd_example
+Z55 w1617754871
+R3
+R4
+!i122 5
+R0
+Z56 8D:/Estudo/Eletronica_Digital/P2/lcd_example.vhd
+Z57 FD:/Estudo/Eletronica_Digital/P2/lcd_example.vhd
+l0
+R35
+V`m?;[<;_f>nloL]RgMLlK3
+!s100 [WiIGzG?T7]TO^2eMl>Kc1
+R7
+31
+R28
+!i10b 1
+R29
+Z58 !s90 -reportprogress|300|-93|-work|work|D:/Estudo/Eletronica_Digital/P2/lcd_example.vhd|
+Z59 !s107 D:/Estudo/Eletronica_Digital/P2/lcd_example.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R3
+R4
+DEx4 work 11 lcd_example 0 22 `m?;[<;_f>nloL]RgMLlK3
+!i122 5
+l54
+L39 237
+VAVAV_bL9X3Nz?CYI^<KOS0
+!s100 e=<@N>Q@>HiOi]bzQbMmU3
+R7
+31
+R28
+!i10b 1
+R29
+R58
+R59
+!i113 1
+R12
+R13
+Emenu
+Z60 w1617713382
+R2
+R39
+R3
+R4
+!i122 3
+R0
+Z61 8D:/Estudo/Eletronica_Digital/P2/menu.vhd
+Z62 FD:/Estudo/Eletronica_Digital/P2/menu.vhd
+l0
+L6 1
+VbY6X2G`z@2U>Y2hQadY;52
+!s100 W[>B7Bc<04UzmE:09oSJX0
+R7
+31
+R28
+!i10b 1
+R29
+Z63 !s90 -reportprogress|300|-93|-work|work|D:/Estudo/Eletronica_Digital/P2/menu.vhd|
+Z64 !s107 D:/Estudo/Eletronica_Digital/P2/menu.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R39
+R3
+R4
+DEx4 work 4 menu 0 22 bY6X2G`z@2U>Y2hQadY;52
+!i122 3
+l14
+L12 16
+VL`e:6VlnoD?TAMARL>c:d1
+!s100 di3<Sb493IF0CDBEZgi^;1
+R7
+31
+R28
+!i10b 1
+R29
+R63
+R64
+!i113 1
+R12
+R13

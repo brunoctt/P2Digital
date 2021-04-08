@@ -1,0 +1,266 @@
+# Reading pref.tcl
+# do Projeto2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/Estudo/Eletronica_Digital/P2/lcd_controller_v2_1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:26:07 on Apr 07,2021
+# vcom -reportprogress 300 -93 -work work D:/Estudo/Eletronica_Digital/P2/lcd_controller_v2_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lcd_controller_v2_1
+# -- Compiling architecture controller of lcd_controller_v2_1
+# End time: 17:26:07 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Estudo/Eletronica_Digital/P2/contador_relogio.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:26:07 on Apr 07,2021
+# vcom -reportprogress 300 -93 -work work D:/Estudo/Eletronica_Digital/P2/contador_relogio.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity contador_relogio
+# -- Compiling architecture contar of contador_relogio
+# End time: 17:26:07 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Estudo/Eletronica_Digital/P2/divisor.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:26:07 on Apr 07,2021
+# vcom -reportprogress 300 -93 -work work D:/Estudo/Eletronica_Digital/P2/divisor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisor
+# -- Compiling architecture Behavioral of divisor
+# End time: 17:26:07 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Estudo/Eletronica_Digital/P2/menu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:26:07 on Apr 07,2021
+# vcom -reportprogress 300 -93 -work work D:/Estudo/Eletronica_Digital/P2/menu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Compiling entity menu
+# -- Compiling architecture Behavior of menu
+# End time: 17:26:07 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Estudo/Eletronica_Digital/P2/divisor2s.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:26:07 on Apr 07,2021
+# vcom -reportprogress 300 -93 -work work D:/Estudo/Eletronica_Digital/P2/divisor2s.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisor2s
+# -- Compiling architecture Behavioral of divisor2s
+# End time: 17:26:07 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Estudo/Eletronica_Digital/P2/lcd_example.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:26:07 on Apr 07,2021
+# vcom -reportprogress 300 -93 -work work D:/Estudo/Eletronica_Digital/P2/lcd_example.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lcd_example
+# -- Compiling architecture behavior of lcd_example
+# End time: 17:26:07 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Estudo/Eletronica_Digital/P2/comparadorpre.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:26:08 on Apr 07,2021
+# vcom -reportprogress 300 -93 -work work D:/Estudo/Eletronica_Digital/P2/comparadorpre.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity comparadorpre
+# -- Compiling architecture comparar of comparadorpre
+# End time: 17:26:08 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Estudo/Eletronica_Digital/P2/alarme2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:26:08 on Apr 07,2021
+# vcom -reportprogress 300 -93 -work work D:/Estudo/Eletronica_Digital/P2/alarme2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity alarme2
+# -- Compiling architecture comparar of alarme2
+# End time: 17:26:08 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Estudo/Eletronica_Digital/P2/alarme3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:26:08 on Apr 07,2021
+# vcom -reportprogress 300 -93 -work work D:/Estudo/Eletronica_Digital/P2/alarme3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity alarme3
+# -- Compiling architecture comparar of alarme3
+# End time: 17:26:08 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Estudo/Eletronica_Digital/P2/debounce.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:26:08 on Apr 07,2021
+# vcom -reportprogress 300 -93 -work work D:/Estudo/Eletronica_Digital/P2/debounce.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity debounce
+# -- Compiling architecture logic of debounce
+# End time: 17:26:08 on Apr 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.lcd_example
+# vsim work.lcd_example 
+# Start time: 17:26:23 on Apr 07,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lcd_example(behavior)
+# Loading work.lcd_controller_v2_1(controller)
+add wave -position insertpoint  \
+sim:/lcd_example/lcd_data
+vsim work.lcd_example
+# End time: 17:28:36 on Apr 07,2021, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 0
+# vsim work.lcd_example 
+# Start time: 17:28:36 on Apr 07,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lcd_example(behavior)
+# Loading work.lcd_controller_v2_1(controller)
+add wave -position insertpoint  \
+sim:/lcd_example/lcd_data
+add wave -position insertpoint  \
+sim:/lcd_example/rw
+add wave -position insertpoint  \
+sim:/lcd_example/rs \
+sim:/lcd_example/e
+add wave -position insertpoint  \
+sim:/lcd_example/clk
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 17:35:44 on Apr 07,2021, Elapsed time: 0:07:08
+# Errors: 0, Warnings: 0
