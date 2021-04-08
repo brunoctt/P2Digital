@@ -1,9 +1,9 @@
 #Objetivos:
   - Contador básico e limites 0-24 e 0-59 (Com feedback) DONE
-  - Alarmes para cada integrante do grupo (Com feedback)
+  - Alarmes para cada integrante do grupo (Com feedback)  DONE
   - Entrar no menu com sw1      DONE
-  - Definir ajuste de relógio ou alarme com sw2
-  - Usar botões para setar valores de alarme e relógio
+  - Definir ajuste de relógio ou alarme com sw2 DONE ALARME
+  - Usar botões para setar valores de alarme e relógio  DONE ALARME
   - Utilizar enable para relógio a partir do set hora  DONE
   - Utilizar load_ena no relógio para quando sai do set hora(falling.edge)
   - Comparador entre a hora e o valor do despertador  DONE
@@ -12,8 +12,7 @@
   - Os botões pressionados da senha devem ser mostrado na 2 linha do LCD
 
 #Dúvidas:
-- Comparador, pq colocar ou tirar leds faz essa merda funcionar?
-- Display qnd adiciona s3
+- Tirar dúvida com monitor como ativar blink para digito sendo modificado
   
 #Links
 http://infraled.blogspot.com/2014/06/vhdl-tutorial-2-relogio-digital.html
