@@ -2,10 +2,10 @@
   - Contador básico e limites 0-24 e 0-59 (Com feedback) DONE
   - Alarmes para cada integrante do grupo (Com feedback)  DONE
   - Entrar no menu com sw1      DONE
-  - Definir ajuste de relógio ou alarme com sw2 DONE ALARME
-  - Usar botões para setar valores de alarme e relógio  DONE ALARME
-  - Utilizar enable para relógio a partir do set hora  DONE
-  - Utilizar load_ena no relógio para quando sai do set hora(falling.edge)
+  - Definir ajuste de relógio ou alarme com sw2 DONE
+  - Usar botões para setar valores de alarme e relógio  DONE
+  - Utilizar enable para relógio a partir do set hora  BURRICE
+  - Utilizar load_ena no relógio para quando sai do set hora(falling.edge) BURRICE
   - Comparador entre a hora e o valor do despertador  DONE
   - Ao entrar no horário de despertador, ativar buzzer e texto no display DONE
   - Dentro do Comparador haverá a checagem de senhas  DONE
