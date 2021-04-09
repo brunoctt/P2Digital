@@ -12,6 +12,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "buzzer",
+					"strict" : false
+				},
+				{
 					"name" : "lcd_data[7]",
 					"strict" : false
 				},
@@ -44,11 +48,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "led[2]",
+					"name" : "led0",
 					"strict" : false
 				},
 				{
-					"name" : "led[1]",
+					"name" : "led4",
+					"strict" : false
+				},
+				{
+					"name" : "led5",
 					"strict" : false
 				},
 				{
@@ -56,11 +64,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "button2",
+					"name" : "button1",
 					"strict" : false
 				},
 				{
-					"name" : "button1",
+					"name" : "button2",
 					"strict" : false
 				},
 				{

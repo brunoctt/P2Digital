@@ -18,46 +18,54 @@ signal aux1 : std_logic := '0';
 signal aux2 : std_logic := '0';
 signal aux3 : std_logic := '0';
 signal aux4 : std_logic := '0';
+--signal espera : integer range 0 to 100000 := 0;
 begin
 	process (clock, edicao)
 		begin				
-			if edicao = '1' and igual = '0' then  -- confirma se o alarme n está sendo modificado
+			if edicao = '1' and igual = '1' then  -- confirma se o alarme n está sendo modificado
 			--------------------------------------------------------------------------------------- comparação valor alarme com relogio
 				if sl = fsl and sh = fsh and ml = fml and mh = fmh and hl = fhl and hh = fhh then
-					igual <= '1';
-				else 
+--					if espera = 100000 then
+--						espera <= 0;
+--						igual <= '0';
+--					else
+--						espera <= espera + 1;
+--						igual <= '1';
+--					end if;
 					igual <= '0';
+				else 
+					igual <= '1';
 				end if;
-			elsif edicao = '1' and igual = '1' then
-			------------------------------------------------------------------- checando senhas	na ordem		
+			elsif edicao = '1' and igual = '0' then
+			------------------------------------------------------------------- checando senhas	na ordem		 and espera = 100000
 				if s1'event and s1 = '0' then
 					aux1 <= not aux1;
 				else
-					igual <= '1';
+					igual <= '0';
 				end if;
 				if s2'event and s2 = '0' and aux1 = '1' then
 					aux2 <= not aux2;
 				else
-					igual <= '1';
+					igual <= '0';
 				end if;
 				if s3'event and s3 = '0' and aux1 = '1' and aux2 = '1' then
 					aux3 <= not aux3;				
 				else
-					igual <= '1';
+					igual <= '0';
 				end if;	
 				if s4'event and s4 = '0' and aux1 = '1' and aux2 = '1' and aux3 = '1' then
 					aux4 <= not aux4;
 				else
-					igual <= '1';
+					igual <= '0';
 				end if;
 				if aux1 = '1' and aux2 = '1' and aux3 = '1' and aux4 = '1' then
-					igual <= '0';
-				else
 					igual <= '1';
+				else
+					igual <= '0';
 				end if;
 				
 			else
-				igual <= '0';
+				igual <= '1';
 			end if;
 	end process;	
 end comparar;
