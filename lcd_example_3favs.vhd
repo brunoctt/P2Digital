@@ -94,60 +94,60 @@ BEGIN
 						when 5 => lcd_bus <= "1001000100";  --D
 						when 6 => lcd_bus <= "1001000001";  --A
 						when 7 => lcd_bus <= "1000100000";  --ESPAÇO
-						when 8 => if comparador = '1' and comparador2 = '0' and comparador3 = '0' then
+						when 8 => if comparador = '0' and comparador2 = '1' and comparador3 = '0' then
 											lcd_bus <= "1001010110";  --V 
-									elsif comparador = '0' and comparador2 = '1' and comparador3 = '0' then
+									elsif comparador = '0' and comparador2 = '0' and comparador3 = '1' then
 											lcd_bus <= "1001010110";  --V 
-									else
+									elsif comparador = '1' and comparador2 = '0' and comparador3 = '0' then
 											lcd_bus <= "1001000010";  --B 
 									end if;
-						when 9 => if comparador = '1' and comparador2 = '0' and comparador3 = '0' then
+						when 9 => if comparador = '0' and comparador2 = '1' and comparador3 = '0' then
 											lcd_bus <= "1001001001";  --I
-									elsif comparador = '0' and comparador2 = '1' and comparador3 = '0' then
+									elsif comparador = '0' and comparador2 = '0' and comparador3 = '1' then
 											lcd_bus <= "1001001001";  --I
-									else
+									elsif comparador = '1' and comparador2 = '0' and comparador3 = '0' then
 											lcd_bus <= "1001010010";  --R 
 									end if;
-						when 10 => if comparador = '1' and comparador2 = '0' and comparador3 = '0' then
+						when 10 => if comparador = '0' and comparador2 = '1' and comparador3 = '0' then
 											lcd_bus <= "1001000011"; --C
-									elsif comparador = '0' and comparador2 = '1' and comparador3 = '0' then
+									elsif comparador = '0' and comparador2 = '0' and comparador3 = '1' then
 											lcd_bus <= "1001001110"; --N
-									else
+									elsif comparador = '1' and comparador2 = '0' and comparador3 = '0' then
 											lcd_bus <= "1001010101"; --U
 									end if;
-						when 11 => if comparador = '1' and comparador2 = '0' and comparador3 = '0' then
+						when 11 => if comparador = '0' and comparador2 = '1' and comparador3 = '0' then
 											lcd_bus <= "1001010100"; --T
-									elsif comparador = '0' and comparador2 = '1' and comparador3 = '0' then
+									elsif comparador = '0' and comparador2 = '0' and comparador3 = '1' then
 											lcd_bus <= "1001001001"; --I
-									else
+									elsif comparador = '1' and comparador2 = '0' and comparador3 = '0' then
 											lcd_bus <= "1001001110"; --N
 									end if;
-						when 12 => if comparador = '1' and comparador2 = '0' and comparador3 = '0' then
+						when 12 => if comparador = '0' and comparador2 = '1' and comparador3 = '0' then
 											lcd_bus <= "1001001111"; --O
-									elsif comparador = '0' and comparador2 = '1' and comparador3 = '0' then
+									elsif comparador = '0' and comparador2 = '0' and comparador3 = '1' then
 											lcd_bus <= "1001000011"; --C
-									else
+									elsif comparador = '1' and comparador2 = '0' and comparador3 = '0' then
 											lcd_bus <= "1001001111"; --O
 									end if;
-						when 13 => if comparador = '1' and comparador2 = '0' and comparador3 = '0' then
+						when 13 => if comparador = '0' and comparador2 = '1' and comparador3 = '0' then
 											lcd_bus <= "1001010010"; --R
-									elsif comparador = '0' and comparador2 = '1' and comparador3 = '0' then
+									elsif comparador = '0' and comparador2 = '0' and comparador3 = '1' then
 											lcd_bus <= "1001001001"; --I
-									else
+									elsif comparador = '1' and comparador2 = '0' and comparador3 = '0' then
 											lcd_bus <= "1000100000"; --ESPAÇO
 									end if;
-						when 14 => if comparador = '1' and comparador2 = '0' and comparador3 = '0' then
+						when 14 => if comparador = '0' and comparador2 = '1' and comparador3 = '0' then
 											lcd_bus <= "1000100000"; --ESPAÇO
-									elsif comparador = '0' and comparador2 = '1' and comparador3 = '0' then
+									elsif comparador = '0' and comparador2 = '0' and comparador3 = '1' then
 											lcd_bus <= "1001010101"; --U
-									else
+									elsif comparador = '1' and comparador2 = '0' and comparador3 = '0' then
 											lcd_bus <= "1000100000"; --ESPAÇO
 									end if;
-						when 15 => if comparador = '1' and comparador2 = '0' and comparador3 = '0' then
+						when 15 => if comparador = '0' and comparador2 = '1' and comparador3 = '0' then
 											lcd_bus <= "1000100000"; --ESPAÇO
-									elsif comparador = '0' and comparador2 = '1' and comparador3 = '0' then
+									elsif comparador = '0' and comparador2 = '0' and comparador3 = '1' then
 											lcd_bus <= "1001010011"; --S
-									else
+									elsif comparador = '1' and comparador2 = '0' and comparador3 = '0' then
 											lcd_bus <= "1000100000"; --ESPAÇO
 									end if;
 						when 16 => lcd_bus <= "0011010000"; --QUEBRA DE LINHA

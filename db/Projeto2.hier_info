@@ -2,6 +2,7 @@
 e <= MUX_lcd:inst24.e
 clock => MUX_lcd:inst24.clk
 clock => lcd_example_favs:inst14.clk
+clock => debounce:inst33.clk
 clock => comparador:inst12.clock
 clock => debounce:inst8.clk
 clock => debounce:inst9.clk
@@ -310,6 +311,33 @@ lcd_data[4] <= lcd_data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 lcd_data[5] <= lcd_data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 lcd_data[6] <= lcd_data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 lcd_data[7] <= lcd_data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testecontdisp|debounce:inst33
+clk => result~reg0.CLK
+clk => flipflops[0].CLK
+clk => flipflops[1].CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+button => flipflops[0].DATAIN
+result <= result~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |testecontdisp|comparador:inst12
@@ -689,7 +717,7 @@ fhh[3] <= <GND>
 edicao <= process_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testecontdisp|contador_relogio:gf
+|testecontdisp|contador_relogio:inst31
 clock => contagemHH[0].CLK
 clock => contagemHH[1].CLK
 clock => contagemHL[0].CLK
@@ -1344,24 +1372,27 @@ load_ena => aux6[3].OUTPUTSELECT
 load_ena => aux6[2].OUTPUTSELECT
 load_ena => aux6[1].OUTPUTSELECT
 load_ena => aux6[0].OUTPUTSELECT
-load_ena => Mux2.IN64
-load_ena => Mux11.IN64
-load_ena => Mux2.IN65
-load_ena => Mux11.IN65
-load_ena => Mux2.IN66
-load_ena => Mux11.IN66
-load_ena => Mux2.IN67
-load_ena => Mux11.IN67
-load_ena => Mux2.IN68
-load_ena => Mux11.IN68
-load_ena => Mux2.IN69
-load_ena => Mux11.IN69
+load_ena => Mux5.IN64
+load_ena => Mux14.IN64
+load_ena => Mux5.IN65
+load_ena => Mux14.IN65
+load_ena => Mux5.IN66
+load_ena => Mux14.IN66
+load_ena => Mux5.IN67
+load_ena => Mux14.IN67
+load_ena => Mux5.IN68
+load_ena => Mux14.IN68
+load_ena => Mux5.IN69
+load_ena => Mux14.IN69
+comparador => process_0.IN0
 comparador => process_0.IN0
 comparador => process_0.IN0
 comparador => process_0.IN0
 comparador2 => process_0.IN1
 comparador2 => process_0.IN1
 comparador2 => process_0.IN1
+comparador2 => process_0.IN1
+comparador3 => process_0.IN1
 comparador3 => process_0.IN1
 comparador3 => process_0.IN1
 comparador3 => process_0.IN1
