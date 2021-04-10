@@ -20,6 +20,9 @@ begin
 				aux<= 0;
 			end if;
 		end if;
+		if ena = '1' then
+			aux <= 0;
+		end if;
 	end process;
 
 	home <= conv_std_logic_vector(aux, 2);

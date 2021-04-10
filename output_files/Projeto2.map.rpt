@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto2
-Fri Apr 09 17:21:19 2021
+Sat Apr 10 12:14:48 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -16,7 +16,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   8. State Machine - |testecontdisp|lcd_example_3favs:inst|lcd_controller_v2_1:dut|state
   9. State Machine - |testecontdisp|lcd_example_favs:inst22|lcd_controller_v2_1:dut|state
  10. State Machine - |testecontdisp|lcd_example_favs:inst19|lcd_controller_v2_1:dut|state
- 11. State Machine - |testecontdisp|lcd_example_favs:inst14|lcd_controller_v2_1:dut|state
+ 11. State Machine - |testecontdisp|lcd_example_favs:inst30|lcd_controller_v2_1:dut|state
  12. Logic Cells Representing Combinational Loops
  13. Registers Removed During Synthesis
  14. Removed Registers Triggering Further Register Optimizations
@@ -31,7 +31,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  23. Parameter Settings for User Entity Instance: debounce:inst34
  24. Parameter Settings for User Entity Instance: debounce:inst35
  25. Port Connectivity Checks: "lcd_example_3favs:inst|lcd_controller_v2_1:dut"
- 26. Port Connectivity Checks: "lcd_example_favs:inst14|lcd_controller_v2_1:dut"
+ 26. Port Connectivity Checks: "lcd_example_favs:inst30|lcd_controller_v2_1:dut"
  27. Post-Synthesis Netlist Statistics for Top Partition
  28. Elapsed Time Per Partition
  29. Analysis & Synthesis Messages
@@ -61,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 09 17:21:19 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 10 12:14:48 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
 ; Top-level Entity Name              ; testecontdisp                               ;
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 1,063                                       ;
 ;     Dedicated logic registers      ; 441                                         ;
 ; Total registers                    ; 441                                         ;
-; Total pins                         ; 20                                          ;
+; Total pins                         ; 17                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -227,14 +227,14 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 441         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 20          ;
+; I/O pins                                    ; 17          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
 ; Maximum fan-out                             ; 314         ;
-; Total fan-out                               ; 4729        ;
-; Average fan-out                             ; 3.06        ;
+; Total fan-out                               ; 4726        ;
+; Average fan-out                             ; 3.07        ;
 +---------------------------------------------+-------------+
 
 
@@ -243,7 +243,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Entity Name               ; Library Name ;
 +--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+---------------------------+--------------+
-; |testecontdisp                       ; 1063 (1)            ; 441 (0)                   ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |testecontdisp                                                 ; testecontdisp             ; work         ;
+; |testecontdisp                       ; 1063 (2)            ; 441 (0)                   ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |testecontdisp                                                 ; testecontdisp             ; work         ;
 ;    |MUX_lcd:inst24|                  ; 13 (13)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|MUX_lcd:inst24                                  ; MUX_lcd                   ; work         ;
 ;    |comparador:inst12|               ; 21 (21)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|comparador:inst12                               ; comparador                ; work         ;
 ;    |comparador:inst16|               ; 21 (21)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|comparador:inst16                               ; comparador                ; work         ;
@@ -258,16 +258,16 @@ https://fpgasoftware.intel.com/eula.
 ;    |debounce:inst9|                  ; 26 (26)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|debounce:inst9                                  ; debounce                  ; work         ;
 ;    |divisor2s:inst1|                 ; 49 (49)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|divisor2s:inst1                                 ; divisor2s                 ; work         ;
 ;    |divisor:inst2|                   ; 45 (45)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|divisor:inst2                                   ; divisor                   ; work         ;
-;    |lcd_example_3favs:inst|          ; 305 (127)           ; 62 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_3favs:inst                          ; lcd_example_3favs         ; work         ;
+;    |lcd_example_3favs:inst|          ; 304 (126)           ; 62 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_3favs:inst                          ; lcd_example_3favs         ; work         ;
 ;       |lcd_controller_v2_1:dut|      ; 178 (178)           ; 47 (47)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_3favs:inst|lcd_controller_v2_1:dut  ; lcd_controller_v2_1       ; work         ;
-;    |lcd_example_favs:inst14|         ; 86 (67)             ; 18 (9)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_favs:inst14                         ; lcd_example_favs          ; work         ;
-;       |lcd_controller_v2_1:dut|      ; 19 (19)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_favs:inst14|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
-;    |lcd_example_favs:inst19|         ; 46 (42)             ; 8 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_favs:inst19                         ; lcd_example_favs          ; work         ;
-;       |lcd_controller_v2_1:dut|      ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_favs:inst19|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
+;    |lcd_example_favs:inst19|         ; 72 (61)             ; 18 (9)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_favs:inst19                         ; lcd_example_favs          ; work         ;
+;       |lcd_controller_v2_1:dut|      ; 11 (11)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_favs:inst19|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
 ;    |lcd_example_favs:inst22|         ; 47 (43)             ; 8 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_favs:inst22                         ; lcd_example_favs          ; work         ;
 ;       |lcd_controller_v2_1:dut|      ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_favs:inst22|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
+;    |lcd_example_favs:inst30|         ; 60 (48)             ; 8 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_favs:inst30                         ; lcd_example_favs          ; work         ;
+;       |lcd_controller_v2_1:dut|      ; 12 (12)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|lcd_example_favs:inst30|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
 ;    |menu:inst4|                      ; 4 (4)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|menu:inst4                                      ; menu                      ; work         ;
-;    |set_alarme_bruno:inst25|         ; 32 (32)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|set_alarme_bruno:inst25                         ; set_alarme_bruno          ; work         ;
+;    |set_alarme_bruno:inst31|         ; 32 (32)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|set_alarme_bruno:inst31                         ; set_alarme_bruno          ; work         ;
 ;    |set_alarme_victor:inst26|        ; 34 (34)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|set_alarme_victor:inst26                        ; set_alarme_victor         ; work         ;
 ;    |set_alarme_vinicius:inst27|      ; 32 (32)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|set_alarme_vinicius:inst27                      ; set_alarme_vinicius       ; work         ;
 ;    |set_hora:inst5|                  ; 82 (82)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |testecontdisp|set_hora:inst5                                  ; set_hora                  ; work         ;
@@ -316,7 +316,7 @@ Encoding Type:  One-Hot
 
 Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------------+
-; State Machine - |testecontdisp|lcd_example_favs:inst14|lcd_controller_v2_1:dut|state ;
+; State Machine - |testecontdisp|lcd_example_favs:inst30|lcd_controller_v2_1:dut|state ;
 +------------------+------------+-------------+------------------+---------------------+
 ; Name             ; state.send ; state.ready ; state.initialize ; state.power_up      ;
 +------------------+------------+-------------+------------------+---------------------+
@@ -348,168 +348,168 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; lcd_example_3favs:inst|char[5]                                   ; Stuck at GND due to stuck port data_in                                      ;
 ; lcd_example_favs:inst22|char[5]                                  ; Stuck at GND due to stuck port data_in                                      ;
 ; lcd_example_favs:inst19|char[5]                                  ; Stuck at GND due to stuck port data_in                                      ;
-; lcd_example_favs:inst14|char[5]                                  ; Stuck at GND due to stuck port data_in                                      ;
+; lcd_example_favs:inst30|char[5]                                  ; Stuck at GND due to stuck port data_in                                      ;
 ; lcd_example_3favs:inst|lcd_bus[8]                                ; Stuck at GND due to stuck port data_in                                      ;
 ; lcd_example_favs:inst22|lcd_bus[8]                               ; Stuck at GND due to stuck port data_in                                      ;
 ; lcd_example_favs:inst19|lcd_bus[8]                               ; Stuck at GND due to stuck port data_in                                      ;
-; lcd_example_favs:inst14|lcd_bus[8]                               ; Stuck at GND due to stuck port data_in                                      ;
+; lcd_example_favs:inst30|lcd_bus[8]                               ; Stuck at GND due to stuck port data_in                                      ;
 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|rw                ; Stuck at GND due to stuck port data_in                                      ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|rw               ; Stuck at GND due to stuck port data_in                                      ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|rw               ; Stuck at GND due to stuck port data_in                                      ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|rw               ; Stuck at GND due to stuck port data_in                                      ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|rw               ; Stuck at GND due to stuck port data_in                                      ;
 ; MUX_lcd:inst24|rw                                                ; Stuck at GND due to stuck port data_in                                      ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|e                ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|e                ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|e                ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|e                ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|e                ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|e                ;
-; lcd_example_favs:inst19|lcd_controller_v2_1:dut|rs               ; Merged with lcd_example_favs:inst14|lcd_controller_v2_1:dut|rs              ;
-; lcd_example_favs:inst22|lcd_controller_v2_1:dut|rs               ; Merged with lcd_example_favs:inst14|lcd_controller_v2_1:dut|rs              ;
-; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[7]      ; Merged with lcd_example_favs:inst14|lcd_controller_v2_1:dut|lcd_data[7]     ;
-; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[7]      ; Merged with lcd_example_favs:inst14|lcd_controller_v2_1:dut|lcd_data[7]     ;
-; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]      ; Merged with lcd_example_favs:inst14|lcd_controller_v2_1:dut|lcd_data[6]     ;
-; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[6]      ; Merged with lcd_example_favs:inst14|lcd_controller_v2_1:dut|lcd_data[6]     ;
-; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]      ; Merged with lcd_example_favs:inst14|lcd_controller_v2_1:dut|lcd_data[5]     ;
-; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[5]      ; Merged with lcd_example_favs:inst14|lcd_controller_v2_1:dut|lcd_data[5]     ;
-; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]      ; Merged with lcd_example_favs:inst14|lcd_controller_v2_1:dut|lcd_data[4]     ;
-; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[4]      ; Merged with lcd_example_favs:inst14|lcd_controller_v2_1:dut|lcd_data[4]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[31]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[31]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|e                ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|e                ;
+; lcd_example_favs:inst22|lcd_controller_v2_1:dut|rs               ; Merged with lcd_example_favs:inst19|lcd_controller_v2_1:dut|rs              ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|rs               ; Merged with lcd_example_favs:inst19|lcd_controller_v2_1:dut|rs              ;
+; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[7]      ; Merged with lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[7]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[7]      ; Merged with lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[7]     ;
+; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[6]      ; Merged with lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[6]      ; Merged with lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]     ;
+; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[5]      ; Merged with lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[5]      ; Merged with lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]     ;
+; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[4]      ; Merged with lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[4]      ; Merged with lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[31]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[31]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[31]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[31]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[30]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[30]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[31]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[31]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[30]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[30]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[30]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[30]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[29]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[29]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[30]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[30]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[29]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[29]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[29]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[29]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[28]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[28]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[29]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[29]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[28]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[28]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[28]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[28]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[27]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[28]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[28]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[27]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[27]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[26]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[26]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[27]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[26]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[26]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[26]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[26]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[25]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[25]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[26]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[26]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[25]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[25]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[25]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[25]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[24]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[24]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[25]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[25]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[24]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[24]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[24]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[24]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[23]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[23]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[24]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[24]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[23]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[23]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[23]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[23]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[22]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[22]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[23]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[23]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[22]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[22]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[22]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[22]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[21]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[21]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[22]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[22]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[21]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[21]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[21]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[21]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[20]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[20]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[21]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[21]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[20]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[20]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[20]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[20]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[19]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[19]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[20]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[20]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[19]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[19]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[19]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[19]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[18]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[18]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[19]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[19]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[18]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[18]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[18]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[18]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[17]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[17]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[18]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[18]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[17]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[17]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[17]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[17]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[16]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[16]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[17]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[17]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[16]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[16]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[16]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[16]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[15]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[15]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[16]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[16]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[15]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[15]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[15]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[15]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[14]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[14]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[15]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[15]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[14]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[14]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[14]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[14]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[13]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[13]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[14]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[14]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[13]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[13]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[13]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[13]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[12]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[12]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[13]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[13]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[12]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[12]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[12]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[12]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[11]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[11]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[12]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[12]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[11]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[11]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[11]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[11]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[10]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[10]    ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[11]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[11]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[10]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[10]    ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[10]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[10]    ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[9]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[9]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[10]    ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[10]    ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[9]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[9]     ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[9]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[9]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[8]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[9]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[9]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[8]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]     ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[8]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[7]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[8]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[7]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]     ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[7]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[6]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[7]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[6]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]     ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[6]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[5]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[5]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[6]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[5]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[5]     ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[5]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[5]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[4]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[4]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[5]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[5]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[4]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[4]     ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[4]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[4]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[3]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[3]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[4]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[4]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[3]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[3]     ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[3]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[3]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[2]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[2]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[3]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[3]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[2]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[2]     ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[2]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[2]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[1]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[2]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[2]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[1]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]     ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[1]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[0]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]     ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[1]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[0]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]     ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[0]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]     ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|state.power_up   ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[0]     ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]     ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|state.power_up   ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|state.power_up   ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|state.ready      ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.ready      ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|state.power_up   ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|state.ready      ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.ready      ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|state.ready      ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.ready      ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|state.initialize ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.initialize ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|state.ready      ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.ready      ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|state.initialize ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.initialize ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|state.initialize ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.initialize ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|state.send       ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|state.initialize ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.initialize ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|state.send       ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|state.send       ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ;
-; lcd_example_favs:inst14|lcd_enable                               ; Merged with lcd_example_3favs:inst|lcd_enable                               ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|state.send       ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ;
 ; lcd_example_favs:inst19|lcd_enable                               ; Merged with lcd_example_3favs:inst|lcd_enable                               ;
 ; lcd_example_favs:inst22|lcd_enable                               ; Merged with lcd_example_3favs:inst|lcd_enable                               ;
-; lcd_example_favs:inst19|lcd_bus[9]                               ; Merged with lcd_example_favs:inst14|lcd_bus[9]                              ;
-; lcd_example_favs:inst22|lcd_bus[9]                               ; Merged with lcd_example_favs:inst14|lcd_bus[9]                              ;
-; lcd_example_favs:inst19|lcd_bus[7]                               ; Merged with lcd_example_favs:inst14|lcd_bus[7]                              ;
-; lcd_example_favs:inst22|lcd_bus[7]                               ; Merged with lcd_example_favs:inst14|lcd_bus[7]                              ;
-; lcd_example_favs:inst19|lcd_bus[6]                               ; Merged with lcd_example_favs:inst14|lcd_bus[6]                              ;
-; lcd_example_favs:inst22|lcd_bus[6]                               ; Merged with lcd_example_favs:inst14|lcd_bus[6]                              ;
-; lcd_example_favs:inst19|lcd_bus[5]                               ; Merged with lcd_example_favs:inst14|lcd_bus[5]                              ;
-; lcd_example_favs:inst22|lcd_bus[5]                               ; Merged with lcd_example_favs:inst14|lcd_bus[5]                              ;
-; lcd_example_favs:inst19|lcd_bus[4]                               ; Merged with lcd_example_favs:inst14|lcd_bus[4]                              ;
-; lcd_example_favs:inst22|lcd_bus[4]                               ; Merged with lcd_example_favs:inst14|lcd_bus[4]                              ;
-; lcd_example_favs:inst14|char[0]                                  ; Merged with lcd_example_3favs:inst|char[0]                                  ;
+; lcd_example_favs:inst30|lcd_enable                               ; Merged with lcd_example_3favs:inst|lcd_enable                               ;
+; lcd_example_favs:inst22|lcd_bus[9]                               ; Merged with lcd_example_favs:inst19|lcd_bus[9]                              ;
+; lcd_example_favs:inst30|lcd_bus[9]                               ; Merged with lcd_example_favs:inst19|lcd_bus[9]                              ;
+; lcd_example_favs:inst22|lcd_bus[7]                               ; Merged with lcd_example_favs:inst19|lcd_bus[7]                              ;
+; lcd_example_favs:inst30|lcd_bus[7]                               ; Merged with lcd_example_favs:inst19|lcd_bus[7]                              ;
+; lcd_example_favs:inst22|lcd_bus[6]                               ; Merged with lcd_example_favs:inst19|lcd_bus[6]                              ;
+; lcd_example_favs:inst30|lcd_bus[6]                               ; Merged with lcd_example_favs:inst19|lcd_bus[6]                              ;
+; lcd_example_favs:inst22|lcd_bus[5]                               ; Merged with lcd_example_favs:inst19|lcd_bus[5]                              ;
+; lcd_example_favs:inst30|lcd_bus[5]                               ; Merged with lcd_example_favs:inst19|lcd_bus[5]                              ;
+; lcd_example_favs:inst22|lcd_bus[4]                               ; Merged with lcd_example_favs:inst19|lcd_bus[4]                              ;
+; lcd_example_favs:inst30|lcd_bus[4]                               ; Merged with lcd_example_favs:inst19|lcd_bus[4]                              ;
 ; lcd_example_favs:inst19|char[0]                                  ; Merged with lcd_example_3favs:inst|char[0]                                  ;
 ; lcd_example_favs:inst22|char[0]                                  ; Merged with lcd_example_3favs:inst|char[0]                                  ;
-; lcd_example_favs:inst14|char[1]                                  ; Merged with lcd_example_3favs:inst|char[1]                                  ;
+; lcd_example_favs:inst30|char[0]                                  ; Merged with lcd_example_3favs:inst|char[0]                                  ;
 ; lcd_example_favs:inst19|char[1]                                  ; Merged with lcd_example_3favs:inst|char[1]                                  ;
 ; lcd_example_favs:inst22|char[1]                                  ; Merged with lcd_example_3favs:inst|char[1]                                  ;
-; lcd_example_favs:inst14|char[2]                                  ; Merged with lcd_example_3favs:inst|char[2]                                  ;
+; lcd_example_favs:inst30|char[1]                                  ; Merged with lcd_example_3favs:inst|char[1]                                  ;
 ; lcd_example_favs:inst19|char[2]                                  ; Merged with lcd_example_3favs:inst|char[2]                                  ;
 ; lcd_example_favs:inst22|char[2]                                  ; Merged with lcd_example_3favs:inst|char[2]                                  ;
-; lcd_example_favs:inst14|char[3]                                  ; Merged with lcd_example_3favs:inst|char[3]                                  ;
+; lcd_example_favs:inst30|char[2]                                  ; Merged with lcd_example_3favs:inst|char[2]                                  ;
 ; lcd_example_favs:inst19|char[3]                                  ; Merged with lcd_example_3favs:inst|char[3]                                  ;
 ; lcd_example_favs:inst22|char[3]                                  ; Merged with lcd_example_3favs:inst|char[3]                                  ;
-; lcd_example_favs:inst14|char[4]                                  ; Merged with lcd_example_3favs:inst|char[4]                                  ;
+; lcd_example_favs:inst30|char[3]                                  ; Merged with lcd_example_3favs:inst|char[3]                                  ;
 ; lcd_example_favs:inst19|char[4]                                  ; Merged with lcd_example_3favs:inst|char[4]                                  ;
 ; lcd_example_favs:inst22|char[4]                                  ; Merged with lcd_example_3favs:inst|char[4]                                  ;
-; lcd_example_favs:inst14|lcd_controller_v2_1:dut|busy             ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|busy             ;
+; lcd_example_favs:inst30|char[4]                                  ; Merged with lcd_example_3favs:inst|char[4]                                  ;
 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|busy             ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|busy             ;
 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|busy             ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|busy             ;
+; lcd_example_favs:inst30|lcd_controller_v2_1:dut|busy             ; Merged with lcd_example_3favs:inst|lcd_controller_v2_1:dut|busy             ;
 ; Total Number of Removed Registers = 165                          ;                                                                             ;
 +------------------------------------------------------------------+-----------------------------------------------------------------------------+
 
@@ -525,8 +525,8 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ;                                 ; due to stuck port data_in ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|rw                   ;
 ; lcd_example_favs:inst19|char[5] ; Stuck at GND              ; lcd_example_favs:inst19|lcd_bus[8],                                  ;
 ;                                 ; due to stuck port data_in ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|rw                   ;
-; lcd_example_favs:inst14|char[5] ; Stuck at GND              ; lcd_example_favs:inst14|lcd_bus[8],                                  ;
-;                                 ; due to stuck port data_in ; lcd_example_favs:inst14|lcd_controller_v2_1:dut|rw                   ;
+; lcd_example_favs:inst30|char[5] ; Stuck at GND              ; lcd_example_favs:inst30|lcd_bus[8],                                  ;
+;                                 ; due to stuck port data_in ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|rw                   ;
 +---------------------------------+---------------------------+----------------------------------------------------------------------+
 
 
@@ -538,7 +538,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; Total registers                              ; 441   ;
 ; Number of registers using Synchronous Clear  ; 134   ;
 ; Number of registers using Synchronous Load   ; 15    ;
-; Number of registers using Asynchronous Clear ; 20    ;
+; Number of registers using Asynchronous Clear ; 23    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 285   ;
 ; Number of registers using Preset             ; 0     ;
@@ -563,10 +563,10 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------+
 ; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; Yes        ; |testecontdisp|MUX_lcd:inst24|e                                              ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |testecontdisp|contador_relogio_feedback:inst6|contagemSL[0]                 ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |testecontdisp|set_alarme_bruno:inst25|ml[3]                                 ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |testecontdisp|set_alarme_bruno:inst31|ml[3]                                 ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |testecontdisp|contador_relogio_feedback:inst6|contagemHL[3]                 ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |testecontdisp|set_alarme_bruno:inst25|hl[1]                                 ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |testecontdisp|set_alarme_bruno:inst25|mh[1]                                 ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |testecontdisp|set_alarme_bruno:inst31|hl[1]                                 ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |testecontdisp|set_alarme_bruno:inst31|mh[1]                                 ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |testecontdisp|set_alarme_victor:inst26|ml[3]                                ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |testecontdisp|set_alarme_victor:inst26|hl[0]                                ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |testecontdisp|set_alarme_victor:inst26|mh[0]                                ;
@@ -583,31 +583,31 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |testecontdisp|contador_relogio_feedback:inst6|contagemML[1]                 ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |testecontdisp|contador_relogio_feedback:inst6|contagemSH[0]                 ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |testecontdisp|contador_relogio_feedback:inst6|contagemMH[0]                 ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |testecontdisp|set_alarme_bruno:inst25|hh[0]                                 ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |testecontdisp|set_alarme_bruno:inst31|hh[0]                                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |testecontdisp|set_alarme_victor:inst26|hh[0]                                ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |testecontdisp|set_alarme_vinicius:inst27|hh[1]                              ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |testecontdisp|set_alarme_bruno:inst25|sl[0]                                 ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |testecontdisp|set_alarme_bruno:inst25|sh[2]                                 ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |testecontdisp|set_alarme_bruno:inst31|sl[0]                                 ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |testecontdisp|set_alarme_bruno:inst31|sh[2]                                 ;
 ; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |testecontdisp|set_alarme_victor:inst26|sl[0]                                ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |testecontdisp|set_alarme_victor:inst26|sh[0]                                ;
 ; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |testecontdisp|set_alarme_vinicius:inst27|sl[3]                              ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |testecontdisp|set_alarme_vinicius:inst27|sh[2]                              ;
-; 32:1               ; 2 bits    ; 42 LEs        ; 4 LEs                ; 38 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst14|lcd_bus[9]                            ;
+; 32:1               ; 2 bits    ; 42 LEs        ; 4 LEs                ; 38 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst30|lcd_bus[9]                            ;
 ; 32:1               ; 2 bits    ; 42 LEs        ; 4 LEs                ; 38 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst19|lcd_bus[9]                            ;
 ; 32:1               ; 2 bits    ; 42 LEs        ; 4 LEs                ; 38 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst22|lcd_bus[7]                            ;
 ; 33:1               ; 2 bits    ; 44 LEs        ; 4 LEs                ; 40 LEs                 ; Yes        ; |testecontdisp|lcd_example_3favs:inst|lcd_bus[9]                             ;
 ; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |testecontdisp|lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[25]  ;
 ; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst22|lcd_controller_v2_1:dut|clk_count[2]  ;
 ; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst19|lcd_controller_v2_1:dut|clk_count[5]  ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst14|lcd_controller_v2_1:dut|clk_count[14] ;
-; 34:1               ; 2 bits    ; 44 LEs        ; 14 LEs               ; 30 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst14|lcd_bus[6]                            ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst30|lcd_controller_v2_1:dut|clk_count[14] ;
+; 34:1               ; 2 bits    ; 44 LEs        ; 14 LEs               ; 30 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst30|lcd_bus[6]                            ;
 ; 34:1               ; 2 bits    ; 44 LEs        ; 14 LEs               ; 30 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst19|lcd_bus[6]                            ;
 ; 34:1               ; 2 bits    ; 44 LEs        ; 14 LEs               ; 30 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst22|lcd_bus[6]                            ;
 ; 35:1               ; 2 bits    ; 46 LEs        ; 16 LEs               ; 30 LEs                 ; Yes        ; |testecontdisp|lcd_example_3favs:inst|lcd_bus[5]                             ;
 ; 14:1               ; 8 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |testecontdisp|lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[0]    ;
 ; 14:1               ; 8 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[6]   ;
 ; 14:1               ; 8 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[7]   ;
-; 14:1               ; 8 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst14|lcd_controller_v2_1:dut|lcd_data[7]   ;
+; 14:1               ; 8 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |testecontdisp|lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[7]   ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |testecontdisp|set_hora:inst5|ml[0]                                          ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |testecontdisp|set_hora:inst5|hl[0]                                          ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |testecontdisp|set_hora:inst5|mh[0]                                          ;
@@ -705,7 +705,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------------+
-; Port Connectivity Checks: "lcd_example_favs:inst14|lcd_controller_v2_1:dut" ;
+; Port Connectivity Checks: "lcd_example_favs:inst30|lcd_controller_v2_1:dut" ;
 +---------+-------+----------+------------------------------------------------+
 ; Port    ; Type  ; Severity ; Details                                        ;
 +---------+-------+----------+------------------------------------------------+
@@ -718,14 +718,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 20                          ;
+; boundary_port         ; 17                          ;
 ; cycloneiii_ff         ; 441                         ;
-;     CLR               ; 2                           ;
-;     ENA               ; 118                         ;
-;     ENA CLR           ; 18                          ;
+;     CLR               ; 3                           ;
+;     ENA               ; 116                         ;
+;     ENA CLR           ; 20                          ;
 ;     ENA SCLR          ; 134                         ;
 ;     ENA SLD           ; 15                          ;
-;     plain             ; 154                         ;
+;     plain             ; 153                         ;
 ; cycloneiii_lcell_comb ; 1064                        ;
 ;     arith             ; 212                         ;
 ;         2 data inputs ; 212                         ;
@@ -756,7 +756,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Apr 09 17:21:07 2021
+    Info: Processing started: Sat Apr 10 12:14:35 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -824,51 +824,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file contado
 Info (12021): Found 2 design units, including 1 entities, in source file contador_relogio_feedback.vhd
     Info (12022): Found design unit 1: contador_relogio_feedback-contar File: D:/Estudo/Eletronica_Digital/P2/contador_relogio_feedback.vhd Line: 18
     Info (12023): Found entity 1: contador_relogio_feedback File: D:/Estudo/Eletronica_Digital/P2/contador_relogio_feedback.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file lcd_example_3favs_botoes.vhd
+    Info (12022): Found design unit 1: lcd_example_3favs_botoes-behavior File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs_botoes.vhd Line: 40
+    Info (12023): Found entity 1: lcd_example_3favs_botoes File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs_botoes.vhd Line: 29
 Info (12127): Elaborating entity "testecontdisp" for the top level hierarchy
-Warning (275083): Bus "contador1[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275083): Bus "contador2[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275083): Bus "contador3[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275080): Converted elements in bus name "contador" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador[3..0]" to "contador3..0"
-Warning (275080): Converted elements in bus name "contador1" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador1[3..0]" to "contador13..0"
-Warning (275080): Converted elements in bus name "contador2" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador2[3..0]" to "contador23..0"
-Warning (275080): Converted elements in bus name "contador3" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador3[3..0]" to "contador33..0"
-Warning (275083): Bus "contador1[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275083): Bus "contador2[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275083): Bus "contador3[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275080): Converted elements in bus name "contador" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador[3..0]" to "contador3..0"
-Warning (275080): Converted elements in bus name "contador1" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador1[3..0]" to "contador13..0"
-Warning (275080): Converted elements in bus name "contador2" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador2[3..0]" to "contador23..0"
-Warning (275080): Converted elements in bus name "contador3" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador3[3..0]" to "contador33..0"
-Warning (275083): Bus "contador1[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275083): Bus "contador2[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275083): Bus "contador3[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275080): Converted elements in bus name "contador" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador[3..0]" to "contador3..0"
-Warning (275080): Converted elements in bus name "contador1" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador1[3..0]" to "contador13..0"
-Warning (275080): Converted elements in bus name "contador2" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador2[3..0]" to "contador23..0"
-Warning (275080): Converted elements in bus name "contador3" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador3[3..0]" to "contador33..0"
-Warning (275083): Bus "contador1[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275083): Bus "contador2[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275083): Bus "contador3[3..0]" found using same base name as "contador", which might lead to a name conflict.
-Warning (275080): Converted elements in bus name "contador" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador[3..0]" to "contador3..0"
-Warning (275080): Converted elements in bus name "contador1" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador1[3..0]" to "contador13..0"
-Warning (275080): Converted elements in bus name "contador2" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador2[3..0]" to "contador23..0"
-Warning (275080): Converted elements in bus name "contador3" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "contador3[3..0]" to "contador33..0"
 Warning (275080): Converted elements in bus name "lcd_data" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "lcd_data[7..0]" to "lcd_data7..0"
 Warning (275080): Converted elements in bus name "lcd_data1" using legacy naming rules. Make any assignments on the new names, not on the original names.
@@ -877,14 +836,8 @@ Warning (275080): Converted elements in bus name "lcd_data2" using legacy naming
     Warning (275081): Converted element name(s) from "lcd_data2[7..0]" to "lcd_data27..0"
 Warning (275080): Converted elements in bus name "lcd_data3" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "lcd_data3[7..0]" to "lcd_data37..0"
-Warning (275089): Not all bits in bus "led[5..0]" are used
-Warning (275080): Converted elements in bus name "led" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "led[0]" to "led0"
-    Warning (275081): Converted element name(s) from "led[4]" to "led4"
-    Warning (275081): Converted element name(s) from "led[5]" to "led5"
-Warning (275008): Primitive "VCC" of instance "inst32" not used
 Info (12128): Elaborating entity "MUX_lcd" for hierarchy "MUX_lcd:inst24"
-Info (12128): Elaborating entity "lcd_example_favs" for hierarchy "lcd_example_favs:inst14"
+Info (12128): Elaborating entity "lcd_example_favs" for hierarchy "lcd_example_favs:inst30"
 Warning (10492): VHDL Process Statement warning at lcd_example_favs.vhd(64): signal "load_ena" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_favs.vhd Line: 64
 Warning (10492): VHDL Process Statement warning at lcd_example_favs.vhd(72): signal "contador1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_favs.vhd Line: 72
 Warning (10492): VHDL Process Statement warning at lcd_example_favs.vhd(73): signal "contador2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_favs.vhd Line: 73
@@ -892,7 +845,7 @@ Warning (10492): VHDL Process Statement warning at lcd_example_favs.vhd(74): sig
 Warning (10492): VHDL Process Statement warning at lcd_example_favs.vhd(75): signal "contador4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_favs.vhd Line: 75
 Warning (10492): VHDL Process Statement warning at lcd_example_favs.vhd(76): signal "contador5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_favs.vhd Line: 76
 Warning (10492): VHDL Process Statement warning at lcd_example_favs.vhd(77): signal "contador6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_favs.vhd Line: 77
-Info (12128): Elaborating entity "lcd_controller_v2_1" for hierarchy "lcd_example_favs:inst14|lcd_controller_v2_1:dut" File: D:/Estudo/Eletronica_Digital/P2/lcd_example_favs.vhd Line: 57
+Info (12128): Elaborating entity "lcd_controller_v2_1" for hierarchy "lcd_example_favs:inst30|lcd_controller_v2_1:dut" File: D:/Estudo/Eletronica_Digital/P2/lcd_example_favs.vhd Line: 57
 Warning (12125): Using design file debounce.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: debounce-logic File: D:/Estudo/Eletronica_Digital/P2/debounce.vhd Line: 40
     Info (12023): Found entity 1: debounce File: D:/Estudo/Eletronica_Digital/P2/debounce.vhd Line: 29
@@ -926,7 +879,7 @@ Warning (10492): VHDL Process Statement warning at comparador.vhd(61): signal "a
 Warning (10492): VHDL Process Statement warning at comparador.vhd(61): signal "aux2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/comparador.vhd Line: 61
 Warning (10492): VHDL Process Statement warning at comparador.vhd(61): signal "aux3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/comparador.vhd Line: 61
 Warning (10492): VHDL Process Statement warning at comparador.vhd(61): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/comparador.vhd Line: 61
-Info (12128): Elaborating entity "set_alarme_bruno" for hierarchy "set_alarme_bruno:inst25"
+Info (12128): Elaborating entity "set_alarme_bruno" for hierarchy "set_alarme_bruno:inst31"
 Warning (10492): VHDL Process Statement warning at set_alarme_bruno.vhd(24): signal "sw2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/set_alarme_bruno.vhd Line: 24
 Warning (10492): VHDL Process Statement warning at set_alarme_bruno.vhd(24): signal "menu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/set_alarme_bruno.vhd Line: 24
 Warning (10492): VHDL Process Statement warning at set_alarme_bruno.vhd(88): signal "sl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/set_alarme_bruno.vhd Line: 88
@@ -937,6 +890,7 @@ Warning (10492): VHDL Process Statement warning at set_alarme_bruno.vhd(92): sig
 Warning (10492): VHDL Process Statement warning at set_alarme_bruno.vhd(93): signal "hh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/set_alarme_bruno.vhd Line: 93
 Info (12128): Elaborating entity "menu" for hierarchy "menu:inst4"
 Warning (10492): VHDL Process Statement warning at menu.vhd(17): signal "ena" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/menu.vhd Line: 17
+Warning (10492): VHDL Process Statement warning at menu.vhd(23): signal "ena" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/menu.vhd Line: 23
 Info (12128): Elaborating entity "divisor2s" for hierarchy "divisor2s:inst1"
 Info (12128): Elaborating entity "set_alarme_victor" for hierarchy "set_alarme_victor:inst26"
 Warning (10492): VHDL Process Statement warning at set_alarme_victor.vhd(24): signal "sw2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/set_alarme_victor.vhd Line: 24
@@ -974,13 +928,12 @@ Warning (10492): VHDL Process Statement warning at set_alarme_vinicius.vhd(91): 
 Warning (10492): VHDL Process Statement warning at set_alarme_vinicius.vhd(92): signal "hl" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/set_alarme_vinicius.vhd Line: 92
 Warning (10492): VHDL Process Statement warning at set_alarme_vinicius.vhd(93): signal "hh" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/set_alarme_vinicius.vhd Line: 93
 Info (12128): Elaborating entity "lcd_example_3favs" for hierarchy "lcd_example_3favs:inst"
-Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(64): signal "load_ena" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 64
-Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(72): signal "contador1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 72
-Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(73): signal "contador2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 73
-Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(74): signal "contador3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 74
-Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(75): signal "contador4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 75
-Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(76): signal "contador5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 76
-Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(77): signal "contador6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 77
+Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(64): signal "contador1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(65): signal "contador2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 65
+Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(66): signal "contador3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(67): signal "contador4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(68): signal "contador5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at lcd_example_3favs.vhd(69): signal "contador6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 69
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "set_hora:inst5|sh[0]" is converted into an equivalent circuit using register "set_hora:inst5|sh[0]~_emulated" and latch "set_hora:inst5|sh[0]~1" File: D:/Estudo/Eletronica_Digital/P2/set_hora.vhd Line: 40
     Warning (13310): Register "set_hora:inst5|sh[1]" is converted into an equivalent circuit using register "set_hora:inst5|sh[1]~_emulated" and latch "set_hora:inst5|sh[1]~5" File: D:/Estudo/Eletronica_Digital/P2/set_hora.vhd Line: 40
@@ -1007,14 +960,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1101 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1098 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 15 output pins
+    Info (21059): Implemented 12 output pins
     Info (21061): Implemented 1081 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 164 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 114 warnings
     Info: Peak virtual memory: 4800 megabytes
-    Info: Processing ended: Fri Apr 09 17:21:19 2021
-    Info: Elapsed time: 00:00:12
+    Info: Processing ended: Sat Apr 10 12:14:48 2021
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:23
 
 

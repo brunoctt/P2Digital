@@ -28,7 +28,7 @@ USE ieee.std_logic_1164.all;
 
 ENTITY lcd_example_favs IS
   PORT(
-		contador, contador1, contador2, contador3, contador4: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		contador1, contador2, contador3, contador4: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		contador5, contador6  : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       clk, load_ena, comparador, comparador2, comparador3    : IN  STD_LOGIC;  --system clock+
 		menu						: in STD_LOGIC_VECTOR(1 DOWNTO 0);

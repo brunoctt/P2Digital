@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Fri Apr 09 17:21:19 2021
+Analysis & Synthesis Status : Successful - Sat Apr 10 12:14:48 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Projeto2
 Top-level Entity Name : testecontdisp
@@ -7,7 +7,7 @@ Total logic elements : 1,075
     Total combinational functions : 1,063
     Dedicated logic registers : 441
 Total registers : 441
-Total pins : 20
+Total pins : 17
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
