@@ -12,26 +12,18 @@ entity comparador is
 	);
 end comparador;	
 architecture comparar of comparador is
---signal pulso : std_logic := '0';
 signal aux 	: std_logic := '0';
 signal aux1 : std_logic := '0';
 signal aux2 : std_logic := '0';
 signal aux3 : std_logic := '0';
 signal aux4 : std_logic := '0';
---signal espera : integer range 0 to 100000 := 0;
+
 begin
 	process (clock, edicao)
 		begin				
 			if edicao = '1' and igual = '1' then  -- confirma se o alarme n está sendo modificado
 			--------------------------------------------------------------------------------------- comparação valor alarme com relogio
 				if sl = fsl and sh = fsh and ml = fml and mh = fmh and hl = fhl and hh = fhh then
---					if espera = 100000 then
---						espera <= 0;
---						igual <= '0';
---					else
---						espera <= espera + 1;
---						igual <= '1';
---					end if;
 					igual <= '0';
 				else 
 					igual <= '1';

@@ -17,7 +17,7 @@ process(clk) -- Divisor do sinal de clock da placa(50Mhz)
 begin
 	if rising_edge(clk) then
 		cont<=cont+1;
-		if cont=(2500000) then
+		if cont=(25000000) then -- após 0.5 segundos, barra o sinal, criando assim um sinal de 1s
 			cont<=0;
 			aux<= not aux;
 		end if;

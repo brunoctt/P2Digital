@@ -61,6 +61,7 @@ BEGIN
   PROCESS(clk)
     VARIABLE char  :  INTEGER RANGE 0 TO 32 := 0;
 	BEGIN
+	------------------------------- concatenando vetores do contador para ficar no formato de dados do display
 		aux1 <= "100011"&contador1;
 		aux2 <= "100011"&contador2;
 		aux3 <= "100011"&contador3;
@@ -73,10 +74,10 @@ BEGIN
     IF(clk'EVENT AND clk = '1') THEN
 		IF(lcd_busy = '0' AND lcd_enable = '0') THEN
 			lcd_enable <= '1';
-			IF(char < 33) THEN
+			IF(char < 33) THEN  -- contador para varrer casas do display
 				char := char + 1;
 			END IF;					
-			if comparador = '1' or comparador2 = '1' or comparador3 = '1' then							-- caso do comparador igual a 1
+			if comparador = '1' or comparador2 = '1' or comparador3 = '1' then		-- caso de algum alarme ativado
 
 					CASE char IS
 						when 1 => lcd_bus <= "1001000001";  --A
@@ -155,7 +156,7 @@ BEGIN
 											 char:= 0;		
 					end case;
 
-			else 
+			else  -- caso padrão do relógio
 
 					CASE char IS
 						when 1 => lcd_bus <= "1001010000";  --P

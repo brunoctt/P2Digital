@@ -61,27 +61,20 @@ BEGIN
   PROCESS(clk)
     VARIABLE char  :  INTEGER RANGE 0 TO 32 := 0;
 	BEGIN
-	 IF load_ena = '1' then
-		aux1 <= "1000100000";
-		aux2 <= "1000100000";
-		aux3 <= "1000100000";
-		aux4 <= "1000100000";
-		aux5 <= "1000100000";
-		aux6 <= "1000100000";
-	 ELSE
+	------------------------------- concatenando vetores do contador para ficar no formato de dados do display	
 		aux1 <= "100011"&contador1;
 		aux2 <= "100011"&contador2;
 		aux3 <= "100011"&contador3;
 		aux4 <= "100011"&contador4;
 		aux5 <= "100011"&contador5;
 		aux6 <= "100011"&contador6;
-	 END IF;
+
 		
 		
     IF(clk'EVENT AND clk = '1') THEN
 		IF(lcd_busy = '0' AND lcd_enable = '0') THEN
 			lcd_enable <= '1';
-			IF(char < 33) THEN
+			IF(char < 33) THEN   -- contador para varrer casas do display
 				char := char + 1;
 			END IF;					
 				CASE char IS

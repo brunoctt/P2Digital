@@ -15,13 +15,13 @@ begin
 	process(clk2s, sw1) -- Divisor do sinal de clock da placa(50Mhz)
 	begin
 		if rising_edge(clk2s) and sw1 = '0' and ena = '0' then
-			aux <= aux + 1;
+			aux <= aux + 1;	-- a cada 2s, o valor do menu irá alterar
 			if aux = 4 then
 				aux<= 0;
 			end if;
 		end if;
-		if ena = '1' then
-			aux <= 0;
+		if ena = '1' then -- sinal de enable baseado no sinal dos alarmes
+			aux <= 0; -- volta para o relogio caso alarme
 		end if;
 	end process;
 
