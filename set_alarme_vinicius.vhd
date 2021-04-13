@@ -84,6 +84,7 @@ begin
 		end if;
 	else
 		edicao <= '1'; -- caso não esteja modificando, pode acionar o alarme
+		digito := 0;	-- caso pare de editar, o cursor volta para o segundo
 	end if;
 	fsl <= conv_std_logic_vector (sl, 4);
 	fsh <= conv_std_logic_vector (sh, 4);

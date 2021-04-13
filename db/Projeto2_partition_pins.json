@@ -52,11 +52,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "button1",
+					"name" : "button2",
 					"strict" : false
 				},
 				{
-					"name" : "button2",
+					"name" : "button1",
 					"strict" : false
 				},
 				{

@@ -60,7 +60,6 @@ set_location_assignment PIN_142 -to lcd_data[0]
 set_location_assignment PIN_141 -to rs
 set_location_assignment PIN_138 -to rw
 set_global_assignment -name VHDL_FILE lcd_controller_v2_1.vhd
-set_global_assignment -name VHDL_FILE seteseg.vhd
 set_location_assignment PIN_23 -to clock
 set_location_assignment PIN_133 -to dig[0]
 set_location_assignment PIN_135 -to dig[1]
@@ -81,9 +80,7 @@ set_location_assignment PIN_85 -to led[2]
 set_location_assignment PIN_84 -to led[3]
 set_global_assignment -name VHDL_FILE menu.vhd
 set_global_assignment -name VHDL_FILE divisor2s.vhd
-set_global_assignment -name VHDL_FILE lcd_example.vhd
 set_global_assignment -name BDF_FILE testecontdisp.bdf
-set_global_assignment -name VHDL_FILE comparador.vhd
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_location_assignment PIN_88 -to button1
@@ -94,9 +91,7 @@ set_global_assignment -name VHDL_FILE lcd_example_3favs.vhd
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "D:/Estudo/Eletronica_Digital/P2" -section_id eda_simulation
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
 set_location_assignment PIN_110 -to buzzer
-set_global_assignment -name VHDL_FILE set_alarme.vhd
 set_global_assignment -name BDF_FILE teste_set_alarme.bdf
 set_global_assignment -name VHDL_FILE lcd.vhd
 set_global_assignment -name VHDL_FILE lcd_example_favs.vhd
@@ -112,4 +107,7 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE contador_relogio_feedback.vhd
 set_global_assignment -name VHDL_FILE lcd_example_3favs_botoes.vhd
+set_global_assignment -name VHDL_FILE comparador_victor.vhd
+set_global_assignment -name VHDL_FILE comparador_bruno.vhd
+set_global_assignment -name VHDL_FILE comparador_vinicius.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

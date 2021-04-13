@@ -52,6 +52,10 @@ begin
 				end if;
 				if aux1 = '1' and aux2 = '1' and aux3 = '1' and aux4 = '1' then
 					igual <= '1';
+					aux1 <= not aux1;
+					aux2 <= not aux2;
+					aux3 <= not aux3;
+					aux4 <= not aux4;
 				else
 					igual <= '0';
 				end if;

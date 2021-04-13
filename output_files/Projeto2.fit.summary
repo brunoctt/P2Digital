@@ -1,14 +1,14 @@
-Fitter Status : Successful - Sat Apr 10 12:14:58 2021
+Fitter Status : Successful - Tue Apr 13 10:19:32 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Projeto2
 Top-level Entity Name : testecontdisp
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 1,089 / 6,272 ( 17 % )
-    Total combinational functions : 1,063 / 6,272 ( 17 % )
-    Dedicated logic registers : 441 / 6,272 ( 7 % )
-Total registers : 441
+Total logic elements : 1,015 / 6,272 ( 16 % )
+    Total combinational functions : 997 / 6,272 ( 16 % )
+    Dedicated logic registers : 375 / 6,272 ( 6 % )
+Total registers : 375
 Total pins : 17 / 92 ( 18 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
