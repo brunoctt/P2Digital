@@ -16,6 +16,7 @@
   
 #Links
 http://infraled.blogspot.com/2014/06/vhdl-tutorial-2-relogio-digital.html
+https://www.digikey.com/eewiki/pages/viewpage.action?pageId=4096079
   
   ![image](https://user-images.githubusercontent.com/65169791/113223793-5d042300-9260-11eb-8473-5bf09d9ee167.png)
 ![image](https://user-images.githubusercontent.com/65169791/113338956-34336a80-9300-11eb-8fa4-fa5902850ed3.png)
