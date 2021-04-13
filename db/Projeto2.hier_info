@@ -18,9 +18,6 @@ clock => set_alarme_vinicius:inst27.clock
 clock => lcd_example_favs:inst19.clk
 clock => lcd_example_favs:inst22.clk
 clock => lcd_example_3favs:inst.clk
-clock => debounce:inst33.clk
-clock => debounce:inst34.clk
-clock => debounce:inst35.clk
 button1 => debounce:inst8.button
 button2 => debounce:inst9.button
 button3 => debounce:inst10.button
@@ -1461,86 +1458,5 @@ lcd_data[4] <= lcd_data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 lcd_data[5] <= lcd_data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 lcd_data[6] <= lcd_data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 lcd_data[7] <= lcd_data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|testecontdisp|debounce:inst33
-clk => result~reg0.CLK
-clk => flipflops[0].CLK
-clk => flipflops[1].CLK
-clk => count[0].CLK
-clk => count[1].CLK
-clk => count[2].CLK
-clk => count[3].CLK
-clk => count[4].CLK
-clk => count[5].CLK
-clk => count[6].CLK
-clk => count[7].CLK
-clk => count[8].CLK
-clk => count[9].CLK
-clk => count[10].CLK
-clk => count[11].CLK
-clk => count[12].CLK
-clk => count[13].CLK
-clk => count[14].CLK
-clk => count[15].CLK
-clk => count[16].CLK
-clk => count[17].CLK
-clk => count[18].CLK
-button => flipflops[0].DATAIN
-result <= result~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|testecontdisp|debounce:inst34
-clk => result~reg0.CLK
-clk => flipflops[0].CLK
-clk => flipflops[1].CLK
-clk => count[0].CLK
-clk => count[1].CLK
-clk => count[2].CLK
-clk => count[3].CLK
-clk => count[4].CLK
-clk => count[5].CLK
-clk => count[6].CLK
-clk => count[7].CLK
-clk => count[8].CLK
-clk => count[9].CLK
-clk => count[10].CLK
-clk => count[11].CLK
-clk => count[12].CLK
-clk => count[13].CLK
-clk => count[14].CLK
-clk => count[15].CLK
-clk => count[16].CLK
-clk => count[17].CLK
-clk => count[18].CLK
-button => flipflops[0].DATAIN
-result <= result~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|testecontdisp|debounce:inst35
-clk => result~reg0.CLK
-clk => flipflops[0].CLK
-clk => flipflops[1].CLK
-clk => count[0].CLK
-clk => count[1].CLK
-clk => count[2].CLK
-clk => count[3].CLK
-clk => count[4].CLK
-clk => count[5].CLK
-clk => count[6].CLK
-clk => count[7].CLK
-clk => count[8].CLK
-clk => count[9].CLK
-clk => count[10].CLK
-clk => count[11].CLK
-clk => count[12].CLK
-clk => count[13].CLK
-clk => count[14].CLK
-clk => count[15].CLK
-clk => count[16].CLK
-clk => count[17].CLK
-clk => count[18].CLK
-button => flipflops[0].DATAIN
-result <= result~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

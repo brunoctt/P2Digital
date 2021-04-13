@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Projeto2
-Tue Apr 13 10:19:19 2021
+Tue Apr 13 10:56:39 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -27,14 +27,11 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  19. Parameter Settings for User Entity Instance: debounce:inst9
  20. Parameter Settings for User Entity Instance: debounce:inst10
  21. Parameter Settings for User Entity Instance: debounce:inst11
- 22. Parameter Settings for User Entity Instance: debounce:inst33
- 23. Parameter Settings for User Entity Instance: debounce:inst34
- 24. Parameter Settings for User Entity Instance: debounce:inst35
- 25. Port Connectivity Checks: "lcd_example_3favs:inst|lcd_controller_v2_1:dut"
- 26. Port Connectivity Checks: "lcd_example_favs:inst30|lcd_controller_v2_1:dut"
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
+ 22. Port Connectivity Checks: "lcd_example_3favs:inst|lcd_controller_v2_1:dut"
+ 23. Port Connectivity Checks: "lcd_example_favs:inst30|lcd_controller_v2_1:dut"
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -61,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 13 10:19:19 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 13 10:56:39 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
 ; Top-level Entity Name              ; testecontdisp                               ;
@@ -204,7 +201,7 @@ https://fpgasoftware.intel.com/eula.
 ; comparador_victor.vhd            ; yes             ; User VHDL File                     ; D:/Estudo/Eletronica_Digital/P2/comparador_victor.vhd         ;         ;
 ; comparador_bruno.vhd             ; yes             ; User VHDL File                     ; D:/Estudo/Eletronica_Digital/P2/comparador_bruno.vhd          ;         ;
 ; comparador_vinicius.vhd          ; yes             ; User VHDL File                     ; D:/Estudo/Eletronica_Digital/P2/comparador_vinicius.vhd       ;         ;
-; debounce.vhd                     ; yes             ; Auto-Found VHDL File               ; D:/Estudo/Eletronica_Digital/P2/debounce.vhd                  ;         ;
+; debounce.vhd                     ; yes             ; User VHDL File                     ; D:/Estudo/Eletronica_Digital/P2/debounce.vhd                  ;         ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+---------+
 
 
@@ -658,39 +655,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debounce:inst33 ;
-+----------------+----------+----------------------------------+
-; Parameter Name ; Value    ; Type                             ;
-+----------------+----------+----------------------------------+
-; clk_freq       ; 50000000 ; Signed Integer                   ;
-; stable_time    ; 10       ; Signed Integer                   ;
-+----------------+----------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debounce:inst34 ;
-+----------------+----------+----------------------------------+
-; Parameter Name ; Value    ; Type                             ;
-+----------------+----------+----------------------------------+
-; clk_freq       ; 50000000 ; Signed Integer                   ;
-; stable_time    ; 10       ; Signed Integer                   ;
-+----------------+----------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: debounce:inst35 ;
-+----------------+----------+----------------------------------+
-; Parameter Name ; Value    ; Type                             ;
-+----------------+----------+----------------------------------+
-; clk_freq       ; 50000000 ; Signed Integer                   ;
-; stable_time    ; 10       ; Signed Integer                   ;
-+----------------+----------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +----------------------------------------------------------------------------+
 ; Port Connectivity Checks: "lcd_example_3favs:inst|lcd_controller_v2_1:dut" ;
 +---------+-------+----------+-----------------------------------------------+
@@ -742,7 +706,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -752,16 +716,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 13 10:19:06 2021
+    Info: Processing started: Tue Apr 13 10:56:25 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto2 -c Projeto2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file lcd_controller_v2_1.vhd
     Info (12022): Found design unit 1: lcd_controller_v2_1-controller File: D:/Estudo/Eletronica_Digital/P2/lcd_controller_v2_1.vhd Line: 62
     Info (12023): Found entity 1: lcd_controller_v2_1 File: D:/Estudo/Eletronica_Digital/P2/lcd_controller_v2_1.vhd Line: 51
-Info (12021): Found 2 design units, including 1 entities, in source file contador_relogio.vhd
-    Info (12022): Found design unit 1: contador_relogio-contar File: D:/Estudo/Eletronica_Digital/P2/contador_relogio.vhd Line: 16
-    Info (12023): Found entity 1: contador_relogio File: D:/Estudo/Eletronica_Digital/P2/contador_relogio.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file divisor.vhd
     Info (12022): Found design unit 1: divisor-Behavioral File: D:/Estudo/Eletronica_Digital/P2/divisor.vhd Line: 11
     Info (12023): Found entity 1: divisor File: D:/Estudo/Eletronica_Digital/P2/divisor.vhd Line: 5
@@ -776,11 +737,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file testeco
 Info (12021): Found 2 design units, including 1 entities, in source file lcd_example_3favs.vhd
     Info (12022): Found design unit 1: lcd_example_3favs-behavior File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 39
     Info (12023): Found entity 1: lcd_example_3favs File: D:/Estudo/Eletronica_Digital/P2/lcd_example_3favs.vhd Line: 29
-Info (12021): Found 1 design units, including 1 entities, in source file teste_set_alarme.bdf
-    Info (12023): Found entity 1: teste_set_alarme
-Info (12021): Found 2 design units, including 1 entities, in source file lcd.vhd
-    Info (12022): Found design unit 1: lcd-behavior File: D:/Estudo/Eletronica_Digital/P2/lcd.vhd Line: 14
-    Info (12023): Found entity 1: lcd File: D:/Estudo/Eletronica_Digital/P2/lcd.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file lcd_example_favs.vhd
     Info (12022): Found design unit 1: lcd_example_favs-behavior File: D:/Estudo/Eletronica_Digital/P2/lcd_example_favs.vhd Line: 39
     Info (12023): Found entity 1: lcd_example_favs File: D:/Estudo/Eletronica_Digital/P2/lcd_example_favs.vhd Line: 29
@@ -796,15 +752,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file set_ala
 Info (12021): Found 2 design units, including 1 entities, in source file set_alarme_vinicius.vhd
     Info (12022): Found design unit 1: set_alarme_vinicius-seta File: D:/Estudo/Eletronica_Digital/P2/set_alarme_vinicius.vhd Line: 13
     Info (12023): Found entity 1: set_alarme_vinicius File: D:/Estudo/Eletronica_Digital/P2/set_alarme_vinicius.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file lcd_example_bruno.vhd
-    Info (12022): Found design unit 1: lcd_bruno-behavior File: D:/Estudo/Eletronica_Digital/P2/lcd_example_bruno.vhd Line: 39
-    Info (12023): Found entity 1: lcd_bruno File: D:/Estudo/Eletronica_Digital/P2/lcd_example_bruno.vhd Line: 29
 Info (12021): Found 2 design units, including 1 entities, in source file set_hora.vhd
     Info (12022): Found design unit 1: set_hora-seta File: D:/Estudo/Eletronica_Digital/P2/set_hora.vhd Line: 15
     Info (12023): Found entity 1: set_hora File: D:/Estudo/Eletronica_Digital/P2/set_hora.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file contador_relogio_set.vhd
-    Info (12022): Found design unit 1: contador_relogio_set-contar File: D:/Estudo/Eletronica_Digital/P2/contador_relogio_set.vhd Line: 18
-    Info (12023): Found entity 1: contador_relogio_set File: D:/Estudo/Eletronica_Digital/P2/contador_relogio_set.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file contador_relogio_feedback.vhd
     Info (12022): Found design unit 1: contador_relogio_feedback-contar File: D:/Estudo/Eletronica_Digital/P2/contador_relogio_feedback.vhd Line: 18
     Info (12023): Found entity 1: contador_relogio_feedback File: D:/Estudo/Eletronica_Digital/P2/contador_relogio_feedback.vhd Line: 6
@@ -820,6 +770,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file compara
 Info (12021): Found 2 design units, including 1 entities, in source file comparador_vinicius.vhd
     Info (12022): Found design unit 1: comparador_vinicius-comparar File: D:/Estudo/Eletronica_Digital/P2/comparador_vinicius.vhd Line: 14
     Info (12023): Found entity 1: comparador_vinicius File: D:/Estudo/Eletronica_Digital/P2/comparador_vinicius.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file debounce.vhd
+    Info (12022): Found design unit 1: debounce-logic File: D:/Estudo/Eletronica_Digital/P2/debounce.vhd Line: 40
+    Info (12023): Found entity 1: debounce File: D:/Estudo/Eletronica_Digital/P2/debounce.vhd Line: 29
 Info (12127): Elaborating entity "testecontdisp" for the top level hierarchy
 Warning (275080): Converted elements in bus name "lcd_data" using legacy naming rules. Make any assignments on the new names, not on the original names.
     Warning (275081): Converted element name(s) from "lcd_data[7..0]" to "lcd_data7..0"
@@ -871,9 +824,6 @@ Warning (10492): VHDL Process Statement warning at comparador_bruno.vhd(55): sig
 Warning (10492): VHDL Process Statement warning at comparador_bruno.vhd(56): signal "aux2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/comparador_bruno.vhd Line: 56
 Warning (10492): VHDL Process Statement warning at comparador_bruno.vhd(57): signal "aux3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/comparador_bruno.vhd Line: 57
 Warning (10492): VHDL Process Statement warning at comparador_bruno.vhd(58): signal "aux4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/comparador_bruno.vhd Line: 58
-Warning (12125): Using design file debounce.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: debounce-logic File: D:/Estudo/Eletronica_Digital/P2/debounce.vhd Line: 40
-    Info (12023): Found entity 1: debounce File: D:/Estudo/Eletronica_Digital/P2/debounce.vhd Line: 29
 Info (12128): Elaborating entity "debounce" for hierarchy "debounce:inst8"
 Info (12128): Elaborating entity "set_alarme_bruno" for hierarchy "set_alarme_bruno:inst31"
 Warning (10492): VHDL Process Statement warning at set_alarme_bruno.vhd(24): signal "sw2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Estudo/Eletronica_Digital/P2/set_alarme_bruno.vhd Line: 24
@@ -1026,10 +976,10 @@ Info (21057): Implemented 1026 device resources after synthesis - the final reso
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 12 output pins
     Info (21061): Implemented 1009 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 181 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 180 warnings
     Info: Peak virtual memory: 4799 megabytes
-    Info: Processing ended: Tue Apr 13 10:19:19 2021
-    Info: Elapsed time: 00:00:13
+    Info: Processing ended: Tue Apr 13 10:56:39 2021
+    Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:23
 
 
