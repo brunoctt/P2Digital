@@ -30,8 +30,7 @@ ENTITY lcd_example_3favs_botoes IS
   PORT(
 		contador1, contador2, contador3, contador4: IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 		contador5, contador6  : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-      clk, load_ena, comparador, comparador2, comparador3    : IN  STD_LOGIC;  --system clock+
-		menu						: in STD_LOGIC_VECTOR(1 DOWNTO 0);
+      clk, comparador, comparador2, comparador3    : IN  STD_LOGIC;  --system clock+
 		s1, s2, s3, s4  : IN  STD_LOGIC; 
       rw, rs, e : OUT STD_LOGIC;  --read/write, setup/data, and enable for lcd
       lcd_data  : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)); --data signals for lcd
@@ -67,21 +66,13 @@ BEGIN
     VARIABLE char  :  INTEGER RANGE 0 TO 32 := 0;
 	 variable digito : integer range 0 to 3 := 0; -- numero do aperto de botão
 	BEGIN
-	 IF load_ena = '1' then
-		aux1 <= "1000100000";
-		aux2 <= "1000100000";
-		aux3 <= "1000100000";
-		aux4 <= "1000100000";
-		aux5 <= "1000100000";
-		aux6 <= "1000100000";
-	 ELSE
+	
 		aux1 <= "100011"&contador1;
 		aux2 <= "100011"&contador2;
 		aux3 <= "100011"&contador3;
 		aux4 <= "100011"&contador4;
 		aux5 <= "100011"&contador5;
 		aux6 <= "100011"&contador6;
-	 END IF;
 		
 		if (s1 and s2 and s3 and s4) = '1' then
 			button <= '1';
@@ -201,7 +192,7 @@ BEGIN
 											lcd_bus <= "1000100000"; --ESPAÇO
 									end if;
 						when 16 => lcd_bus <= "0011010000"; --QUEBRA DE LINHA
-						WHEN 17 => if botao(0) /= 0 then
+						WHEN 17 => 	if botao(0) /= 0 then
 											lcd_bus <= "1001010011"; --S
 										else
 											lcd_bus <= "1000100000"; --ESPAÇO

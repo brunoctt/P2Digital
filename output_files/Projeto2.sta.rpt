@@ -1,5 +1,5 @@
 Timing Analyzer report for Projeto2
-Tue Apr 13 10:56:58 2021
+Tue Apr 13 22:09:24 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -167,14 +167,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.09        ;
+; Average used               ; 1.10        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   5.5%      ;
-;     Processor 3            ;   1.7%      ;
-;     Processor 4            ;   1.7%      ;
+;     Processor 2            ;   5.8%      ;
+;     Processor 3            ;   2.2%      ;
+;     Processor 4            ;   1.9%      ;
 +----------------------------+-------------+
 
 
@@ -292,20 +292,20 @@ HTML report is unavailable in plain text report export.
 ; Slack  ; From Node                                                    ; To Node                                                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+--------------------------------------------------------------+--------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; -9.547 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock        ; clock       ; 1.000        ; -0.092     ; 10.456     ;
-; -9.542 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.092     ; 10.451     ;
 ; -9.542 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.092     ; 10.451     ;
+; -9.542 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.092     ; 10.451     ;
 ; -9.542 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[0]   ; clock        ; clock       ; 1.000        ; -0.092     ; 10.451     ;
-; -9.542 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.092     ; 10.451     ;
+; -9.542 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.092     ; 10.451     ;
 ; -9.500 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[2]   ; clock        ; clock       ; 1.000        ; -0.104     ; 10.397     ;
+; -9.500 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.104     ; 10.397     ;
+; -9.500 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.104     ; 10.397     ;
 ; -9.500 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.104     ; 10.397     ;
-; -9.500 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.104     ; 10.397     ;
-; -9.500 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.104     ; 10.397     ;
-; -9.498 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]  ; clock        ; clock       ; 1.000        ; -0.082     ; 10.417     ;
+; -9.498 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[5]  ; clock        ; clock       ; 1.000        ; -0.082     ; 10.417     ;
 ; -9.498 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]   ; clock        ; clock       ; 1.000        ; -0.082     ; 10.417     ;
-; -9.498 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]  ; clock        ; clock       ; 1.000        ; -0.082     ; 10.417     ;
+; -9.498 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]  ; clock        ; clock       ; 1.000        ; -0.082     ; 10.417     ;
 ; -9.498 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[5]   ; clock        ; clock       ; 1.000        ; -0.082     ; 10.417     ;
 ; -9.498 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]   ; clock        ; clock       ; 1.000        ; -0.082     ; 10.417     ;
-; -9.498 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]  ; clock        ; clock       ; 1.000        ; -0.082     ; 10.417     ;
+; -9.498 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]  ; clock        ; clock       ; 1.000        ; -0.082     ; 10.417     ;
 ; -9.395 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]  ; clock        ; clock       ; 1.000        ; -0.092     ; 10.304     ;
 ; -9.395 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[4]  ; clock        ; clock       ; 1.000        ; -0.092     ; 10.304     ;
 ; -9.394 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[2]  ; clock        ; clock       ; 1.000        ; -0.092     ; 10.303     ;
@@ -318,19 +318,19 @@ HTML report is unavailable in plain text report export.
 ; -9.329 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[26] ; clock        ; clock       ; 1.000        ; -0.082     ; 10.248     ;
 ; -9.329 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[31] ; clock        ; clock       ; 1.000        ; -0.082     ; 10.248     ;
 ; -9.313 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock        ; clock       ; 1.000        ; -0.582     ; 9.732      ;
-; -9.298 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.582     ; 9.717      ;
+; -9.298 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.582     ; 9.717      ;
+; -9.298 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.582     ; 9.717      ;
 ; -9.298 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.582     ; 9.717      ;
-; -9.298 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.582     ; 9.717      ;
 ; -9.298 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[0]   ; clock        ; clock       ; 1.000        ; -0.582     ; 9.717      ;
-; -9.266 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.683      ;
+; -9.266 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.683      ;
 ; -9.266 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]   ; clock        ; clock       ; 1.000        ; -0.584     ; 9.683      ;
 ; -9.266 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[5]   ; clock        ; clock       ; 1.000        ; -0.584     ; 9.683      ;
-; -9.266 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.683      ;
+; -9.266 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[5]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.683      ;
 ; -9.266 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]   ; clock        ; clock       ; 1.000        ; -0.584     ; 9.683      ;
-; -9.266 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.683      ;
-; -9.256 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.594     ; 9.663      ;
-; -9.256 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.594     ; 9.663      ;
+; -9.266 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.683      ;
 ; -9.256 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.594     ; 9.663      ;
+; -9.256 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.594     ; 9.663      ;
+; -9.256 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.594     ; 9.663      ;
 ; -9.256 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[2]   ; clock        ; clock       ; 1.000        ; -0.594     ; 9.663      ;
 ; -9.237 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[11] ; clock        ; clock       ; 1.000        ; 0.388      ; 10.626     ;
 ; -9.236 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[13] ; clock        ; clock       ; 1.000        ; 0.388      ; 10.625     ;
@@ -340,9 +340,9 @@ HTML report is unavailable in plain text report export.
 ; -9.232 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[21] ; clock        ; clock       ; 1.000        ; 0.388      ; 10.621     ;
 ; -9.228 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[18] ; clock        ; clock       ; 1.000        ; 0.388      ; 10.617     ;
 ; -9.176 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock        ; clock       ; 1.000        ; -0.579     ; 9.598      ;
-; -9.171 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.579     ; 9.593      ;
+; -9.171 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.579     ; 9.593      ;
+; -9.171 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.579     ; 9.593      ;
 ; -9.171 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.579     ; 9.593      ;
-; -9.171 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.579     ; 9.593      ;
 ; -9.171 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[0]   ; clock        ; clock       ; 1.000        ; -0.579     ; 9.593      ;
 ; -9.164 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]  ; clock        ; clock       ; 1.000        ; 0.390      ; 10.555     ;
 ; -9.164 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[15] ; clock        ; clock       ; 1.000        ; 0.390      ; 10.555     ;
@@ -356,25 +356,25 @@ HTML report is unavailable in plain text report export.
 ; -9.150 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[2]  ; clock        ; clock       ; 1.000        ; -0.582     ; 9.569      ;
 ; -9.150 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[3]  ; clock        ; clock       ; 1.000        ; -0.582     ; 9.569      ;
 ; -9.149 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[5]  ; clock        ; clock       ; 1.000        ; -0.582     ; 9.568      ;
-; -9.139 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]  ; clock        ; clock       ; 1.000        ; -0.581     ; 9.559      ;
+; -9.139 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]  ; clock        ; clock       ; 1.000        ; -0.581     ; 9.559      ;
 ; -9.139 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]   ; clock        ; clock       ; 1.000        ; -0.581     ; 9.559      ;
 ; -9.139 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[5]   ; clock        ; clock       ; 1.000        ; -0.581     ; 9.559      ;
-; -9.139 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]  ; clock        ; clock       ; 1.000        ; -0.581     ; 9.559      ;
+; -9.139 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[5]  ; clock        ; clock       ; 1.000        ; -0.581     ; 9.559      ;
 ; -9.139 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]   ; clock        ; clock       ; 1.000        ; -0.581     ; 9.559      ;
-; -9.139 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]  ; clock        ; clock       ; 1.000        ; -0.581     ; 9.559      ;
-; -9.129 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.591     ; 9.539      ;
-; -9.129 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.591     ; 9.539      ;
+; -9.139 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]  ; clock        ; clock       ; 1.000        ; -0.581     ; 9.559      ;
 ; -9.129 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.591     ; 9.539      ;
+; -9.129 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.591     ; 9.539      ;
+; -9.129 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[2]  ; clock        ; clock       ; 1.000        ; -0.591     ; 9.539      ;
 ; -9.129 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[2]   ; clock        ; clock       ; 1.000        ; -0.591     ; 9.539      ;
-; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[1]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
-; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[1]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
-; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[1]   ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
+; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[1]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
 ; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[1]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
-; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[7]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
+; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[1]   ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
+; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[1]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
+; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[7]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
 ; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[7]   ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
-; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[3]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
-; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[3]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
+; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[3]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
 ; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[3]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
+; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[3]  ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
 ; -9.112 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[3]   ; clock        ; clock       ; 1.000        ; 0.332      ; 10.445     ;
 ; -9.097 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[22] ; clock        ; clock       ; 1.000        ; -0.584     ; 9.514      ;
 ; -9.097 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[23] ; clock        ; clock       ; 1.000        ; -0.584     ; 9.514      ;
@@ -384,13 +384,13 @@ HTML report is unavailable in plain text report export.
 ; -9.097 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[31] ; clock        ; clock       ; 1.000        ; -0.584     ; 9.514      ;
 ; -9.088 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; clock        ; clock       ; 1.000        ; 0.388      ; 10.477     ;
 ; -9.055 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock        ; clock       ; 1.000        ; -0.584     ; 9.472      ;
-; -9.050 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]  ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.467      ;
+; -9.050 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]  ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.467      ;
+; -9.050 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]  ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.467      ;
 ; -9.050 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]  ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.467      ;
-; -9.050 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]  ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.584     ; 9.467      ;
 ; -9.050 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[0]   ; clock        ; clock       ; 1.000        ; -0.584     ; 9.467      ;
 ; -9.040 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]  ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock        ; clock       ; 1.000        ; -0.082     ; 9.959      ;
 ; -9.034 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[11] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock        ; clock       ; 1.000        ; -0.582     ; 9.453      ;
-; -9.025 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]  ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.082     ; 9.944      ;
+; -9.025 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]  ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock        ; clock       ; 1.000        ; -0.082     ; 9.944      ;
 +--------+--------------------------------------------------------------+--------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -1371,7 +1371,7 @@ HTML report is unavailable in plain text report export.
 +-------+-----------------------------------------------------------------+-----------------------------------------------------------------+-----------------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                                                       ; To Node                                                         ; Launch Clock          ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------------------------------------------+-----------------------------------------------------------------+-----------------------+-------------+--------------+------------+------------+
-; 0.452 ; lcd_example_favs:inst19|lcd_bus[6]                              ; lcd_example_favs:inst19|lcd_bus[6]                              ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.746      ;
+; 0.452 ; lcd_example_favs:inst16|lcd_bus[6]                              ; lcd_example_favs:inst16|lcd_bus[6]                              ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.746      ;
 ; 0.452 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.initialize ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.initialize ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.746      ;
 ; 0.452 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.746      ;
 ; 0.452 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.746      ;
@@ -1381,12 +1381,12 @@ HTML report is unavailable in plain text report export.
 ; 0.509 ; debounce:inst11|count[18]                                       ; debounce:inst11|count[18]                                       ; clock                 ; clock       ; 0.000        ; 0.081      ; 0.802      ;
 ; 0.510 ; debounce:inst10|count[18]                                       ; debounce:inst10|count[18]                                       ; clock                 ; clock       ; 0.000        ; 0.080      ; 0.802      ;
 ; 0.640 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]      ; MUX_lcd:inst24|lcd_data[6]                                      ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.934      ;
-; 0.644 ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.938      ;
+; 0.644 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.938      ;
 ; 0.645 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]      ; MUX_lcd:inst24|lcd_data[4]                                      ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.939      ;
 ; 0.646 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|rs               ; MUX_lcd:inst24|rs                                               ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.940      ;
 ; 0.688 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|rs               ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.982      ;
-; 0.691 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|rs              ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.985      ;
-; 0.692 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]     ; MUX_lcd:inst24|lcd_data[6]                                      ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.986      ;
+; 0.691 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|rs              ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.985      ;
+; 0.692 ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]     ; MUX_lcd:inst24|lcd_data[6]                                      ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.986      ;
 ; 0.692 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.ready      ; clock                 ; clock       ; 0.000        ; 0.082      ; 0.986      ;
 ; 0.718 ; debounce:inst8|count[1]                                         ; debounce:inst8|count[1]                                         ; clock                 ; clock       ; 0.000        ; 0.101      ; 1.031      ;
 ; 0.734 ; debounce:inst10|flipflops[0]                                    ; debounce:inst10|flipflops[1]                                    ; clock                 ; clock       ; 0.000        ; 0.081      ; 1.027      ;
@@ -1402,14 +1402,14 @@ HTML report is unavailable in plain text report export.
 ; 0.738 ; debounce:inst10|count[1]                                        ; debounce:inst10|count[1]                                        ; clock                 ; clock       ; 0.000        ; 0.081      ; 1.031      ;
 ; 0.738 ; debounce:inst10|count[3]                                        ; debounce:inst10|count[3]                                        ; clock                 ; clock       ; 0.000        ; 0.081      ; 1.031      ;
 ; 0.739 ; debounce:inst9|count[2]                                         ; debounce:inst9|count[2]                                         ; clock                 ; clock       ; 0.000        ; 0.081      ; 1.032      ;
-; 0.739 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|rs              ; MUX_lcd:inst24|rs                                               ; clock                 ; clock       ; 0.000        ; 0.082      ; 1.033      ;
+; 0.739 ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|rs              ; MUX_lcd:inst24|rs                                               ; clock                 ; clock       ; 0.000        ; 0.082      ; 1.033      ;
 ; 0.740 ; debounce:inst11|count[2]                                        ; debounce:inst11|count[2]                                        ; clock                 ; clock       ; 0.000        ; 0.081      ; 1.033      ;
-; 0.740 ; lcd_example_favs:inst30|lcd_bus[0]                              ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]     ; clock                 ; clock       ; 0.000        ; 0.082      ; 1.034      ;
+; 0.740 ; lcd_example_favs:inst19|lcd_bus[0]                              ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]     ; clock                 ; clock       ; 0.000        ; 0.082      ; 1.034      ;
 ; 0.740 ; debounce:inst8|count[2]                                         ; debounce:inst8|count[2]                                         ; clock                 ; clock       ; 0.000        ; 0.081      ; 1.033      ;
 ; 0.740 ; debounce:inst10|count[2]                                        ; debounce:inst10|count[2]                                        ; clock                 ; clock       ; 0.000        ; 0.081      ; 1.033      ;
-; 0.741 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]     ; MUX_lcd:inst24|lcd_data[4]                                      ; clock                 ; clock       ; 0.000        ; 0.082      ; 1.035      ;
+; 0.741 ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]     ; MUX_lcd:inst24|lcd_data[4]                                      ; clock                 ; clock       ; 0.000        ; 0.082      ; 1.035      ;
 ; 0.741 ; divisor:inst2|cont[1]                                           ; divisor:inst2|cont[1]                                           ; clock                 ; clock       ; 0.000        ; 0.102      ; 1.055      ;
-; 0.742 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock                 ; clock       ; 0.000        ; 0.082      ; 1.036      ;
+; 0.742 ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock                 ; clock       ; 0.000        ; 0.082      ; 1.036      ;
 ; 0.743 ; debounce:inst9|count[9]                                         ; debounce:inst9|count[9]                                         ; clock                 ; clock       ; 0.000        ; 0.081      ; 1.036      ;
 ; 0.743 ; debounce:inst9|count[0]                                         ; debounce:inst9|count[0]                                         ; clock                 ; clock       ; 0.000        ; 0.101      ; 1.056      ;
 ; 0.743 ; debounce:inst9|count[7]                                         ; debounce:inst9|count[7]                                         ; clock                 ; clock       ; 0.000        ; 0.081      ; 1.036      ;
@@ -2977,20 +2977,20 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Slack  ; From Node                                                   ; To Node                                                      ; Launch Clock      ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-------------------------------------------------------------+--------------------------------------------------------------+-------------------+-------------+--------------+------------+------------+
 ; -8.717 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock             ; clock       ; 1.000        ; -0.082     ; 9.637      ;
-; -8.686 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.082     ; 9.606      ;
 ; -8.686 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.082     ; 9.606      ;
+; -8.686 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.082     ; 9.606      ;
 ; -8.686 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[0]   ; clock             ; clock       ; 1.000        ; -0.082     ; 9.606      ;
-; -8.686 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.082     ; 9.606      ;
-; -8.645 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]  ; clock             ; clock       ; 1.000        ; -0.074     ; 9.573      ;
+; -8.686 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.082     ; 9.606      ;
+; -8.645 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[5]  ; clock             ; clock       ; 1.000        ; -0.074     ; 9.573      ;
 ; -8.645 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]   ; clock             ; clock       ; 1.000        ; -0.074     ; 9.573      ;
-; -8.645 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]  ; clock             ; clock       ; 1.000        ; -0.074     ; 9.573      ;
+; -8.645 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]  ; clock             ; clock       ; 1.000        ; -0.074     ; 9.573      ;
 ; -8.645 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[5]   ; clock             ; clock       ; 1.000        ; -0.074     ; 9.573      ;
 ; -8.645 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]   ; clock             ; clock       ; 1.000        ; -0.074     ; 9.573      ;
-; -8.645 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]  ; clock             ; clock       ; 1.000        ; -0.074     ; 9.573      ;
+; -8.645 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]  ; clock             ; clock       ; 1.000        ; -0.074     ; 9.573      ;
 ; -8.640 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[2]   ; clock             ; clock       ; 1.000        ; -0.094     ; 9.548      ;
+; -8.640 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.094     ; 9.548      ;
+; -8.640 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.094     ; 9.548      ;
 ; -8.640 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.094     ; 9.548      ;
-; -8.640 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.094     ; 9.548      ;
-; -8.640 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.094     ; 9.548      ;
 ; -8.566 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]  ; clock             ; clock       ; 1.000        ; -0.082     ; 9.486      ;
 ; -8.566 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[4]  ; clock             ; clock       ; 1.000        ; -0.082     ; 9.486      ;
 ; -8.565 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[2]  ; clock             ; clock       ; 1.000        ; -0.082     ; 9.485      ;
@@ -3005,9 +3005,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; -8.468 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock             ; clock       ; 1.000        ; -0.544     ; 8.926      ;
 ; -8.453 ; contador_relogio_feedback:inst6|contagemSL[2]               ; lcd_example_3favs:inst|lcd_bus[1]                            ; divisor:inst2|aux ; clock       ; 1.000        ; -0.548     ; 8.897      ;
 ; -8.437 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[11] ; clock             ; clock       ; 1.000        ; 0.369      ; 9.808      ;
-; -8.437 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.544     ; 8.895      ;
+; -8.437 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.544     ; 8.895      ;
+; -8.437 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.544     ; 8.895      ;
 ; -8.437 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.544     ; 8.895      ;
-; -8.437 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.544     ; 8.895      ;
 ; -8.437 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[0]   ; clock             ; clock       ; 1.000        ; -0.544     ; 8.895      ;
 ; -8.436 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[13] ; clock             ; clock       ; 1.000        ; 0.369      ; 9.807      ;
 ; -8.435 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[19] ; clock             ; clock       ; 1.000        ; 0.369      ; 9.806      ;
@@ -3015,15 +3015,15 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; -8.434 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[17] ; clock             ; clock       ; 1.000        ; 0.369      ; 9.805      ;
 ; -8.432 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[21] ; clock             ; clock       ; 1.000        ; 0.369      ; 9.803      ;
 ; -8.429 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[18] ; clock             ; clock       ; 1.000        ; 0.369      ; 9.800      ;
-; -8.406 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]  ; clock             ; clock       ; 1.000        ; -0.546     ; 8.862      ;
+; -8.406 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]  ; clock             ; clock       ; 1.000        ; -0.546     ; 8.862      ;
 ; -8.406 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]   ; clock             ; clock       ; 1.000        ; -0.546     ; 8.862      ;
 ; -8.406 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[5]   ; clock             ; clock       ; 1.000        ; -0.546     ; 8.862      ;
-; -8.406 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]  ; clock             ; clock       ; 1.000        ; -0.546     ; 8.862      ;
+; -8.406 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[5]  ; clock             ; clock       ; 1.000        ; -0.546     ; 8.862      ;
 ; -8.406 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]   ; clock             ; clock       ; 1.000        ; -0.546     ; 8.862      ;
-; -8.406 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]  ; clock             ; clock       ; 1.000        ; -0.546     ; 8.862      ;
-; -8.391 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.556     ; 8.837      ;
-; -8.391 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.556     ; 8.837      ;
+; -8.406 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]  ; clock             ; clock       ; 1.000        ; -0.546     ; 8.862      ;
 ; -8.391 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.556     ; 8.837      ;
+; -8.391 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.556     ; 8.837      ;
+; -8.391 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.556     ; 8.837      ;
 ; -8.391 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[2]   ; clock             ; clock       ; 1.000        ; -0.556     ; 8.837      ;
 ; -8.382 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock             ; clock       ; 1.000        ; -0.540     ; 8.844      ;
 ; -8.371 ; contador_relogio_feedback:inst6|contagemSL[3]               ; lcd_example_3favs:inst|lcd_bus[1]                            ; divisor:inst2|aux ; clock       ; 1.000        ; -0.547     ; 8.816      ;
@@ -3035,37 +3035,37 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; -8.360 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[10] ; clock             ; clock       ; 1.000        ; 0.374      ; 9.736      ;
 ; -8.360 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[12] ; clock             ; clock       ; 1.000        ; 0.374      ; 9.736      ;
 ; -8.359 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[30] ; clock             ; clock       ; 1.000        ; 0.374      ; 9.735      ;
-; -8.351 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.540     ; 8.813      ;
+; -8.351 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.540     ; 8.813      ;
+; -8.351 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.540     ; 8.813      ;
 ; -8.351 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.540     ; 8.813      ;
-; -8.351 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.540     ; 8.813      ;
 ; -8.351 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[0]   ; clock             ; clock       ; 1.000        ; -0.540     ; 8.813      ;
 ; -8.322 ; contador_relogio_feedback:inst6|contagemSL[3]               ; lcd_example_3favs:inst|lcd_bus[4]                            ; divisor:inst2|aux ; clock       ; 1.000        ; -0.547     ; 8.767      ;
-; -8.320 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]  ; clock             ; clock       ; 1.000        ; -0.542     ; 8.780      ;
+; -8.320 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]  ; clock             ; clock       ; 1.000        ; -0.542     ; 8.780      ;
 ; -8.320 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]   ; clock             ; clock       ; 1.000        ; -0.542     ; 8.780      ;
 ; -8.320 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[5]   ; clock             ; clock       ; 1.000        ; -0.542     ; 8.780      ;
-; -8.320 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]  ; clock             ; clock       ; 1.000        ; -0.542     ; 8.780      ;
+; -8.320 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[5]  ; clock             ; clock       ; 1.000        ; -0.542     ; 8.780      ;
 ; -8.320 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]   ; clock             ; clock       ; 1.000        ; -0.542     ; 8.780      ;
-; -8.320 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]  ; clock             ; clock       ; 1.000        ; -0.542     ; 8.780      ;
+; -8.320 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]  ; clock             ; clock       ; 1.000        ; -0.542     ; 8.780      ;
 ; -8.317 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]  ; clock             ; clock       ; 1.000        ; -0.544     ; 8.775      ;
 ; -8.317 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[4]  ; clock             ; clock       ; 1.000        ; -0.544     ; 8.775      ;
 ; -8.316 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[2]  ; clock             ; clock       ; 1.000        ; -0.544     ; 8.774      ;
 ; -8.316 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[3]  ; clock             ; clock       ; 1.000        ; -0.544     ; 8.774      ;
 ; -8.315 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[5]  ; clock             ; clock       ; 1.000        ; -0.544     ; 8.773      ;
 ; -8.307 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7]  ; clock             ; clock       ; 1.000        ; 0.370      ; 9.679      ;
-; -8.305 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.552     ; 8.755      ;
-; -8.305 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.552     ; 8.755      ;
 ; -8.305 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.552     ; 8.755      ;
+; -8.305 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.552     ; 8.755      ;
+; -8.305 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[2]  ; clock             ; clock       ; 1.000        ; -0.552     ; 8.755      ;
 ; -8.305 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[6] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[2]   ; clock             ; clock       ; 1.000        ; -0.552     ; 8.755      ;
 ; -8.291 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock             ; clock       ; 1.000        ; -0.549     ; 8.744      ;
-; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[1]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
-; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[1]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
-; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[1]   ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
+; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[1]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
 ; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[1]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
-; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[7]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
+; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[1]   ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
+; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[1]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
+; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[7]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
 ; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[7]   ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
-; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[3]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
-; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[3]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
+; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[3]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
 ; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[3]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
+; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[3]  ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
 ; -8.286 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[3]   ; clock             ; clock       ; 1.000        ; 0.312      ; 9.600      ;
 ; -8.273 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[22] ; clock             ; clock       ; 1.000        ; -0.545     ; 8.730      ;
 ; -8.273 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[23] ; clock             ; clock       ; 1.000        ; -0.545     ; 8.730      ;
@@ -3073,9 +3073,9 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; -8.272 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[24] ; clock             ; clock       ; 1.000        ; -0.545     ; 8.729      ;
 ; -8.272 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[26] ; clock             ; clock       ; 1.000        ; -0.545     ; 8.729      ;
 ; -8.272 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[31] ; clock             ; clock       ; 1.000        ; -0.545     ; 8.729      ;
-; -8.260 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.549     ; 8.713      ;
+; -8.260 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.549     ; 8.713      ;
+; -8.260 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.549     ; 8.713      ;
 ; -8.260 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.549     ; 8.713      ;
-; -8.260 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[8] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]  ; clock             ; clock       ; 1.000        ; -0.549     ; 8.713      ;
 +--------+-------------------------------------------------------------+--------------------------------------------------------------+-------------------+-------------+--------------+------------+------------+
 
 
@@ -4057,7 +4057,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Slack ; From Node                                                       ; To Node                                                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------------------------------------------+-----------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; 0.400 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ; clock        ; clock       ; 0.000        ; 0.074      ; 0.669      ;
-; 0.401 ; lcd_example_favs:inst19|lcd_bus[6]                              ; lcd_example_favs:inst19|lcd_bus[6]                              ; clock        ; clock       ; 0.000        ; 0.073      ; 0.669      ;
+; 0.401 ; lcd_example_favs:inst16|lcd_bus[6]                              ; lcd_example_favs:inst16|lcd_bus[6]                              ; clock        ; clock       ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.401 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.initialize ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.initialize ; clock        ; clock       ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.401 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; clock        ; clock       ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.468 ; divisor:inst2|cont[25]                                          ; divisor:inst2|cont[25]                                          ; clock        ; clock       ; 0.000        ; 0.074      ; 0.737      ;
@@ -4067,14 +4067,14 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.470 ; debounce:inst10|count[18]                                       ; debounce:inst10|count[18]                                       ; clock        ; clock       ; 0.000        ; 0.072      ; 0.737      ;
 ; 0.597 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]      ; MUX_lcd:inst24|lcd_data[6]                                      ; clock        ; clock       ; 0.000        ; 0.074      ; 0.866      ;
 ; 0.600 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]      ; MUX_lcd:inst24|lcd_data[4]                                      ; clock        ; clock       ; 0.000        ; 0.074      ; 0.869      ;
-; 0.601 ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock        ; clock       ; 0.000        ; 0.073      ; 0.869      ;
+; 0.601 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock        ; clock       ; 0.000        ; 0.073      ; 0.869      ;
 ; 0.602 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|rs               ; MUX_lcd:inst24|rs                                               ; clock        ; clock       ; 0.000        ; 0.073      ; 0.870      ;
-; 0.616 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]     ; MUX_lcd:inst24|lcd_data[6]                                      ; clock        ; clock       ; 0.000        ; 0.074      ; 0.885      ;
+; 0.616 ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]     ; MUX_lcd:inst24|lcd_data[6]                                      ; clock        ; clock       ; 0.000        ; 0.074      ; 0.885      ;
 ; 0.642 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.ready      ; clock        ; clock       ; 0.000        ; 0.074      ; 0.911      ;
 ; 0.642 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|rs               ; clock        ; clock       ; 0.000        ; 0.073      ; 0.910      ;
-; 0.646 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|rs              ; clock        ; clock       ; 0.000        ; 0.073      ; 0.914      ;
+; 0.646 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|rs              ; clock        ; clock       ; 0.000        ; 0.073      ; 0.914      ;
 ; 0.647 ; debounce:inst10|flipflops[0]                                    ; debounce:inst10|flipflops[1]                                    ; clock        ; clock       ; 0.000        ; 0.073      ; 0.915      ;
-; 0.658 ; lcd_example_favs:inst30|lcd_bus[0]                              ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]     ; clock        ; clock       ; 0.000        ; 0.074      ; 0.927      ;
+; 0.658 ; lcd_example_favs:inst19|lcd_bus[0]                              ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]     ; clock        ; clock       ; 0.000        ; 0.074      ; 0.927      ;
 ; 0.668 ; debounce:inst8|count[1]                                         ; debounce:inst8|count[1]                                         ; clock        ; clock       ; 0.000        ; 0.092      ; 0.955      ;
 ; 0.686 ; debounce:inst11|count[4]                                        ; debounce:inst11|count[4]                                        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.954      ;
 ; 0.686 ; debounce:inst9|count[4]                                         ; debounce:inst9|count[4]                                         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.953      ;
@@ -4083,20 +4083,20 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.687 ; debounce:inst11|count[3]                                        ; debounce:inst11|count[3]                                        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.955      ;
 ; 0.687 ; debounce:inst9|count[1]                                         ; debounce:inst9|count[1]                                         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.954      ;
 ; 0.687 ; debounce:inst9|count[3]                                         ; debounce:inst9|count[3]                                         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.954      ;
-; 0.687 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|rs              ; MUX_lcd:inst24|rs                                               ; clock        ; clock       ; 0.000        ; 0.073      ; 0.955      ;
+; 0.687 ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|rs              ; MUX_lcd:inst24|rs                                               ; clock        ; clock       ; 0.000        ; 0.073      ; 0.955      ;
 ; 0.687 ; debounce:inst8|count[3]                                         ; debounce:inst8|count[3]                                         ; clock        ; clock       ; 0.000        ; 0.073      ; 0.955      ;
 ; 0.687 ; debounce:inst10|count[1]                                        ; debounce:inst10|count[1]                                        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.955      ;
 ; 0.687 ; debounce:inst10|count[3]                                        ; debounce:inst10|count[3]                                        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.955      ;
 ; 0.688 ; divisor:inst2|cont[1]                                           ; divisor:inst2|cont[1]                                           ; clock        ; clock       ; 0.000        ; 0.092      ; 0.975      ;
 ; 0.689 ; debounce:inst11|count[2]                                        ; debounce:inst11|count[2]                                        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.957      ;
-; 0.689 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]     ; MUX_lcd:inst24|lcd_data[4]                                      ; clock        ; clock       ; 0.000        ; 0.074      ; 0.958      ;
+; 0.689 ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]     ; MUX_lcd:inst24|lcd_data[4]                                      ; clock        ; clock       ; 0.000        ; 0.074      ; 0.958      ;
 ; 0.689 ; divisor2s:inst1|cont[1]                                         ; divisor2s:inst1|cont[1]                                         ; clock        ; clock       ; 0.000        ; 0.091      ; 0.975      ;
 ; 0.689 ; debounce:inst8|count[2]                                         ; debounce:inst8|count[2]                                         ; clock        ; clock       ; 0.000        ; 0.073      ; 0.957      ;
 ; 0.689 ; debounce:inst10|count[2]                                        ; debounce:inst10|count[2]                                        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.957      ;
 ; 0.690 ; debounce:inst9|count[2]                                         ; debounce:inst9|count[2]                                         ; clock        ; clock       ; 0.000        ; 0.072      ; 0.957      ;
 ; 0.691 ; debounce:inst8|count[9]                                         ; debounce:inst8|count[9]                                         ; clock        ; clock       ; 0.000        ; 0.073      ; 0.959      ;
 ; 0.691 ; debounce:inst10|count[8]                                        ; debounce:inst10|count[8]                                        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.959      ;
-; 0.691 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock        ; clock       ; 0.000        ; 0.073      ; 0.959      ;
+; 0.691 ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock        ; clock       ; 0.000        ; 0.073      ; 0.959      ;
 ; 0.692 ; debounce:inst11|count[5]                                        ; debounce:inst11|count[5]                                        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.960      ;
 ; 0.692 ; debounce:inst11|count[6]                                        ; debounce:inst11|count[6]                                        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.960      ;
 ; 0.692 ; debounce:inst11|count[7]                                        ; debounce:inst11|count[7]                                        ; clock        ; clock       ; 0.000        ; 0.073      ; 0.960      ;
@@ -5647,23 +5647,23 @@ No synchronizer chains to report.
 +--------+-------------------------------------------------------------+--------------------------------------------------------------+------------------------+-------------+--------------+------------+------------+
 ; -3.546 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.492      ;
 ; -3.503 ; set_alarme_victor:inst26|hl[0]                              ; lcd_example_3favs:inst|lcd_bus[1]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.126     ; 3.854      ;
-; -3.499 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]  ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.445      ;
 ; -3.499 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]  ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.445      ;
+; -3.499 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[0]  ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.445      ;
 ; -3.499 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[0]   ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.445      ;
-; -3.499 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.445      ;
+; -3.499 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.445      ;
 ; -3.489 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[27] ; clock                  ; clock       ; 1.000        ; -0.240     ; 4.236      ;
 ; -3.486 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[2]   ; clock                  ; clock       ; 1.000        ; -0.048     ; 4.425      ;
+; -3.486 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[2]  ; clock                  ; clock       ; 1.000        ; -0.048     ; 4.425      ;
+; -3.486 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[2]  ; clock                  ; clock       ; 1.000        ; -0.048     ; 4.425      ;
 ; -3.486 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[2]  ; clock                  ; clock       ; 1.000        ; -0.048     ; 4.425      ;
-; -3.486 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[2]  ; clock                  ; clock       ; 1.000        ; -0.048     ; 4.425      ;
-; -3.486 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[2]  ; clock                  ; clock       ; 1.000        ; -0.048     ; 4.425      ;
 ; -3.479 ; set_alarme_victor:inst26|hl[0]                              ; lcd_example_3favs:inst|lcd_bus[4]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.126     ; 3.830      ;
-; -3.476 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]  ; clock                  ; clock       ; 1.000        ; -0.037     ; 4.426      ;
+; -3.476 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[5]  ; clock                  ; clock       ; 1.000        ; -0.037     ; 4.426      ;
 ; -3.476 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]   ; clock                  ; clock       ; 1.000        ; -0.037     ; 4.426      ;
-; -3.476 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]  ; clock                  ; clock       ; 1.000        ; -0.037     ; 4.426      ;
+; -3.476 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]  ; clock                  ; clock       ; 1.000        ; -0.037     ; 4.426      ;
 ; -3.476 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[5]   ; clock                  ; clock       ; 1.000        ; -0.037     ; 4.426      ;
 ; -3.476 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[4]  ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.422      ;
 ; -3.476 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]   ; clock                  ; clock       ; 1.000        ; -0.037     ; 4.426      ;
-; -3.476 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]  ; clock                  ; clock       ; 1.000        ; -0.037     ; 4.426      ;
+; -3.476 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]  ; clock                  ; clock       ; 1.000        ; -0.037     ; 4.426      ;
 ; -3.475 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[1]  ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.421      ;
 ; -3.474 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[2]  ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.420      ;
 ; -3.474 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[3]  ; clock                  ; clock       ; 1.000        ; -0.041     ; 4.420      ;
@@ -5677,9 +5677,9 @@ No synchronizer chains to report.
 ; -3.449 ; set_alarme_victor:inst26|hh[1]                              ; lcd_example_3favs:inst|lcd_bus[1]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.126     ; 3.800      ;
 ; -3.448 ; set_alarme_victor:inst26|sl[3]                              ; lcd_example_3favs:inst|lcd_bus[4]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.140     ; 3.785      ;
 ; -3.444 ; set_alarme_victor:inst26|sl[1]                              ; lcd_example_3favs:inst|lcd_bus[1]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.128     ; 3.793      ;
-; -3.442 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]  ; clock                  ; clock       ; 1.000        ; -0.240     ; 4.189      ;
+; -3.442 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]  ; clock                  ; clock       ; 1.000        ; -0.240     ; 4.189      ;
+; -3.442 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[0]  ; clock                  ; clock       ; 1.000        ; -0.240     ; 4.189      ;
 ; -3.442 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]  ; clock                  ; clock       ; 1.000        ; -0.240     ; 4.189      ;
-; -3.442 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]  ; clock                  ; clock       ; 1.000        ; -0.240     ; 4.189      ;
 ; -3.442 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[0]   ; clock                  ; clock       ; 1.000        ; -0.240     ; 4.189      ;
 ; -3.440 ; set_alarme_victor:inst26|sl[0]                              ; lcd_example_3favs:inst|lcd_bus[4]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.140     ; 3.777      ;
 ; -3.439 ; set_alarme_victor:inst26|hl[1]                              ; lcd_example_3favs:inst|lcd_bus[4]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.126     ; 3.790      ;
@@ -5695,21 +5695,21 @@ No synchronizer chains to report.
 ; -3.430 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[11] ; clock                  ; clock       ; 1.000        ; 0.153      ; 4.570      ;
 ; -3.430 ; set_alarme_vinicius:inst27|ml[1]                            ; lcd_example_3favs:inst|lcd_bus[1]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.135     ; 3.772      ;
 ; -3.429 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[13] ; clock                  ; clock       ; 1.000        ; 0.153      ; 4.569      ;
-; -3.429 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[2]  ; clock                  ; clock       ; 1.000        ; -0.247     ; 4.169      ;
-; -3.429 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[2]  ; clock                  ; clock       ; 1.000        ; -0.247     ; 4.169      ;
 ; -3.429 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[2]  ; clock                  ; clock       ; 1.000        ; -0.247     ; 4.169      ;
+; -3.429 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[2]  ; clock                  ; clock       ; 1.000        ; -0.247     ; 4.169      ;
+; -3.429 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[2]  ; clock                  ; clock       ; 1.000        ; -0.247     ; 4.169      ;
 ; -3.429 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[2]   ; clock                  ; clock       ; 1.000        ; -0.247     ; 4.169      ;
 ; -3.428 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[20] ; clock                  ; clock       ; 1.000        ; 0.153      ; 4.568      ;
 ; -3.428 ; set_alarme_victor:inst26|sl[0]                              ; lcd_example_3favs:inst|lcd_bus[7]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.126     ; 3.779      ;
 ; -3.428 ; set_alarme_victor:inst26|sl[0]                              ; lcd_example_3favs:inst|lcd_bus[9]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.126     ; 3.779      ;
 ; -3.427 ; contador_relogio_feedback:inst6|contagemSL[2]               ; lcd_example_3favs:inst|lcd_bus[4]                            ; divisor:inst2|aux      ; clock       ; 1.000        ; -0.226     ; 4.178      ;
 ; -3.427 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[0] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[19] ; clock                  ; clock       ; 1.000        ; 0.153      ; 4.567      ;
-; -3.427 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]  ; clock                  ; clock       ; 1.000        ; -0.244     ; 4.170      ;
+; -3.427 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]  ; clock                  ; clock       ; 1.000        ; -0.244     ; 4.170      ;
 ; -3.427 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]   ; clock                  ; clock       ; 1.000        ; -0.244     ; 4.170      ;
 ; -3.427 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[5]   ; clock                  ; clock       ; 1.000        ; -0.244     ; 4.170      ;
-; -3.427 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[5]  ; clock                  ; clock       ; 1.000        ; -0.244     ; 4.170      ;
+; -3.427 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[5]  ; clock                  ; clock       ; 1.000        ; -0.244     ; 4.170      ;
 ; -3.427 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]   ; clock                  ; clock       ; 1.000        ; -0.244     ; 4.170      ;
-; -3.427 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]  ; clock                  ; clock       ; 1.000        ; -0.244     ; 4.170      ;
+; -3.427 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|clk_count[7] ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]  ; clock                  ; clock       ; 1.000        ; -0.244     ; 4.170      ;
 ; -3.427 ; set_alarme_victor:inst26|hl[1]                              ; lcd_example_3favs:inst|lcd_bus[7]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.112     ; 3.792      ;
 ; -3.427 ; set_alarme_victor:inst26|hl[1]                              ; lcd_example_3favs:inst|lcd_bus[9]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.112     ; 3.792      ;
 ; -3.427 ; set_alarme_victor:inst26|mh[0]                              ; lcd_example_3favs:inst|lcd_bus[1]                            ; debounce:inst11|result ; clock       ; 0.500        ; -0.123     ; 3.781      ;
@@ -6621,7 +6621,7 @@ No synchronizer chains to report.
 ; 0.186 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.initialize ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.initialize ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.307      ;
 ; 0.186 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.307      ;
 ; 0.186 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.307      ;
-; 0.187 ; lcd_example_favs:inst19|lcd_bus[6]                              ; lcd_example_favs:inst19|lcd_bus[6]                              ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; lcd_example_favs:inst16|lcd_bus[6]                              ; lcd_example_favs:inst16|lcd_bus[6]                              ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.204 ; divisor:inst2|cont[25]                                          ; divisor:inst2|cont[25]                                          ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.325      ;
 ; 0.205 ; debounce:inst9|count[18]                                        ; debounce:inst9|count[18]                                        ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.325      ;
 ; 0.205 ; debounce:inst8|count[18]                                        ; debounce:inst8|count[18]                                        ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.325      ;
@@ -6632,15 +6632,15 @@ No synchronizer chains to report.
 ; 0.252 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[6]      ; MUX_lcd:inst24|lcd_data[6]                                      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.373      ;
 ; 0.253 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[4]      ; MUX_lcd:inst24|lcd_data[4]                                      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.374      ;
 ; 0.254 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|rs               ; MUX_lcd:inst24|rs                                               ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.375      ;
-; 0.255 ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.376      ;
-; 0.261 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[6]     ; MUX_lcd:inst24|lcd_data[6]                                      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.382      ;
+; 0.255 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.376      ;
+; 0.261 ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[6]     ; MUX_lcd:inst24|lcd_data[6]                                      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.382      ;
 ; 0.275 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.send       ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.ready      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.396      ;
 ; 0.275 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|rs               ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.396      ;
 ; 0.278 ; debounce:inst10|flipflops[0]                                    ; debounce:inst10|flipflops[1]                                    ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.399      ;
-; 0.280 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|rs              ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.401      ;
-; 0.280 ; lcd_example_favs:inst30|lcd_bus[0]                              ; lcd_example_favs:inst30|lcd_controller_v2_1:dut|lcd_data[0]     ; clock                 ; clock       ; 0.000        ; 0.038      ; 0.402      ;
+; 0.280 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|state.power_up   ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|rs              ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.401      ;
+; 0.280 ; lcd_example_favs:inst19|lcd_bus[0]                              ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[0]     ; clock                 ; clock       ; 0.000        ; 0.038      ; 0.402      ;
 ; 0.286 ; debounce:inst8|count[1]                                         ; debounce:inst8|count[1]                                         ; clock                 ; clock       ; 0.000        ; 0.044      ; 0.414      ;
-; 0.293 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|rs              ; MUX_lcd:inst24|rs                                               ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.414      ;
+; 0.293 ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|rs              ; MUX_lcd:inst24|rs                                               ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.414      ;
 ; 0.293 ; debounce:inst10|count[1]                                        ; debounce:inst10|count[1]                                        ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.414      ;
 ; 0.294 ; debounce:inst11|count[1]                                        ; debounce:inst11|count[1]                                        ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.414      ;
 ; 0.294 ; debounce:inst9|count[1]                                         ; debounce:inst9|count[1]                                         ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.414      ;
@@ -6650,7 +6650,7 @@ No synchronizer chains to report.
 ; 0.295 ; debounce:inst11|count[4]                                        ; debounce:inst11|count[4]                                        ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.415      ;
 ; 0.295 ; debounce:inst9|count[2]                                         ; debounce:inst9|count[2]                                         ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.415      ;
 ; 0.295 ; debounce:inst9|count[3]                                         ; debounce:inst9|count[3]                                         ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.415      ;
-; 0.295 ; lcd_example_favs:inst19|lcd_controller_v2_1:dut|lcd_data[4]     ; MUX_lcd:inst24|lcd_data[4]                                      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.416      ;
+; 0.295 ; lcd_example_favs:inst16|lcd_controller_v2_1:dut|lcd_data[4]     ; MUX_lcd:inst24|lcd_data[4]                                      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.416      ;
 ; 0.295 ; debounce:inst8|count[3]                                         ; debounce:inst8|count[3]                                         ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.415      ;
 ; 0.295 ; debounce:inst8|count[4]                                         ; debounce:inst8|count[4]                                         ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.415      ;
 ; 0.295 ; debounce:inst10|count[2]                                        ; debounce:inst10|count[2]                                        ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.416      ;
@@ -6668,7 +6668,7 @@ No synchronizer chains to report.
 ; 0.297 ; debounce:inst10|count[6]                                        ; debounce:inst10|count[6]                                        ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.418      ;
 ; 0.297 ; debounce:inst10|count[7]                                        ; debounce:inst10|count[7]                                        ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.418      ;
 ; 0.297 ; debounce:inst10|count[9]                                        ; debounce:inst10|count[9]                                        ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.417      ;
-; 0.297 ; lcd_example_favs:inst22|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.418      ;
+; 0.297 ; lcd_example_favs:inst17|lcd_controller_v2_1:dut|lcd_data[0]     ; MUX_lcd:inst24|lcd_data[0]                                      ; clock                 ; clock       ; 0.000        ; 0.037      ; 0.418      ;
 ; 0.298 ; debounce:inst11|count[5]                                        ; debounce:inst11|count[5]                                        ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.418      ;
 ; 0.298 ; debounce:inst11|count[6]                                        ; debounce:inst11|count[6]                                        ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.418      ;
 ; 0.298 ; debounce:inst11|count[7]                                        ; debounce:inst11|count[7]                                        ; clock                 ; clock       ; 0.000        ; 0.036      ; 0.418      ;
@@ -8653,7 +8653,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 13 10:56:54 2021
+    Info: Processing started: Tue Apr 13 22:09:20 2021
 Info: Command: quartus_sta Projeto2 -c Projeto2
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -8837,8 +8837,8 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Tue Apr 13 10:56:58 2021
+    Info: Peak virtual memory: 4780 megabytes
+    Info: Processing ended: Tue Apr 13 22:09:24 2021
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

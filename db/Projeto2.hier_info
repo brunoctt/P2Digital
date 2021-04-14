@@ -1,7 +1,7 @@
 |testecontdisp
 e <= MUX_lcd:inst24.e
 clock => MUX_lcd:inst24.clk
-clock => lcd_example_favs:inst30.clk
+clock => lcd_example_favs:inst19.clk
 clock => comparador_bruno:inst3.clock
 clock => debounce:inst8.clk
 clock => debounce:inst9.clk
@@ -15,8 +15,8 @@ clock => divisor:inst2.clk
 clock => set_hora:inst5.clock
 clock => comparador_vinicius:inst14.clock
 clock => set_alarme_vinicius:inst27.clock
-clock => lcd_example_favs:inst19.clk
-clock => lcd_example_favs:inst22.clk
+clock => lcd_example_favs:inst16.clk
+clock => lcd_example_favs:inst17.clk
 clock => lcd_example_3favs:inst.clk
 button1 => debounce:inst8.button
 button2 => debounce:inst9.button
@@ -126,7 +126,7 @@ lcd_data[6] <= lcd_data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 lcd_data[7] <= lcd_data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testecontdisp|lcd_example_favs:inst30
+|testecontdisp|lcd_example_favs:inst19
 contador1[0] => Mux9.IN64
 contador1[1] => Mux8.IN64
 contador1[2] => Mux7.IN64
@@ -169,7 +169,6 @@ clk => char[2].CLK
 clk => char[3].CLK
 clk => char[4].CLK
 clk => char[5].CLK
-load_ena => ~NO_FANOUT~
 comparador => ~NO_FANOUT~
 comparador2 => ~NO_FANOUT~
 comparador3 => ~NO_FANOUT~
@@ -192,7 +191,7 @@ lcd_data[6] <= lcd_controller_v2_1:dut.lcd_data[6]
 lcd_data[7] <= lcd_controller_v2_1:dut.lcd_data[7]
 
 
-|testecontdisp|lcd_example_favs:inst30|lcd_controller_v2_1:dut
+|testecontdisp|lcd_example_favs:inst19|lcd_controller_v2_1:dut
 clk => e~reg0.CLK
 clk => lcd_data[0]~reg0.CLK
 clk => lcd_data[1]~reg0.CLK
@@ -973,7 +972,7 @@ fhh[3] <= <GND>
 edicao <= process_0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testecontdisp|lcd_example_favs:inst19
+|testecontdisp|lcd_example_favs:inst16
 contador1[0] => Mux9.IN64
 contador1[1] => Mux8.IN64
 contador1[2] => Mux7.IN64
@@ -1016,7 +1015,6 @@ clk => char[2].CLK
 clk => char[3].CLK
 clk => char[4].CLK
 clk => char[5].CLK
-load_ena => ~NO_FANOUT~
 comparador => ~NO_FANOUT~
 comparador2 => ~NO_FANOUT~
 comparador3 => ~NO_FANOUT~
@@ -1039,7 +1037,7 @@ lcd_data[6] <= lcd_controller_v2_1:dut.lcd_data[6]
 lcd_data[7] <= lcd_controller_v2_1:dut.lcd_data[7]
 
 
-|testecontdisp|lcd_example_favs:inst19|lcd_controller_v2_1:dut
+|testecontdisp|lcd_example_favs:inst16|lcd_controller_v2_1:dut
 clk => e~reg0.CLK
 clk => lcd_data[0]~reg0.CLK
 clk => lcd_data[1]~reg0.CLK
@@ -1126,7 +1124,7 @@ lcd_data[6] <= lcd_data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 lcd_data[7] <= lcd_data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testecontdisp|lcd_example_favs:inst22
+|testecontdisp|lcd_example_favs:inst17
 contador1[0] => Mux9.IN64
 contador1[1] => Mux8.IN64
 contador1[2] => Mux7.IN64
@@ -1169,7 +1167,6 @@ clk => char[2].CLK
 clk => char[3].CLK
 clk => char[4].CLK
 clk => char[5].CLK
-load_ena => ~NO_FANOUT~
 comparador => ~NO_FANOUT~
 comparador2 => ~NO_FANOUT~
 comparador3 => ~NO_FANOUT~
@@ -1192,7 +1189,7 @@ lcd_data[6] <= lcd_controller_v2_1:dut.lcd_data[6]
 lcd_data[7] <= lcd_controller_v2_1:dut.lcd_data[7]
 
 
-|testecontdisp|lcd_example_favs:inst22|lcd_controller_v2_1:dut
+|testecontdisp|lcd_example_favs:inst17|lcd_controller_v2_1:dut
 clk => e~reg0.CLK
 clk => lcd_data[0]~reg0.CLK
 clk => lcd_data[1]~reg0.CLK
@@ -1358,8 +1355,6 @@ comparador3 => process_0.IN1
 comparador3 => process_0.IN1
 comparador3 => process_0.IN1
 comparador3 => process_0.IN1
-menu[0] => ~NO_FANOUT~
-menu[1] => ~NO_FANOUT~
 rw <= lcd_controller_v2_1:dut.rw
 rs <= lcd_controller_v2_1:dut.rs
 e <= lcd_controller_v2_1:dut.e

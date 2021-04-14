@@ -1,5 +1,5 @@
 Fitter report for Projeto2
-Tue Apr 13 10:56:51 2021
+Tue Apr 13 22:09:17 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -69,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Tue Apr 13 10:56:51 2021       ;
+; Fitter Status                      ; Successful - Tue Apr 13 22:09:17 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Projeto2                                    ;
 ; Top-level Entity Name              ; testecontdisp                               ;
@@ -161,8 +161,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.8%      ;
-;     Processor 3            ;   2.9%      ;
+;     Processor 2            ;   3.7%      ;
+;     Processor 3            ;   2.8%      ;
 ;     Processor 4            ;   2.8%      ;
 +----------------------------+-------------+
 
@@ -624,12 +624,12 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |divisor:inst2|                   ; 50 (50)     ; 27 (27)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 23 (23)      ; 1 (1)             ; 26 (26)          ; |testecontdisp|divisor:inst2                                   ; divisor                   ; work         ;
 ;    |lcd_example_3favs:inst|          ; 303 (128)   ; 62 (15)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 240 (112)    ; 2 (2)             ; 61 (14)          ; |testecontdisp|lcd_example_3favs:inst                          ; lcd_example_3favs         ; work         ;
 ;       |lcd_controller_v2_1:dut|      ; 175 (175)   ; 47 (47)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 128 (128)    ; 0 (0)             ; 47 (47)          ; |testecontdisp|lcd_example_3favs:inst|lcd_controller_v2_1:dut  ; lcd_controller_v2_1       ; work         ;
-;    |lcd_example_favs:inst19|         ; 75 (64)     ; 18 (9)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (55)      ; 0 (0)             ; 18 (9)           ; |testecontdisp|lcd_example_favs:inst19                         ; lcd_example_favs          ; work         ;
-;       |lcd_controller_v2_1:dut|      ; 11 (11)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 9 (9)            ; |testecontdisp|lcd_example_favs:inst19|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
-;    |lcd_example_favs:inst22|         ; 47 (43)     ; 8 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 39 (39)      ; 0 (0)             ; 8 (4)            ; |testecontdisp|lcd_example_favs:inst22                         ; lcd_example_favs          ; work         ;
-;       |lcd_controller_v2_1:dut|      ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; |testecontdisp|lcd_example_favs:inst22|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
-;    |lcd_example_favs:inst30|         ; 62 (50)     ; 8 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 54 (46)      ; 0 (0)             ; 8 (4)            ; |testecontdisp|lcd_example_favs:inst30                         ; lcd_example_favs          ; work         ;
-;       |lcd_controller_v2_1:dut|      ; 12 (12)     ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 4 (4)            ; |testecontdisp|lcd_example_favs:inst30|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
+;    |lcd_example_favs:inst16|         ; 75 (64)     ; 18 (9)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 57 (55)      ; 0 (0)             ; 18 (9)           ; |testecontdisp|lcd_example_favs:inst16                         ; lcd_example_favs          ; work         ;
+;       |lcd_controller_v2_1:dut|      ; 11 (11)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 9 (9)            ; |testecontdisp|lcd_example_favs:inst16|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
+;    |lcd_example_favs:inst17|         ; 47 (43)     ; 8 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 39 (39)      ; 0 (0)             ; 8 (4)            ; |testecontdisp|lcd_example_favs:inst17                         ; lcd_example_favs          ; work         ;
+;       |lcd_controller_v2_1:dut|      ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; |testecontdisp|lcd_example_favs:inst17|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
+;    |lcd_example_favs:inst19|         ; 62 (50)     ; 8 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 54 (46)      ; 0 (0)             ; 8 (4)            ; |testecontdisp|lcd_example_favs:inst19                         ; lcd_example_favs          ; work         ;
+;       |lcd_controller_v2_1:dut|      ; 12 (12)     ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 4 (4)            ; |testecontdisp|lcd_example_favs:inst19|lcd_controller_v2_1:dut ; lcd_controller_v2_1       ; work         ;
 ;    |menu:inst4|                      ; 4 (4)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 3 (3)            ; |testecontdisp|menu:inst4                                      ; menu                      ; work         ;
 ;    |set_alarme_bruno:inst31|         ; 32 (32)     ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 23 (23)          ; |testecontdisp|set_alarme_bruno:inst31                         ; set_alarme_bruno          ; work         ;
 ;    |set_alarme_victor:inst26|        ; 32 (32)     ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 23 (23)          ; |testecontdisp|set_alarme_victor:inst26                        ; set_alarme_victor         ; work         ;
@@ -712,8 +712,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|lcd_data[1]~2 ; LCCOMB_X12_Y12_N18 ; 24      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; lcd_example_3favs:inst|lcd_controller_v2_1:dut|rs~0          ; LCCOMB_X12_Y13_N22 ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; lcd_example_3favs:inst|process_0~0                           ; LCCOMB_X13_Y13_N18 ; 28      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; lcd_example_favs:inst19|lcd_bus[6]~11                        ; LCCOMB_X17_Y12_N8  ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; lcd_example_favs:inst19|lcd_bus[7]~10                        ; LCCOMB_X16_Y11_N28 ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; lcd_example_favs:inst16|lcd_bus[6]~11                        ; LCCOMB_X17_Y12_N8  ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; lcd_example_favs:inst16|lcd_bus[7]~10                        ; LCCOMB_X16_Y11_N28 ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; menu:inst4|process_0~0                                       ; LCCOMB_X19_Y10_N16 ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 ; set_alarme_bruno:inst31|edicao                               ; LCCOMB_X19_Y10_N22 ; 15      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
 ; set_alarme_bruno:inst31|hh[0]~0                              ; LCCOMB_X23_Y11_N18 ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
@@ -1292,7 +1292,7 @@ Info (170195): Router estimated average interconnect usage is 2% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
-Info (11888): Total time spent on timing analysis during the Fitter is 2.68 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 2.77 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1301,10 +1301,10 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file D:/Estudo/Eletronica_Digital/P2/output_files/Projeto2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 5513 megabytes
-    Info: Processing ended: Tue Apr 13 10:56:52 2021
+    Info: Peak virtual memory: 5507 megabytes
+    Info: Processing ended: Tue Apr 13 22:09:17 2021
     Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +----------------------------+
